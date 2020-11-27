@@ -9,6 +9,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Microsite"
     folder: "site/content/microsite"
     create: true
+    slug: '{{slug}}'
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "string"}
