@@ -12,6 +12,7 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "string"}
+      - {label: "URL Slug (e.g. https://value.hexawise.com/your-slug)", name: "slug", widget: "string"}
       - {label: "Foo", name: "foo", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
