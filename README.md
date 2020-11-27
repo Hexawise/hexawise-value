@@ -15,6 +15,6 @@ For more about how to use the Netlify CLI, use the commands `netlify` and `netli
 
 ## Deploying to Netlify
 
-The Netlify site can be found [here](https://app.netlify.com/sites/quirky-rosalind-1c424b/overview).
+The Netlify site can be found [here](https://app.netlify.com/sites/vigilant-boyd-cd20dd/overview).
 Pushing to this repo will automatically start a deploy there.
-The resulting site in production is [here](https://quirky-rosalind-1c424b.netlify.app).
+The resulting site in production is [here](https://vigilant-boyd-cd20dd.netlify.app).
