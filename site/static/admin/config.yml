@@ -11,11 +11,18 @@ collections: # A list of collections the CMS should be able to edit
     create: true
     slug: '{{slug}}'
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Subtitle", name: "subtitle", widget: "string"}
-      - {label: "URL Slug (e.g. https://value.hexawise.com/your-slug)", name: "slug", widget: "string"}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Subtitle", name: "subtitle", widget: "string", required: true}
       - {label: "Foo", name: "foo", widget: "string", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+      - widget: string
+        name: "slug"
+        label: "Slug"
+        required: true
+        pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$',"A slug can't have spaces or special characters"]
+        hint: >-
+          The URL slug for the microsite (the 'your-slug' in https://value.hexawise.com/your-slug)
+
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
     folder: "site/content/post" # The path to the folder where the documents are stored
