@@ -9,7 +9,10 @@
   <body>
     <h1>{{ .Title }}</h1>
     <strong>{{ .Description }}</strong>
-    <p>The value of foo: {{ .Params.foo }}</p>
+    <h6>Hexawise is a <u>test design optimization tool</u> that allows users to quickly generate tests from a model of variation ideas of their System Under Test.</h6>
+    <p>{{ .Params.intro_blurb_1 }} </p>
+    <p>{{ .Params.intro_blurb_2 }} </p>
+    <img>{{ .Params.image }}</img>
     <article class="content">
       {{ .Content }}
     </article>

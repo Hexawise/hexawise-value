@@ -14,7 +14,9 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Subtitle", name: "description", widget: "text", required: true}
-      - {label: "Foo", name: "foo", widget: "string", required: false}
+      - {label: "Intro Blurb #1", name: "intro_blurb_1", widget: "string", required: true}
+      - {label: "Intro Blurb #2", name: "intro_blurb_2", widget: "string", required: true}
+      - {label: "Image", name: "image", widget: "image", required: true}
       - {label: "Body", name: "body", widget: "markdown", required: false}
       - widget: string
         name: "slug"
