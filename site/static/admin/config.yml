@@ -13,7 +13,7 @@ collections: # A list of collections the CMS should be able to edit
     slug: '{{slug}}'
     fields:
       - {label: "Title", name: "title", widget: "string", required: true}
-      - {label: "Subtitle", name: "subtitle", widget: "string", required: true}
+      - {label: "Subtitle", name: "description", widget: "text", required: true}
       - {label: "Foo", name: "foo", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
       - widget: string
