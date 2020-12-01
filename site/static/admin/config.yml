@@ -23,7 +23,8 @@ collections: # A list of collections the CMS should be able to edit
           The URL slug for the microsite (the 'your-slug' in https://value.hexawise.com/your-slug)
       - {label: "Intro Blurb #1", name: "intro_blurb_1", widget: "string", required: true}
       - {label: "Intro Blurb #2", name: "intro_blurb_2", widget: "string", required: true}
-      - {label: "Image", name: "image", widget: "image", required: true}
+      - {label: "Intro Image", name: "image", widget: "image", required: true}
+      - {label: "CTA Contact", name: "contact", widget: "string", required: true}
       - {label: "Body", name: "body", widget: "markdown", required: false}
 
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
