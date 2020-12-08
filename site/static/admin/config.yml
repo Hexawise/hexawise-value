@@ -34,11 +34,11 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Section Text #3", name: "section_text_3", widget: "string", required: false}
       - {label: "Section Text #4", name: "section_text_4", widget: "string", required: false}
       - {label: "Section Text #5", name: "section_text_5", widget: "string", required: false}
-      - {label: "Section Video #1", name: "section_video_1", widget: "video", required: true}
-      - {label: "Section Video #2", name: "section_video_2", widget: "video", required: true}
-      - {label: "Section Video #3", name: "section_video_3", widget: "video", required: false}
-      - {label: "Section Video #4", name: "section_video_4", widget: "video", required: false}
-      - {label: "Section Video #5", name: "section_video_5", widget: "video", required: false}
+      - {label: "Section Video #1", name: "section_video_1", widget: "file", required: true}
+      - {label: "Section Video #2", name: "section_video_2", widget: "file", required: true}
+      - {label: "Section Video #3", name: "section_video_3", widget: "file", required: false}
+      - {label: "Section Video #4", name: "section_video_4", widget: "file", required: false}
+      - {label: "Section Video #5", name: "section_video_5", widget: "file", required: false}
       - {label: "CTA Contact #1", name: "contact_2", widget: "string", required: true}
       - {label: "CTA Contact #2", name: contact_2", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
