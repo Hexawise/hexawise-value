@@ -3,7 +3,7 @@ backend:
   repo: hexawise/hexawise-value
   branch: master
 
-media_folder: "site/static/img" # Folder where user uploaded files should go
+media_folder: "site/static/img"
 public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
