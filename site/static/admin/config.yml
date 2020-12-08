@@ -22,24 +22,24 @@ collections: # A list of collections the CMS should be able to edit
         pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$',"A slug can't have spaces or special characters"]
         hint: >-
           The URL slug for the microsite (the 'your-slug' in https://value.hexawise.com/your-slug)
-      - {label: "Intro Header", name: "intro_header", widget: "string", required: true}
-      - {label: "Intro Body", name: "intro_body", widget: "string", required: true}
-      - {label: "Intro Image", name: "image", widget: "image", required: true}
-      - {label: "Section Header #1", name: "section_header_1", widget: "string", required: true}
-      - {label: "Section Header #2", name: "section_header_2", widget: "string", required: true}
+      - {label: "Intro Header", name: "intro_header", widget: "string", required: false}
+      - {label: "Intro Body", name: "intro_body", widget: "string", required: false}
+      - {label: "Intro Image", name: "image", widget: "image", required: false}
+      - {label: "Section Header #1", name: "section_header_1", widget: "string", required: false}
+      - {label: "Section Header #2", name: "section_header_2", widget: "string", required: false}
       - {label: "Section Header #3", name: "section_header_3", widget: "string", required: false}
       - {label: "Section Header #4", name: "section_header_4", widget: "string", required: false}
       - {label: "Section Header #5", name: "section_header_5", widget: "string", required: false}
-      - {label: "Section Text #1", name: "section_text_1", widget: "string", required: true}
-      - {label: "Section Text #2", name: "section_text_2", widget: "string", required: true}
+      - {label: "Section Text #1", name: "section_text_1", widget: "string", required: false}
+      - {label: "Section Text #2", name: "section_text_2", widget: "string", required: false}
       - {label: "Section Text #3", name: "section_text_3", widget: "string", required: false}
       - {label: "Section Text #4", name: "section_text_4", widget: "string", required: false}
       - {label: "Section Text #5", name: "section_text_5", widget: "string", required: false}
-      - {label: "Section Video #1", name: "section_video_1", widget: "file", required: true}
-      - {label: "Section Video #2", name: "section_video_2", widget: "file", required: true}
+      - {label: "Section Video #1", name: "section_video_1", widget: "file", required: false}
+      - {label: "Section Video #2", name: "section_video_2", widget: "file", required: false}
       - {label: "Section Video #3", name: "section_video_3", widget: "file", required: false}
       - {label: "Section Video #4", name: "section_video_4", widget: "file", required: false}
       - {label: "Section Video #5", name: "section_video_5", widget: "file", required: false}
-      - {label: "CTA Contact #1", name: "contact_2", widget: "string", required: true}
+      - {label: "CTA Contact #1", name: "contact_2", widget: "string", required: false}
       - {label: "CTA Contact #2", name: contact_2", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
