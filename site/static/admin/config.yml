@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: hexawise/hexawise-value
   branch: master
 
 media_folder: "site/static/img" # Folder where user uploaded files should go
