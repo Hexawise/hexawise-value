@@ -9,7 +9,7 @@ Hexawise is used alongside various Test Management and Automation tools, includi
 
 Hexawise’s objectively superior tests can be exported into a data sheet format that can be directly imported into Tosca, leading to significantly increased time savings and testing thoroughness
 
-## Another section
+## Example Sections
 
 More of the layout is being specified now. Static content to be added includes:
 
