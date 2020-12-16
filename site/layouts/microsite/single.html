@@ -23,10 +23,10 @@
     <div id="features-container" class="hexawise-container container d-none d-md-block">
       <nav id="features-navbar" class="scrollspy-navbar navbar navbar-expand px-0 pb-0 sticky-top">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#different">{{ Params.section_header_1 }}</a>
-          <a class="nav-item nav-link" href="#find-more-defects">{{ Params.section_header_2 }}</a>
-          <a class="nav-item nav-link" href="#faster">{{ Params.section_header_3 }}</a>
-          <a class="nav-item nav-link" href="#accelerate">{{ Params.section_header_4 }}</a>
+          <a class="nav-item nav-link active" href="#different">{{ .Params.section_header_1 }}</a>
+          <a class="nav-item nav-link" href="#find-more-defects">{{ .Params.section_header_2 }}</a>
+          <a class="nav-item nav-link" href="#faster">{{ .Params.section_header_3 }}</a>
+          <a class="nav-item nav-link" href="#accelerate">{{ .Params.section_header_4 }}</a>
         </div>
       </nav>
 
@@ -34,7 +34,7 @@
         <div id="different" class="feature-section">
           <div class="row w-100">
             <div class="p-3">
-              <h5>{{ Params.section_text_1 }}</h5>
+              <h5>{{ .Params.section_text_1 }}</h5>
             </div>
           </div>
           <div class="row w-100">
@@ -46,14 +46,14 @@
 
         <div class="row w-100 text-center mb-4">
           <div class="p-3 mb-5 w-100">
-            <h5>{{ Params.section_text_2 }}</h5>
+            <h5>{{ .Params.section_text_2 }}</h5>
           </div>
         </div>
 
         <div id="find-more-defects" class="feature-section">
           <div class="row w-100">
             <div class="p-3">
-              <h5>{{ Params.section_text_3 }}</h5>
+              <h5>{{ .Params.section_text_3 }}</h5>
             </div>
           </div>
           <div class="row w-100">
@@ -66,7 +66,7 @@
         <div id="faster" class="feature-section">
           <div class="row">
             <div class="p-3">
-              <h5>{{ Params.section_text_4 }}</h5>
+              <h5>{{ .Params.section_text_4 }}</h5>
             </div>
           </div>
 
@@ -86,7 +86,7 @@
         <div id="accelerate" class="feature-section">
           <div class="row">
             <div class="p-3">
-              <h5>{{ Params.section_text_5 }}</h5>
+              <h5>{{ .Params.section_text_5 }}</h5>
             </div>
           </div>
 
@@ -130,8 +130,8 @@
                 Reach out to the below contacts to learn more about the significant benefits that were achieved during the Hexawise POC at Guidewire:
               </large>
               <br>
-              <large>{{ Params.contact_1 }}</large>
-              <large>{{ Params.contact_2 }}</large>
+              <large>{{ .Params.contact_1 }}</large>
+              <large>{{ .Params.contact_2 }}</large>
             </div>
           </div>
         </div>
