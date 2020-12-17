@@ -3,11 +3,7 @@
   {{ partial "head" . }}
   <body class="sans-serif">
 
-    {{ block "header" . }}{{ partial "nav" . }}{{end}}
-
     {{ block "main" . }}{{ end }}
-
-    {{ block "footer" . }}{{ partial "footer" . }}{{end}}
 
     {{ $script := .Site.Data.webpack.main }}
     {{ with $script.js }}
