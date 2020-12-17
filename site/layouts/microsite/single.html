@@ -1,143 +1,132 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="/main.css">
-    <title>{{ .Title }}</title>
-  </head>
-  <body>
-    {{ define "main" }}
-    <h1>{{ .Title }}</h1>
-    <h3>{{ .Description }}</h3>
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<h3>{{ .Description }}</h3>
 
-    <div class="hexawise-container container d-none d-md-block">
-      <h6>{{ .Params.intro_header }}</h6>
-      <div class="d-flex flex-lg-nowrap flex-wrap align-items-center">
-        <div>
-          <p>{{ .Params.intro_body }}</p>
+<div class="hexawise-container container d-none d-md-block">
+  <h6>{{ .Params.intro_header }}</h6>
+  <div class="d-flex flex-lg-nowrap flex-wrap align-items-center">
+    <div>
+      <p>{{ .Params.intro_body }}</p>
+    </div>
+  {{ .Params.intro_image }}
+  </div>
+</div>
+
+<div id="features-container" class="hexawise-container container d-none d-md-block">
+  <nav id="features-navbar" class="scrollspy-navbar navbar navbar-expand px-0 pb-0 sticky-top">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active">{{ .Params.section_header_1 }}</a>
+      <a class="nav-item nav-link">{{ .Params.section_header_2 }}</a>
+      <a class="nav-item nav-link">{{ .Params.section_header_3 }}</a>
+      <a class="nav-item nav-link">{{ .Params.section_header_4 }}</a>
+    </div>
+  </nav>
+
+  <div class="px-3">
+    <div id="different" class="feature-section">
+      <div class="row w-100">
+        <div class="p-3">
+          <h5>{{ .Params.section_text_1 }}</h5>
         </div>
-      {{ .Params.intro_image }}
+      </div>
+      <div class="row w-100">
+        <video muted id='guidewire-no-matrices' style='width: 100%; height: 100%;'>
+         <source src='https://s3.amazonaws.com/media.hexawise.com/guidewire-no-matrices.mp4' type='video/mp4'>
+        </video>
       </div>
     </div>
 
-    <div id="features-container" class="hexawise-container container d-none d-md-block">
-      <nav id="features-navbar" class="scrollspy-navbar navbar navbar-expand px-0 pb-0 sticky-top">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active">{{ .Params.section_header_1 }}</a>
-          <a class="nav-item nav-link">{{ .Params.section_header_2 }}</a>
-          <a class="nav-item nav-link">{{ .Params.section_header_3 }}</a>
-          <a class="nav-item nav-link">{{ .Params.section_header_4 }}</a>
+    <div class="row w-100 text-center mb-4">
+      <div class="p-3 mb-5 w-100">
+        <h5>{{ .Params.section_text_2 }}</h5>
+      </div>
+    </div>
+
+    <div id="find-more-defects" class="feature-section">
+      <div class="row w-100">
+        <div class="p-3">
+          <h5>{{ .Params.section_text_3 }}</h5>
         </div>
-      </nav>
+      </div>
+      <div class="row w-100">
+        <video muted id='guidewire-matrices' style='width: 100%; height: 100%;'>
+         <source src='https://s3.amazonaws.com/media.hexawise.com/guidewire-matrices.mp4' type='video/mp4'>
+        </video>
+      </div>
+    </div>
 
-      <div class="px-3">
-        <div id="different" class="feature-section">
-          <div class="row w-100">
-            <div class="p-3">
-              <h5>{{ .Params.section_text_1 }}</h5>
-            </div>
-          </div>
-          <div class="row w-100">
-            <video muted id='guidewire-no-matrices' style='width: 100%; height: 100%;'>
-             <source src='https://s3.amazonaws.com/media.hexawise.com/guidewire-no-matrices.mp4' type='video/mp4'>
-            </video>
-          </div>
+    <div id="faster" class="feature-section">
+      <div class="row">
+        <div class="p-3">
+          <h5>{{ .Params.section_text_4 }}</h5>
         </div>
+      </div>
 
-        <div class="row w-100 text-center mb-4">
-          <div class="p-3 mb-5 w-100">
-            <h5>{{ .Params.section_text_2 }}</h5>
-          </div>
+      <div class="row">
+        <!-- <%= render partial: 'content/value/item', locals: { source: 'https://s3.amazonaws.com/media.hexawise.com/video/hexawise-guidewire-faster-test-selection.mp4',
+                                                              primary_text: 'Faster test case selection' ,
+                                                              secondary_text: "Once Guidewire models are placed inside Hexawise, the right tests for execution are quickly selected.",
+                                                              col_size: '12' } %>
+
+        <%= render partial: 'content/value/item', locals: { source: 'https://s3.amazonaws.com/media.hexawise.com/video/hexawise-guidewire-communicate-coverage.mp4',
+                                                              primary_text: 'Smarter testing decisions' ,
+                                                              secondary_text: "Using Hexawise’s clear coverage reports to make smarter testing decisions about test case counts and coverage.",
+                                                              col_size: '12' } %> -->
+      </div>
+    </div>
+
+    <div id="accelerate" class="feature-section">
+      <div class="row">
+        <div class="p-3">
+          <h5>{{ .Params.section_text_5 }}</h5>
         </div>
+      </div>
 
-        <div id="find-more-defects" class="feature-section">
-          <div class="row w-100">
-            <div class="p-3">
-              <h5>{{ .Params.section_text_3 }}</h5>
-            </div>
-          </div>
-          <div class="row w-100">
-            <video muted id='guidewire-matrices' style='width: 100%; height: 100%;'>
-             <source src='https://s3.amazonaws.com/media.hexawise.com/guidewire-matrices.mp4' type='video/mp4'>
-            </video>
-          </div>
+      <div class='px-3'>
+        <div class="row">
+          <h5>Teams using BDD</h5>
         </div>
-
-        <div id="faster" class="feature-section">
-          <div class="row">
-            <div class="p-3">
-              <h5>{{ .Params.section_text_4 }}</h5>
+        <div class="row">
+          <div style="display: flex; align-items: center;">
+            <!-- <%= image_tag('new_site/header-logo.svg', class: 'mx-3 mx-lg-5') %> -->
+            <div style="display: flex; flex-direction: column; align-items: center;" class="mx-3 mx-lg-5">
+              <div>Export</div>
+              <!-- <%= new_fa_icon('fas', 'long-arrow-right', class: 'fa-2x') %> -->
+              <div style="height: 1.5em;"></div>
             </div>
-          </div>
-
-          <div class="row">
-            <!-- <%= render partial: 'content/value/item', locals: { source: 'https://s3.amazonaws.com/media.hexawise.com/video/hexawise-guidewire-faster-test-selection.mp4',
-                                                                  primary_text: 'Faster test case selection' ,
-                                                                  secondary_text: "Once Guidewire models are placed inside Hexawise, the right tests for execution are quickly selected.",
-                                                                  col_size: '12' } %>
-
-            <%= render partial: 'content/value/item', locals: { source: 'https://s3.amazonaws.com/media.hexawise.com/video/hexawise-guidewire-communicate-coverage.mp4',
-                                                                  primary_text: 'Smarter testing decisions' ,
-                                                                  secondary_text: "Using Hexawise’s clear coverage reports to make smarter testing decisions about test case counts and coverage.",
-                                                                  col_size: '12' } %> -->
-          </div>
-        </div>
-
-        <div id="accelerate" class="feature-section">
-          <div class="row">
-            <div class="p-3">
-              <h5>{{ .Params.section_text_5 }}</h5>
-            </div>
-          </div>
-
-          <div class='px-3'>
-            <div class="row">
-              <h5>Teams using BDD</h5>
-            </div>
-            <div class="row">
-              <div style="display: flex; align-items: center;">
-                <!-- <%= image_tag('new_site/header-logo.svg', class: 'mx-3 mx-lg-5') %> -->
-                <div style="display: flex; flex-direction: column; align-items: center;" class="mx-3 mx-lg-5">
-                  <div>Export</div>
-                  <!-- <%= new_fa_icon('fas', 'long-arrow-right', class: 'fa-2x') %> -->
-                  <div style="height: 1.5em;"></div>
-                </div>
-                <div style="display: flex; flex-direction: column; align-items: center;" class="mx-3 mx-lg-5">
-                  <div>
-                    <!-- <%= image_tag('new_site/value/hexawise-bdd-screenshot.png', size: '172x150') %> -->
-                  </div>
-                  <small>Data driven automation-ready enhanced feature files</small>
-                </div>
+            <div style="display: flex; flex-direction: column; align-items: center;" class="mx-3 mx-lg-5">
+              <div>
+                <!-- <%= image_tag('new_site/value/hexawise-bdd-screenshot.png', size: '172x150') %> -->
               </div>
-            </div>
-            <div class="row w-100 my-5">
-              <video controls style='width: 100%; height: 100%;'>
-                <source src="https://s3.amazonaws.com/media.hexawise.com/video/hexawise-guidewire-faster-automation.mp4" type="video/mp4">
-              </video>
+              <small>Data driven automation-ready enhanced feature files</small>
             </div>
           </div>
         </div>
+        <div class="row w-100 my-5">
+          <video controls style='width: 100%; height: 100%;'>
+            <source src="https://s3.amazonaws.com/media.hexawise.com/video/hexawise-guidewire-faster-automation.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
     </div>
+  </div>
+</div>
 
-    <div class="footer-call-to-action container-fluid purple px-sm-5 py-5">
-      <div class="container">
-        <div class="row text-center justify-content-center">
-          <div class="col px-0">
-            <div class="mx-auto">
-              <h1>Want more information?</h1>
-              <large class="text-center">
-                Reach out to the below contacts to learn more about the significant benefits that were achieved during the Hexawise POC at Guidewire:
-              </large>
-              <br>
-              <large>{{ .Params.contact_1 }}</large>
-              <large>{{ .Params.contact_2 }}</large>
-            </div>
-          </div>
+<div class="footer-call-to-action container-fluid purple px-sm-5 py-5">
+  <div class="container">
+    <div class="row text-center justify-content-center">
+      <div class="col px-0">
+        <div class="mx-auto">
+          <h1>Want more information?</h1>
+          <large class="text-center">
+            Reach out to the below contacts to learn more about the significant benefits that were achieved during the Hexawise POC at Guidewire:
+          </large>
+          <br>
+          <large>{{ .Params.contact_1 }}</large>
+          <large>{{ .Params.contact_2 }}</large>
         </div>
       </div>
     </div>
-  </body>
-</html>
+  </div>
+</div>
+{{ end }}
