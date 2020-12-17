@@ -1,0 +1,176 @@
+#achievements-panel {
+	height: calc(100% - 53px);
+	overflow: auto;
+
+	#user-level-container {
+		height: 95%;
+
+		p, h1 { margin: 0 0 10px; }
+		
+		ul li.disabled a { text-decoration: none; }
+
+		.achievements-title {
+			font-weight: bold;
+			text-decoration: none;
+		}
+
+		ul li { margin-left: 0px; }
+
+		.experts {
+			height: 300px;
+			overflow: auto;
+
+			.expert {
+				width: 200px;
+				text-align: center;
+				margin-right: 15px;
+
+				.name {
+					font-size: 1.2em;
+				}
+
+				img {
+					height: 75px; 
+					border: 1px solid black;
+				}
+			}
+		}
+
+		.progression-information {
+			margin-left: 240px;
+
+			.completion-percentage {
+				margin-left: 40px;
+				margin-top: 35px;
+			}
+
+			ul li { margin-left: 0px; }
+		}
+
+		.well { background-color: white; }
+
+		#user-todo-list {
+			width: 235px;
+			overflow: auto;
+			height: 100%;
+			margin-bottom: 0px;
+
+			&.well { 
+				padding: 0px; 
+				overflow-x: hidden; 
+			}
+
+			a {
+				color: $hex_purple;
+				padding-left: 20px;
+
+				&.achievements-title { color: black; }
+
+				&:hover { background-color: $hex_orange; }
+			}
+
+			a.guru {
+				&:hover { background-color: white; }		
+			}
+
+			ul li { 
+				height: 25px;
+			}		
+
+			.nav-header {
+				padding-left: 0px;
+
+				a {
+					margin-left: 0px; 
+					padding-left: 20px;
+				}
+			}
+		}
+		
+		.nav-list { padding-left: 0px; }
+		.suggested-task, .next-level, .current-level, .suggested-task-and-help { min-width: 650px; }
+		.current-level, .suggested-task, .suggested-task-and-help { height: 150px; }
+		.next-level { 
+			height: 110px; 
+
+			.percentage-to-next-level { width: 350px; }
+			.next-level-frogs {
+				margin-left: 50px;
+				width: 250px;
+			}
+			.next-level-arrow {
+				height: 16px;
+				padding-bottom: 40px;
+			}
+		}
+
+		.suggested-task-and-help .suggested-task, .suggested-task-and-help .help-resources {
+			width: 43%;
+			height: 140px;
+		}
+
+		.suggested-task-and-help .suggested-task-frog, .suggested-task-and-help .help-resource-frog { 
+			margin-top: 20px;
+			height: 100px;
+		}
+
+		.suggested-task-and-help .suggested-task .suggested-task-description { margin-bottom: 0px; }
+		.suggested-task span.suggested-task-information div, #user-level-container .suggested-task .quiz-content { max-width: 560px; }
+	}
+}
+
+ol.todo-instructions {
+    li {
+    	line-height: 1.5;
+
+    	img { vertical-align: middle;	}
+    }
+}
+
+.help-resouces img { padding: 15px 25px 0 0; }
+
+.help-resources-list { list-style: disc; }
+
+.help-resources-list li { line-height: 20px;} 
+
+.wizard-nav-list {
+	height: 422px;
+	overflow: auto;
+}
+
+.loading-container-14, .loading-progress-14 {
+	height:18px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;	
+}
+
+.loading-container-14 {
+	background-color:rgb(236,236,236);
+	width:350px;
+	-moz-box-shadow:0px 1px 0px rgba(255,255,255,0.25) ,inset 0px 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow:0px 1px 0px rgba(255,255,255,0.25) ,inset 0px 1px 3px rgba(0,0,0,0.5);
+	box-shadow:0px 1px 0px rgba(255,255,255,0.25) ,inset 0px 1px 3px rgba(0,0,0,0.5);
+	margin-bottom: 15px;
+}
+
+.loading-progress-14 {
+	background-image:-moz-linear-gradient(46% 94% 90deg,rgb(92,181,25) 0%,rgb(92,181,25) 1%,rgb(216,242,152) 99%,rgb(216,242,152) 100%); 
+	background-image:-webkit-gradient(linear,46% 94%,46% 7%,color-stop(0, rgb(92,181,25)),color-stop(0.01, rgb(92,181,25)),color-stop(0.99, rgb(216,242,152)),color-stop(1, rgb(216,242,152)));
+	background-image:-webkit-linear-gradient(90deg,rgb(92,181,25) 0%,rgb(92,181,25) 1%,rgb(216,242,152) 99%,rgb(216,242,152) 100%);
+	background-image:-o-linear-gradient(90deg,rgb(92,181,25) 0%,rgb(92,181,25) 1%,rgb(216,242,152) 99%,rgb(216,242,152) 100%);
+	background-image:-ms-linear-gradient(90deg,rgb(92,181,25) 0%,rgb(92,181,25) 1%,rgb(216,242,152) 99%,rgb(216,242,152) 100%);
+	background-image:linear-gradient(90deg,rgb(92,181,25) 0%,rgb(92,181,25) 1%,rgb(216,242,152) 99%,rgb(216,242,152) 100%);
+	width:253px;
+	-moz-box-shadow:inset 0px 1px 3px rgb(24,79,0);
+	-webkit-box-shadow:inset 0px 1px 3px rgb(24,79,0);
+	box-shadow:inset 0px 1px 3px rgb(24,79,0);
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffd8f298,endColorstr=#ff5cb519,GradientType=0)";
+	filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffd8f298,endColorstr=#ff5cb519,GradientType=0)";
+}
+
+#tour-content { // Maybe this should be elsewhere?
+	overflow: auto;
+	max-height: 472px;
+	margin: 0 5px;
+} 

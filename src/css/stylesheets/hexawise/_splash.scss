@@ -1,0 +1,30 @@
+.splash {
+	h2 {
+		text-align: center;
+		font-size: 1.2em;
+	}
+
+	p { padding: 5px; }
+	
+	table {
+		border-spacing: 0px;
+		margin: 15px 0;
+	}
+
+	ul {
+		font-size: 14px;
+		padding: 5px 5px 5px 25px;
+		list-style-type:disc;
+	}
+}
+
+.splash-buttons {
+  padding:15px;
+  text-align:center;
+  clear:both;
+  background-color:#EEEEEE;
+  border-top:1px solid black;
+
+  .continue { float: right; }
+  .back { float: left; }
+}

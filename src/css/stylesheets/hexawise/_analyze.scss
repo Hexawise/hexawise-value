@@ -1,0 +1,160 @@
+div#analyze {
+	padding-top: 5px;
+	padding-left: 10px;
+	background-color: #FFF !important;
+
+	h2 { font-size: 14px; }
+
+	p {
+		font-size: 15px;
+		padding: 20px;
+	}
+}
+
+div.analysis-chart {
+	width: 600px;
+	padding: 15px;
+}
+
+#analysis-panel {
+  #analysis {
+    height: 100%;
+
+    .analysis-header {
+      padding-left: 30px;
+      font-size: 200%;
+    }
+
+      #initial-analysis-buttons {
+        margin: -15px;
+        height: calc(100% + 45px);
+        overflow: auto;
+      }
+
+      .analysis-content {
+        height: calc(100% - 34px);
+        overflow: auto;
+      }
+  }
+}
+
+#initial-analysis-buttons-heading {
+  padding-top: 70px;
+  font-size: 200%;
+}
+
+#analysis-button-spinner-container {
+    height: 50px;
+}
+
+#invalid-analysis-option {
+  padding:10px;
+  margin:10px;
+}
+
+#scorecard {
+  padding-top: 10px;
+
+  #considerations, #features {
+    width:600px;
+    margin-left:25px;
+    
+    th {
+        font-size:125%;
+    }
+  }
+}
+
+a.analysis-strength-explanation-link {
+  float:right;
+}
+
+a.analysis-link div {
+  margin: 20px 0 20px 0;
+}
+
+.analysis-buttons {
+  display: block;
+  margin: 0 auto;
+  padding: 3%;
+  width: 90%;
+
+  a {
+      margin: 0 2% 0 0;
+      text-decoration: none;
+      white-space: normal;
+      width: 25%;
+  }
+}
+
+@media (max-width: 800px) {
+	.analysis-buttons a {
+		display:block;
+		margin: 0 auto 4% auto;
+    width: 81%;
+	}
+}
+
+td.text-success {
+  @extend .text-success;
+
+  .fas {
+    @extend .text-success;
+  }
+}
+
+td.text-danger {
+  @extend .text-danger;
+
+  .fas {
+    @extend .text-danger;
+  }
+}
+
+.analysis-tabs {
+  margin: 10px 0 0 0;
+  
+  li.active a {
+    text-decoration: initial;
+  }
+  
+  li a.analysis-loading {
+    text-decoration: initial;
+    background-color: #eee;
+    color: #f28f33;
+  }
+}
+
+#analysis-loading-text {
+  vertical-align: top;
+  line-height: 36px;
+}
+
+#matrix {
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  > h1 {
+    padding-top: 10px;
+  }
+
+  #matrix-info {
+    margin: 10px 30px 0 30px;
+  }
+
+  #matrix-header-container {
+    width: 635px;
+
+    #matrix-export-dropdown {
+      height: 18px;
+      margin: 5px 5px 5px 3px;
+      float: right;
+    }
+  }
+}
+
+#analysis-menu-spinner {
+  width: 38px;
+  height: 38px;
+  margin-left: 10px;
+}

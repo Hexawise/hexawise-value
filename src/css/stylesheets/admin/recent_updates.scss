@@ -1,0 +1,83 @@
+@import "../new_site/fonts";
+
+div#recent-update-form-container {
+  padding: 50px;
+
+  input, textarea {
+    font-size: 14px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  .tags {
+    input[type="radio"] {
+      display: none;
+    }
+
+    div.tag {
+      border-radius: 15px;
+      padding: 4px 10px 0 10px;
+      display: inline-block;
+      height: 25px;
+    }
+
+    input[type="radio"]:checked + div.tag {
+      &.FIXED {
+        background-color: #83CE3D;
+      }
+
+      &.NEW {
+        background-color: #0792CB;
+      }
+
+      &.IMPROVED {
+        background-color: #775BC2;
+      }
+
+      &.CHANGED {
+        background-color: #CB8F31;
+      }
+
+      &.REMOVED {
+        background-color: #CB3431;
+      }
+
+      small label {
+        color: white;
+      }
+    }
+  }
+}
+
+div#recent-updates-preview {
+  div.row {
+    &.update {
+      .actions {
+        display: none;
+      }
+
+      &:hover .actions {
+        display: block;
+      }
+
+      div.tag {
+        display: inline-block;
+        border-radius: 15px;
+        height: 25px;
+        padding: 4px 10px 0 10px;
+        margin: 0px;
+
+        small {
+          color: white;
+        }
+      }
+    }
+
+    div.day-separator {
+      border-top: 2px solid #FAFAFA;
+      padding: 2px 15px;
+    }
+  }
+}

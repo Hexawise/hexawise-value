@@ -1,0 +1,22 @@
+#certification-header {
+  background-image: image-url('new_site/backgrounds/radial-circuits.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 738px;
+  height: 336px;
+}
+
+#certification-explanation-container {
+  @extend .m-auto;
+
+  max-width: 668px;
+  margin-top: 0px;
+
+  .card-header {
+    margin-bottom: 0px;
+  }
+
+  .card-body {
+    @extend .pt-0;
+  }
+}

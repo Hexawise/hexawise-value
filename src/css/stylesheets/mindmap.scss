@@ -1,0 +1,232 @@
+/* Hexawise Colors
+775DC2 - purple
+
+E51F32 - red
+
+F28F32 - orange
+
+E9CB00 - yellow
+
+82DC2E - green
+
+1099F2 - blue
+
+*/
+
+#mindmap-container {
+  @media only print {
+    html, body { margin:0; padding:0; overflow:hidden; background-color: white; }
+    svg { position:fixed; top:0; left:0;}
+    .exportJSON {display: none;}
+  }
+
+  body {
+    font-size: 14px;
+    margin: 10px;
+    background-color: #EEE;
+  }
+
+  .node {
+    cursor: pointer;
+
+    circle {
+      fill: #fff;
+      stroke: #775DC2;
+      stroke-width: 3px;
+    }
+
+    text {
+      font-size: 10px;
+      font-family: sans-serif;
+    }
+  }
+
+  .link {
+    fill: none;
+    stroke: #CCC;
+    stroke-width: 3px;
+  }
+
+  circle {
+    &.expanded {
+      fill: #FFF;
+    }
+
+    &.collapsed {
+      &.hexawise-color-1 {
+        fill: #775DC2;
+      }
+
+      &.hexawise-color-2 {
+        fill: #E51F32;
+      }
+
+      &.hexawise-color-3 {
+        fill: #F28F32;
+      }
+
+      &.hexawise-color-4 {
+        fill: #E9CB00;
+      }
+
+      &.hexawise-color-5 {
+        fill: #82DC2E;
+      }
+
+      &.hexawise-color-6 {
+        fill: #1099F2;
+      }
+    }
+  }
+
+  circle, .link {
+    &.hexawise-color-1 {
+      stroke: #775DC2;
+    }
+
+    &.hexawise-color-2 {
+      stroke: #E51F32;
+    }
+
+    &.hexawise-color-3 {
+      stroke: #F28F32;
+    }
+
+    &.hexawise-color-4 {
+      stroke: #E9CB00;
+    }
+
+    &.hexawise-color-5 {
+      stroke: #82DC2E;
+    }
+
+    &.hexawise-color-6 {
+      stroke: #1099F2;
+    }
+  }
+
+  a.editLink {
+    font-family: 'Font Awesome 5 Free';
+    font-size: 1.6em !important;
+    font-style: normal;
+    font-weight: 900;
+    text-decoration: none;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .templink {
+    fill: none;
+    stroke: red;
+    stroke-width: 3px;
+  }
+
+  .ghostCircle, .activeDrag .ghostCircle {
+    display: none;
+
+    &.show {
+      display: block;
+    }
+  }
+
+  div.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 5px;
+    font: 12px sans-serif;
+    background: #FFF;
+    border: 0px;
+    border-radius: 5px;
+    pointer-events: none;
+  }
+
+  #tree-container {
+    min-height: 100%;
+    min-width: 100%;
+  }
+
+  #dialog-form-add, #dialog-form-edit, #dialog-confirm-delete {
+    display: none;
+  }
+
+  .exportJSON{
+    position: absolute;
+    top:20px;
+    left: 20px;
+  }
+
+  fieldset {
+    padding: 0;
+    border: 0;
+    margin-top: 25px;
+  }
+
+
+  input.text {
+    margin-bottom: 12px;
+    width: 95%;
+    padding: .4em;
+  }
+
+  h1 {
+    font-size: 1.2em;
+    margin: .6em 0;
+  }
+
+  .ui-dialog .ui-state-error {
+    padding: .3em;
+  }
+
+  .validateTips {
+    border: 1px solid transparent;
+    padding: 0.3em;
+  }
+
+  .d3-context-menu ul li {
+    margin-left: 0px;
+  }
+
+  #instructions-container {
+    margin: 15px 0 0 15px;
+    position: absolute;
+
+    p.text-muted {
+      font-size: 75%;
+    }
+  }
+
+  #save-mindmap-button {
+    margin: 15px 30px 0 0;
+    position: absolute;
+    right: 0px;
+
+    i {
+      color: #FFF;
+    }
+  }
+}
+
+/* BOOTSTRAP HEADER OVERRIDE */
+.bootstrap-dialog.type-primary .modal-header {
+  background-color: #775ec2 !important;
+}
+
+.bootstrap-dialog-body {
+  input {
+    width: 95%;
+    height: 34px;
+    padding: 6px 12px;
+    line-height: 1.42857143 !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075) ;
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  }
+
+  label {
+    margin-bottom: 5px;
+  }
+}

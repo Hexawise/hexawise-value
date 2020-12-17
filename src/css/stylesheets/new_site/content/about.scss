@@ -1,0 +1,45 @@
+#about-container {
+  #our-story-container {
+    @extend .m-auto;
+
+    max-width: 668px;
+
+    #about-us-image {
+      width: 100%;
+    }
+
+    p {
+      @extend .mt-3;
+    }
+
+    #about-us-methods {
+      list-style-type: none;
+
+      li {
+        background: image-url('new_site/success.svg') no-repeat left top;
+      }
+    }
+  }
+
+  #leadership-team-blurb-container {
+    @extend .m-auto;
+
+    max-width: 668px;
+  }
+
+  #leadership-team {
+    img.profile {
+      background: #FAFAFA;
+      border: 10px solid #FFFFFF;
+      box-sizing: border-box;/* Card */
+      box-shadow: 0px 8px 35px rgba(51, 51, 51, 0.07);
+      border-radius: 3px;
+      max-width: 240px;
+      min-width: 225px;
+
+      @media (min-width: 992px) {
+        max-width: 295px;
+      }
+    }
+  }
+}

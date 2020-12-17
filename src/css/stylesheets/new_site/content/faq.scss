@@ -1,0 +1,54 @@
+#faq-header {
+  background-image: image-url('new_site/backgrounds/question-cloud.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 336px;
+}
+
+#faq-container {
+  max-width: 1140px;
+
+  .faq-section {
+    @extend .pt-5;
+  
+    margin-top: -3rem;
+    padding-top: 3rem;
+  
+    > div {
+      @extend .pt-5;
+  
+      .faq-section-header {
+        @extend .d-none;
+        @extend .d-md-block;
+        @extend .col-3;
+        @extend .col-lg-2;
+      }
+  
+      .card-header {
+        @extend .pt-0;
+  
+        .question-container {
+          @extend .align-top;
+        }
+      }
+  
+      .faq-section-body {
+        @extend .col;
+        @extend .col-md-8;
+        @extend .col-lg-8;
+      
+        .card-body {
+          @extend .p-0;
+    
+          .answer-container {
+            @extend .px-5;
+
+            img {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

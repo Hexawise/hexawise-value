@@ -1,0 +1,324 @@
+.requirements-panel {
+  display: flex;
+  flex-flow: column nowrap;
+
+  #requirements {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    overflow: auto;
+
+    .loading-enter {
+      opacity: 0;
+    }
+    .loading-enter-active {
+      opacity: 1;
+    }
+    .loading-exit {
+      opacity: 1;
+    }
+    .loading-exit-active {
+      opacity: 0;
+    }
+    .loading-enter-active,
+    .loading-exit-active{
+      transition: opacity 100ms;
+    }
+
+    #loading-indicator {
+      font-size: 3em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    #requirements-table *,
+    #requirements-table *:before,
+    #requirements-table *:after {
+      box-sizing: border-box !important;
+      -webkit-box-sizing: border-box !important;
+      -moz-box-sizing: border-box !important;
+      font-size: 14px;
+    }
+
+    #requirements-table {
+      height: 100%;
+
+      > div {
+        height: 100%;
+
+        .react-grid-Container {
+          height: 100%;
+
+          .react-grid-Main {
+            height: 100%;
+
+            .react-grid-Grid {
+              height: 100%; // all these height properties seem unnecessary, but it gets requirements table to be full height
+
+              .react-grid-Empty {
+                padding: 15px;
+                text-align: center;
+              }
+
+              div.react-grid-Header div.react-grid-HeaderRow div.react-grid-HeaderCell div.widget-HeaderCell__value {
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                div#actions-column-header {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  height: 100%;
+                  width: 100%;
+
+                  button {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    .default-actions-icon {
+                      color: white;
+                    }
+                  }
+                }
+              }
+
+              div div.react-grid-Viewport div.react-grid-Canvas div {
+                .rowDropTarget {
+                  position: absolute;
+                  border-top: 1px solid black;
+                  left: 0;
+                  width: 100%;
+                  z-index: 1;
+                }
+
+                .rdg-editor-container {
+                  textarea {
+                    width: 100%;
+                    resize: none;
+                    padding: 4px 6px;
+                    line-height: 14px;
+                  }
+                }
+
+                div.requirement-row {
+                  &.even-row {
+                    > div > div {
+                      background-color: white !important;
+                    }
+
+                    &.frozen > div > div {
+                      background-color: rgba(49, 176, 213, 0.25) !important;
+                    }
+                  }
+
+                  &.odd-row {
+                    > div > div {
+                      border-right-color: #ddd !important;
+                      background-color: #eee !important;
+                    }
+
+                    &.frozen > div > div {
+                      background-color: rgba(49, 176, 213, 0.5) !important;
+                    }
+                  }
+
+                  div.react-grid-Row {
+                    &:hover {
+                      .no-row-actions {
+                        @extend .row-actions;
+                      }
+                    }
+
+                    div.react-grid-Cell {
+                      padding: 5px 8px;
+                      white-space: pre-wrap;
+
+                      &.editing {
+                        padding: 0px;
+                      }
+
+                      &.is-dragged-over-up,
+                      &.is-dragged-over-down,
+                      &.was-dragged-over {
+                        border-right: 1px solid #eee;
+                        border-bottom: 1px solid #ddd;
+                        border-left: none;
+                        border-top: none;
+                      }
+
+                      .react-grid-Cell__value {
+                        height: 100%;
+                        white-space: pre-wrap !important;
+                        vertical-align: middle;
+
+                        .no-row-actions {
+                          visibility: hidden;
+                        }
+
+                        .requirements-drag-handle {
+                          height: 16px;
+                          cursor: move;
+                          width: 8px;
+                        }
+
+                        .row-actions {
+                          align-items: center;
+                          display: flex;
+                          flex-wrap: nowrap;
+                          height: auto;
+                          justify-content: space-between;
+                          visibility: visible;
+
+                          .fa, .far, .fas {
+                            cursor: pointer;
+                            font-size: 16px;
+                            margin-top: -3px;
+                          }
+                        }
+
+                        .read-only-forced-values-display-container {
+                          max-height: 100px;
+                          display: flex;
+                          flex-direction: column;
+                          flex-wrap: nowrap;
+                          overflow-y: auto;
+
+                          .read-only-forced-value {
+                            padding: 2px 0px;
+                          }
+                        }
+
+                        .forced-values-display-container {
+                          max-height: 100px;
+                        }
+
+                        > div {
+                          height: 100px;
+                          overflow-y: auto;
+                          white-space: pre-wrap;
+
+                          .placeholder {
+                            color: #808080;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.import-link:hover,
+#help-file:hover {
+  cursor: pointer !important;
+}
+
+.drag-handle {
+  display: none;
+}
+
+.modal-body {
+  .forced-values-modal-body {
+    padding: 0px 25px;
+
+    .forced-values-control-container {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      white-space: nowrap;
+
+      .input-group {
+        width: 40%;
+
+        input {
+          z-index: 3;
+          font-size: 13px;
+        }
+      }
+
+      div {
+        padding: 0 4px 0 0;
+      }
+
+      a#add-forced-input-button {
+        cursor: pointer;
+      }
+    }
+
+    .forced-values-display-container {
+      max-height: calc(100vh - 500px);
+      padding-bottom: 10px;
+      overflow-y: auto;
+
+      div.forced-value {
+        margin-bottom: -4px;
+        overflow: hidden;
+        max-height: 30px;
+        height: 30px;
+        padding-left: 2px;
+        display: flex;
+        align-items: center;
+
+        a {
+          color: black !important;
+          text-decoration: none !important;
+          cursor: default !important;
+        }
+
+        .fa, .fas, .far {
+          visibility: hidden;
+          padding-right: 2px;
+        }
+
+        &:hover .fa, &:hover .far, &:hover .fas {
+          visibility: visible;
+        }
+
+        span {
+          a:hover {
+            color: #7265c4 !important;
+            cursor: pointer !important;
+            text-decoration: underline !important;
+          }
+
+          select {
+            max-width: 350px;
+          }
+        }
+      }
+    }
+  }
+
+  .import-requirements-modal-body {
+    &.modal-message {
+      font-size: 14px;
+    }
+
+    #requirement-import-recommendation {
+      margin-bottom: 30px;
+    }
+
+    #requirement-import-existing-requirements {
+      margin-top: 30px;
+    }
+  }
+}

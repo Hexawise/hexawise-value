@@ -1,0 +1,25 @@
+.value-pair-prose {
+    padding: 0 3px;
+    background-color: #DDD;
+    border: 1px solid gray;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+ul.conflicting-vps li { margin-top: 5px; }
+
+p.value-pair-explained, p.value-pair-terse {
+    margin-bottom: 0.5em;
+}
+
+div#value-pair-dialog p,
+div#value-pair-dialog p.value-pair-explained,
+div#value-pair-dialog p.value-pair-terse {
+    line-height: 150%;
+}
+
+div#value-pair-dialog-content {
+	max-height: 400px;
+	overflow: auto;
+}

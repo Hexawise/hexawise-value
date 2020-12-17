@@ -1,0 +1,56 @@
+.tpd-tooltip {
+  .tpd-content {
+    #password-validation-list, #password-confirmation-validation {
+      small {
+        b {
+          color: #333333;
+          font-size: 16px;
+        }
+      }
+
+      ul {
+        @extend .pl-0;
+        @extend .mb-0;
+
+        li {
+          @extend .text-success;
+          @extend .my-1;
+
+          font-family: "HarmoniaSansStd-Regular", sans-serif;
+          font-size: 14px;
+          line-height: 1.5;
+
+          border: 0;
+          list-style: none;
+
+          background-repeat: no-repeat;
+          background-position: left center;
+          background-size: 32px;
+          padding: 0px 0 6px 35px;
+          margin: 15px 0;
+          background-image: image-url("new_site/success.svg");
+
+          &.invalid {
+            @extend .text-danger;
+
+            background-image: image-url("new_site/invalid.svg");
+          }
+        }
+      }
+
+    }
+  }
+}
+
+form {
+  &#registration-form, &#login-form, &#password-form {
+    #submit-button:disabled {
+      opacity: 0.5;
+
+      &:hover {
+        box-shadow: none;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

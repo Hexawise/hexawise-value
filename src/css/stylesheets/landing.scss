@@ -1,0 +1,138 @@
+@import "fontawesome/fontawesome";
+@import "bootstrap4/bootstrap";
+@import "new_site/**/*";
+@import "tipped";
+@import "hexawise/_recent_updates";
+/* NEW CREDIT CARD CHARGE */
+@import "hexawise/_new_charge";
+
+html {
+  position: relative;
+  min-height: 100%;
+
+  body {
+    margin-bottom: 195px;
+
+    #top-navigation {
+      @extend .container;
+      @extend .navbar;
+      @extend .navbar-expand-lg;
+      @extend .navbar-light;
+      @extend .bg-white;
+      @extend .justify-content-start;
+      @extend .justify-content-lg-center;
+
+      a#header-logo {
+        @extend .navbar-brand;
+        @extend .d-inline;
+      }
+
+      button#hamburger-menu {
+        @extend .navbar-toggler;
+        @extend .ml-auto;
+      }
+
+      div#navbarSupportedContent {
+        @extend .navbar-collapse;
+        @extend .collapse;
+        @extend .w-100;
+        @extend .justify-content-between;
+        @extend .align-items-center;
+
+        div#content-links {
+          @extend .navbar-nav;
+          @extend .mx-auto;
+          @extend .text-lg-center;
+
+          #login-link {
+            @extend .nav-item;
+            @extend .nav-link;
+            @extend .d-lg-none;
+          }
+        }
+
+        div#account-links {
+          @extend .nav;
+          @extend .navbar-nav;
+          @extend .flex-row;
+          @extend .justify-content-center;
+          @extend .flex-nowrap;
+
+          a#login-link {
+            @extend .nav-item;
+            @extend .nav-link;
+            @extend .d-none;
+            @extend .d-lg-block;
+            @extend .mx-md-1;
+            @extend .mx-xl-3;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .container {
+        max-width: 1180px;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      .nav-item, .dropdown > a {
+        font-weight: bold;
+      }
+    }
+
+    > div {
+      margin: 50px auto;
+    }
+
+    a {
+      color: $purple;
+    }
+
+    ellipse {
+      fill: $purple;
+      filter: drop-shadow(0px 6px 20px rgba(119, 91, 194, 0.2));
+
+      &.separator {
+        fill: $dark-gray;
+      }
+    }
+
+    input {
+      font-family: $secondary-font-regular;
+    }
+
+    .hexawise-container {
+      max-width: 1280px;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 195px;
+      line-height: 60px;
+      color: $black;
+    
+      &.minimal {
+        width: 100%;
+      }
+    
+      #footer {
+        img {
+          margin-top: -10px;
+        }
+    
+        a {
+          color: black;
+        }
+    
+        #hexawise-info {
+          margin-top: 25px;
+          color: #777777;
+        }
+      }
+    }
+  }
+}

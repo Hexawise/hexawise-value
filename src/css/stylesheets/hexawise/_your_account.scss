@@ -1,0 +1,74 @@
+table.myAccount td {
+  padding-bottom:15px;
+
+  &.label label {
+  	font-weight: bold;
+    width: 180px;
+    text-align:right;
+    padding-right: 10px;
+  }
+  
+  select { max-width: 214px; }
+}
+
+.tabs {
+	color: #000;
+	border-bottom: 2px solid $hex_purple;
+	margin: 5px 0px 0px 0px;
+	padding: 0px;
+	z-index: 1;
+	padding-left: 0px;
+
+	a {
+		&:hover { text-decoration: underline; }
+		&:visited {	color: #000000; }
+	}
+
+	a, a.active {
+		height: 30px;
+		color: #FFF;
+  	background: image-url('hexawise/purple_gradient_large.png') repeat-x;
+  	font-weight: bold;
+		border: 1px solid $hex_purple;
+		padding: 4px 7px 3px 7px;
+		margin: 0px;
+		text-decoration: none; 		
+	}
+
+	a.active {
+    background: #ffffff;
+    color: $hex_orange;
+    border-bottom: 0;
+    padding-bottom: 4px;
+	}
+
+	ul {
+	 	margin-top: 20px;
+		margin-bottom: 2px;
+		padding: 0px;
+
+		li {
+			display: inline;
+			overflow: hidden;
+			list-style-type: none;
+			margin-left: 4px;
+
+			span.disabled {
+		    color: $hex_gray;
+		    background: #FAFAFA;
+		    border: 2px solid #DDDDDD;
+		    border-bottom: none;
+		    padding: 2px 5px 0px 5px;
+		    margin: 0;
+		    text-decoration: none;
+			}
+		}
+	}
+}
+
+
+.tabs_content {
+	background: #FFFFFF;
+	padding: 10px;
+    z-index: 2;
+}

@@ -1,0 +1,259 @@
+table.slickList {
+  border: 2px solid $hex_purple;
+
+  th {
+    font-size: 13px;
+    font-weight: bold;
+    height: 24px;
+    padding: 6px;
+    background-color: #ddd;
+    color: #000;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+
+    &.strength {
+      border-bottom: none;
+    }
+
+    &.count {
+      min-width: 1px;
+    }
+
+    .parameter-name-div {
+      padding: 15px 0;
+    }
+
+    &.hover {
+      color: #fff;
+      background-color: #f28f33;
+      text-decoration: underline;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+
+    #parameter-rows tr {
+      &:hover {
+        th {
+          color: #fff;
+          background-color: $hex_orange;
+        }
+      }
+    }
+
+  td.pv-cell {
+    padding: 6px;
+    border-right: 1px solid #ddd;
+
+    &#new-parameter-td {
+      background-color: #ddd;
+      border-top: 1px solid #fff;
+    }
+
+    &.pv-cell:not(#new-parameter-td):hover {
+      background-color: $hex_orange;
+    }
+
+    &.actionButton {
+      border-right: 0;
+
+      &:hover {
+        background-color: #fff;
+      }
+    }
+
+    &.count {
+      padding-right: 6px;
+      font-weight: bold;
+    }
+
+    &.pairSelected {
+      background-color: $hex_orange;
+
+      td.parameterValueCell {
+        background-color: $hex_orange;
+      }
+    }
+  }
+
+  .even {
+    background-color: #fff;
+  }
+  .odd {
+    background-color: #eee;
+  }
+
+  .even.frozen {
+    background-color: rgba(49, 176, 213, 0.25);
+  }
+  .odd.frozen {
+    background-color: rgba(49, 176, 213, 0.4);
+  }
+
+  &.combinations,
+  &.parameters {
+    border-top: 0px;
+  }
+
+  &.export-fields-table {
+    width: 100%;
+
+    tr {
+      &:hover {
+        color: white;
+        background-color: $hex_orange;
+
+        input {
+          color: black;
+        }
+      }
+
+      &.selected {
+        color: black;
+        background-color: $hex_orange;
+      }
+
+      &.selected:hover,
+      &.selected td:hover {
+        color: white;
+        background-color: $hex_orange;
+
+        input {
+          color: black;
+        }
+      }
+
+      td {
+        &:first-of-type {
+          padding-left: 5px;
+        }
+
+        .form-group {
+          margin-bottom: 0px;
+
+          select.form-control {
+            height: 20px;
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+
+  &.combinations {
+    tr {
+      &:hover {
+        color: black;
+        background-color: $hex_orange;
+      }
+
+      &.selected {
+        color: white;
+        background-color: $hex_orange;
+      }
+
+      &.selected:hover,
+      &.selected td:hover {
+        color: black;
+        background-color: $hex_orange;
+      }
+    }
+
+    td.expected-result {
+      line-height: 1.4em;
+    }
+  }
+
+  &.project-manage {
+    td:hover {
+      background-color: $hex_orange;
+    }
+  }
+
+  &.parameters {
+    min-width: 800px;
+
+    th.modifiable:hover {
+      cursor: pointer;
+    }
+
+    td {
+      height: 35px;
+
+      &.pv-cell:not(#new-parameter-td):hover {
+        background-color: $hex_orange;
+      }
+    }
+
+    > #parameter-rows {
+      i {
+        text-shadow: 0 0 10px #fff;
+      }
+
+      .hover:hover td {
+        background-color: transparent !important;
+      }
+
+      .hover {
+        .badge {
+          background-color: #fff;
+        }
+      }
+
+      .hover {
+        background-color: $hex_orange;
+        color: #fff;
+
+        .badge {
+          color: $hex_orange;
+        }
+      }
+
+    }
+  }
+
+  th.empty,
+  th.empty:hover,
+  td.empty,
+  td.empty:hover {
+    background: white !important;
+    border: white !important;
+  }
+
+  th.parameter-name {
+    border-right: 0px;
+    border-left: 0px;
+    padding: 0;
+
+    &:hover {
+      cursor: pointer !important;
+      text-decoration: underline;
+    }
+  }
+
+  th.parameter-name-constraints {
+    border-right: 0px;
+    border-left: 0px;
+    padding: 0;
+  }
+
+  th.parameter-name-new {
+    border-left: 0px;
+    padding: 0;
+    width: 25px;
+    height: 32px;
+  }
+
+  th.parameter-name-arrows {
+    width: 20px;
+    height: 32px;
+  }
+}
+
+#requirements-table table.slickList th.first-header {
+  border-left: 1px solid $hex_purple;
+  border-bottom: none;
+}

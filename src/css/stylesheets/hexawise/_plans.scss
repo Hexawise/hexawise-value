@@ -1,0 +1,252 @@
+#new-plan-form, #share-plan-form {
+  input:not([type='file']), input:not([type='checkbox']), select {
+    @extend .form-control;
+  }
+
+  input[type='file'] {
+    margin: 15px 0px;
+  }
+
+  .checkbox-container {
+    padding: 5px 0px;
+
+    input[type='checkbox'] {
+      height: auto;
+      width: auto;
+    }
+
+    label {
+      margin: 0px 5px;
+    }
+  }
+
+  .dialog-buttons {
+    margin-left: auto;
+
+    button, .cancel-link {
+      margin: 0px 5px;
+    }
+  }
+
+  #error-message { 
+    padding-top: 15px;
+  }
+}
+
+$active-color: #8776C4;
+$activeColor: $active-color; // Be sure to remove!
+$light-active-color: lighten($active-color, 30%);
+
+#manage-plans-div {
+  max-height: 400px;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+
+  #plan-sidebar {
+    @extend .list-group;
+
+    margin: 0; // Override .list-group
+    width: 200px;
+    min-width: 200px;
+    overflow-y: scroll;
+
+    .filter-item {
+      @extend .list-group-item;
+
+      display: flex;
+      line-height: 1.1em;
+
+      .fa, .fas, .far {
+        margin-right: .3em;
+
+        &.chevron-icon {
+          margin-left: auto;
+        }
+      }
+
+      &.active {
+        background-color: $active-color;
+        border-color: $active-color;
+        color: white;
+
+        .fa, .fas, .far {
+          color: white;
+        }
+      }
+
+      &#projects.active {
+        #projects-list {
+          @extend .list-group;
+        }
+      }
+    }
+  }
+
+  #manage-plans-content {
+    @extend .flex-grow-1;
+
+    width: 60vw;
+    min-width: 790px;
+    margin-left: 5px;
+
+    #plans-div {
+      flex-grow: 1;
+      overflow-y: scroll;
+      height: 90%;
+
+      .empty-view {
+        margin: auto;
+        padding: 0 20px;
+        width: 100%;
+
+        span {
+          font-size: 120%;
+          line-height: 150%;
+        }
+      }
+
+      #project-details {
+        background-color: #eee;
+        padding: 1em;
+        margin-bottom: 5px;
+        width: 100%;
+
+        .action-icons-left {
+          min-width: 40px;
+          width: 40px;
+
+          i {
+            margin: 0 5px 0 0;
+          }
+        }
+
+        .project-name {
+          flex-basis: 53vw;
+          min-width: 565px;
+        }
+
+        .sharing-info {
+          margin-left: auto;
+          min-width: 125px;
+          text-align: right;
+          white-space: nowrap;
+        }
+
+        &.editing div#update-container {
+          margin: 0px 5px;
+        }
+      }
+    }
+  }
+
+  #error-message {
+    width: 100%;
+  }
+}
+
+#manage-plans-div {
+  $activeColor: #8776c4;
+  $lightActiveColor: lighten($activeColor, 30%);
+
+  #plan-data {
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  #manage-plans-table {
+    margin: 0; // Override .table
+    table-layout: fixed;
+    min-width: 750px;
+
+    .plan-row {
+      min-width: 765px;
+
+      &:hover {
+        background-color: $lightActiveColor;
+
+        .action-icons {
+          visibility: visible;
+        }
+      }
+    }
+
+    td, th {
+      padding-left: 3px;
+      padding-right: 3px;
+      border-bottom-width: 1px;
+    }
+
+    .sortable-header {
+      border-bottom: none;
+    }
+
+    .sortable-header .sort-icon {
+      width: 0.5rem;
+      margin-left: 0.5rem;
+    }
+
+    .plan-name {
+      width: 20vw;
+      min-width: 250px;
+
+      .plan-name-text {
+        width: 100%;
+      }
+
+      .action-icons {
+        margin-left: auto;
+        visibility: hidden;
+
+        .fa, .fas, .far { margin: 0 0 0 5px; }
+      }
+    }
+
+    .plan-project {
+      width: 12vw;
+      min-width: 150px;
+    }
+
+    .plan-modified {
+      width: 85px;
+      min-width: 85px;
+    }
+
+    .plan-parameters {
+      width: 6vw;
+    }
+
+    .plan-test-cases {
+      width: 6vw;
+
+      @media(max-width: 1100px) {
+        display: none;
+      }
+    }
+  }
+}
+
+div#file-explanation-dialog {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+#file-explanation-button {
+  margin: 10px auto -15px auto;
+}
+
+table.import-example {
+  border: 1px solid $hex_purple;
+  border-collapse: collapse;
+  border-spacing: 1px;
+
+  th, td {
+    border: 1px inset $hex_purple;
+    padding: 3px;
+  }
+
+  th {
+    background-color: #CCCCCC;
+    font-weight: bold;
+  }
+}

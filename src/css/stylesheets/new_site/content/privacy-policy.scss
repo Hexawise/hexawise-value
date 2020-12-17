@@ -1,0 +1,7 @@
+#privacy-policy-container {
+  max-width: 668px;
+
+  li:not(:first-child) {
+    @extend .mt-4;
+  }
+}

@@ -1,0 +1,18 @@
+// Can't find any evidence that this is being used anymore
+ul.autocomplete_list {
+	text-align: left;
+	padding: 0;
+	list-style-type: none;
+	z-index: 100 !important;
+	position: absolute;
+	border: 1px solid black;
+	width: 172px;
+	*margin-left: -590px !important;
+
+	li.autocomplete_item {
+		padding: 5px;
+		background-color: #DDD;
+	}
+
+	li.selected {background-color: #98b9dc !important;}
+}
