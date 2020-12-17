@@ -40,6 +40,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Section Video #3", name: "section_video_3", widget: "file", required: false}
       - {label: "Section Video #4", name: "section_video_4", widget: "file", required: false}
       - {label: "Section Video #5", name: "section_video_5", widget: "file", required: false}
-      - {label: "CTA Contact #1", name: "contact_2", widget: "string", required: false}
+      - {label: "CTA Contact #1", name: "contact_2", widget: "string", required: true}
       - {label: "CTA Contact #2", name: contact_2", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
