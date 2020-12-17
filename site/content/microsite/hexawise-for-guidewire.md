@@ -6,7 +6,7 @@ intro_header: Hexawise-Guidewire Intro Header
 intro_body: Hexawise is a test design optimization tool.
 image: /img/hexawise-tosca.png
 section_header_1: Hexawise tests are different
-section_header_2: Find more defects
+section_header_2: Find even more defects
 section_header_3: Get to market faster
 section_header_4: Accelerate test automation
 section_text_1: First section text
