@@ -1,6 +1,12 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-<h3>{{ .Description }}</h3>
+<div id="microsite-header" class="hero-call-to-action container-fluid purple text-center mt-1">
+  <div class='hexawise-container container py-5'>
+    <h3>{{ .Title }}</h3>
+    <div class="subheader-container mx-auto">
+      <div><large>{{ .Description }}</large></div>
+    </div>
+  </div>
+</div>
 
 <div class="hexawise-container container d-none d-md-block">
   <h6>{{ .Params.intro_header }}</h6>
