@@ -1,1 +1,11 @@
 @import '~bootstrap/scss/bootstrap'
+@import "stylesheets/application.scss";
+@import "stylesheets/bootstrap_and_overrides.scss";
+@import "stylesheets/colors.scss";
+@import "stylesheets/features.scss";
+@import "stylesheets/hexawise.scss";
+@import "stylesheets/landing.scss";
+
+h1 {
+  /* sanity check, remove after testing */
+  font-size: 9em; }
