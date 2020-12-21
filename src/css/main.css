@@ -1,5 +1,4 @@
 @import '~bootstrap/scss/bootstrap';
-@import "stylesheets/application.scss";
 @import "stylesheets/bootstrap_and_overrides.scss";
 @import "stylesheets/colors.scss";
 @import "stylesheets/features.scss";
