@@ -1,0 +1,207 @@
+/* Colors */
+
+$hexlang_grey: #efefef;
+$hexeditor_highlight_color: lighten($hex_purple, 20%);
+
+/* Editor */
+
+.hexeditor__container,
+.hexeditor__codemirror {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.hexeditor__codemirror
+{
+  .CodeMirror {
+    flex: 1;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    font-family: 'Fira Code', monospace;
+    font-variant-ligatures: contextual;
+  }
+
+  @supports (font-variation-settings: normal) {
+    .CodeMirror { font-family: 'Fira Code VF', monospace; }
+  }
+
+  .CodeMirror-selected {
+    background: $hexeditor_highlight_color !important;
+  }
+
+  pre.CodeMirror-placeholder { color: #999; }
+}
+
+.fira-font {
+  font-family: 'Fira Code', monospace;
+  font-variant-ligatures: contextual;
+}
+
+.hexlang-hint {
+  font-family: 'Fira Code', monospace;
+  font-variant-ligatures: contextual;
+
+  .hint-needle {
+    color: $hex_red;
+    font-weight: bold;
+  }
+}
+
+@supports (font-variation-settings: normal) {
+  .hexlang-hint {
+    font-family: 'Fira Code VF', monospace;
+  }
+}
+
+.hexeditor__codemirror.readonly {
+  .CodeMirror {
+    background: #e2e2e2;
+  }
+}
+
+.hexeditor__codemirror.readonly.error {
+  .CodeMirror {
+    background: #ffdfdf;
+  }
+}
+
+.hexeditor__codemirror.saving {
+  .CodeMirror {
+    background: #ffffee;
+  }
+}
+
+/* CodeMirror */
+
+.CodeMirror-linebackground.errant-line {
+  background-color: #ffdfdf;
+}
+
+.CodeMirror-linebackground.expansion-line {
+  background-color: #d2cde2;
+}
+
+.CodeMirror-hints {
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  list-style: none;
+
+  margin: 0;
+  padding: 2px;
+
+  -webkit-box-shadow: 2px 3px 5px rgba(0,0,0,.2);
+  -moz-box-shadow: 2px 3px 5px rgba(0,0,0,.2);
+  box-shadow: 2px 3px 5px rgba(0,0,0,.2);
+  border-radius: 3px;
+  border: 1px solid silver;
+
+  background: white;
+  font-size: 100%;
+  font-family: monospace;
+
+  max-height: 20em;
+  overflow-y: auto;
+}
+
+.CodeMirror-hint {
+  margin: 0;
+  padding: 1px 4px;
+  border-radius: 2px;
+  white-space: pre;
+  color: black;
+  cursor: pointer;
+}
+
+li.CodeMirror-hint-active {
+  background: #c5bbe6;
+  color: black;
+}
+
+li.CodeMirror-hint-active.automate-autocomplete__used {
+  background: #dedce4;
+  color: #949494;
+}
+
+.info-gutter__error {
+  color: $hex_red;
+  cursor: context-menu;
+}
+
+/* Toolbar */
+
+.hexeditor__toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 8px 1em 29px;
+  background-color: #f7f7f7;
+  border-bottom: 2px solid #e2e2e2;
+}
+
+.hexeditor-toolbar__button {
+  .fa, .far {
+    color: white;
+  }
+
+  &-title {
+    margin-left: 2px;
+  }
+}
+
+.hexeditor-toolbar__select {
+  height: 100%;
+}
+
+/* Usage Text */
+
+.hexeditor-usage-info {
+  background-color: #fffade;
+  padding: 1em;
+  border: 1px solid #aaa;
+  font-size: 1.3em;
+  overflow-y: auto;
+}
+
+.hexeditor-usage-info__text {
+  padding: 0.5em;
+}
+
+.hexeditor-usage-info__table {
+  border-collapse: collapse;
+  border: 1px dotted grey;
+
+  td, th {
+    padding: 0.5em;
+    border: 1px dotted grey;
+  }
+}
+
+/* Syntax highlighting */
+
+.cm-s-hexlang-theme {
+  span.cm-param-literal {
+    color: $hex_purple;
+    background-color: $hexlang_grey;
+    padding: 1px;
+  }
+
+  span.cm-value-literal {
+    color: $hex_blue;
+    background-color: $hexlang_grey;
+    padding: 1px;
+  }
+
+  span.cm-error {
+    color: $hex_red;
+    background-color: #ffd3d3;
+    padding: 1px;
+  }
+
+  span.cm-pv-separator { color: black; font-weight: bold; }
+  span.cm-operator { color: $hex_green; font-weight: bold; }
+  span.cm-connector { color: black; font-weight: bold; }
+  span.cm-bracket { color: black; font-weight: bold; }
+  span.cm-colons { color: black; font-weight: bold; }
+}

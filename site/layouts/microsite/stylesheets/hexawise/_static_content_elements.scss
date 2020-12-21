@@ -1,0 +1,35 @@
+.static {
+	h1 {
+	    
+	    font-size: 1.5em;
+		padding: 5px;
+	}
+
+	h2, h3 {
+		font-size: 1.3em;
+		padding: 5px;
+	}
+
+	p {
+		padding: 10px;
+		line-height: 1.2em;
+		font-size: 1.1em;
+	}
+
+	ol, li {
+		margin-left: 35px;
+		padding: 5px;
+
+		li {
+			padding: 5px;
+			font-size: 13px;
+		}
+	}
+
+	ol { list-style-type: decimal; }
+	ul { list-style-type: disc;	}
+}
+
+#intro-video-text h3 {color: #1399F2; text-transform: uppercase; font-size: 17px; padding-top: 5px;}
+#intro-video-text {line-height: 23px;}
+#first-wednesday p, #first-wednesday ul {font-size: 130%;width: 80%;line-height:130%;}

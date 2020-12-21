@@ -1,0 +1,204 @@
+#automate,
+.automate-container,
+.automate-tabs,
+.automate-tab-panel__content,
+.automate-tab-panel__pane {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.automate-tabs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  -webkit-tap-highlight-color: transparent;
+
+  &__tab-list {
+    border-bottom: 1px solid #aaa;
+    margin: 0;
+    padding: 0 0 0 13px;
+  }
+
+  &__tab {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-bottom: none;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 6px 12px;
+    cursor: pointer;
+
+    &--selected {
+      background: #fff;
+      border-color: #aaa;
+      color: black;
+      border-radius: 5px 5px 0 0;
+    }
+
+    &--disabled {
+      color: GrayText;
+      cursor: default;
+    }
+
+    &:focus {
+      box-shadow: 0 0 5px hsl(208, 99%, 50%);
+      border-color: hsl(208, 99%, 50%);
+      outline: none;
+
+      &:after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        left: -4px;
+        right: -4px;
+        bottom: -5px;
+        background: #fff;
+      }
+    }
+  }
+
+  &__tab-panel {
+    display: none;
+    flex-grow: 1;
+
+    &--selected {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      overflow: hidden;
+    }
+  }
+}
+
+.automate-tab-panel__content {
+  display: flex;
+  flex-direction: row;
+}
+
+.automate-tab-panel__pane {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.automate-tabs__tab-title {
+  .fa, .fas, .far {
+    margin-left: 5px;
+    color: #b7b3d0;
+  }
+
+  .fa-trash-alt:hover {
+    color: red;
+  }
+
+  .fa-pencil-alt:hover,
+  .fa-check:hover {
+    color: green;
+  }
+}
+
+#new-automate-script-form {
+  input:not([type='file']), input:not([type='checkbox']), select {
+    @extend .form-control;
+    width: 100%;
+    -webkit-box-sizing: border-box !important; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box !important;    /* Firefox, other Gecko */
+    box-sizing: border-box !important;         /* Opera/IE 8+ */
+  }
+}
+
+.automate-panel__new-script {
+  padding: 2em;
+  height: fit-content;
+  width: 300px;
+  margin: 1em;
+  border: 1px solid #ddd;
+}
+
+.automate-panel__title {
+  font-size: 1.5em;
+  margin-bottom: 0.8em;
+}
+
+.automate-panel__new-script-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.automate-panel__form-label {
+  display: block;
+  margin-bottom: 0.3em;
+}
+
+.automate-panel__form-control {
+  margin-bottom: 1em;
+  padding: 0 0.3em;
+  height: 2em;
+  font-size: 1.5em;
+}
+
+.automate-panel__form-submit {
+  margin-top: 1em;
+}
+
+.automate-panel__form-error {
+  color: red;
+  padding: 1em 0;
+  font-size: 1.3em;
+}
+
+.automate-line-widget {
+  background-color: #b1b1b1;
+  color: white;
+  height: 1.5em;
+  padding: 0.2em;
+}
+
+
+.automate-autocomplete__used {
+  color: #949494;
+}
+
+.automate-autocomplete__snippet::after {
+  color: blue;
+  content: "<snippet>";
+  float: right;
+  margin-left: 10px;
+}
+
+.automate-warning {
+  font-size: 2em;
+  padding: 1em;
+}
+
+/*
+ * Eclipse Theme
+ */
+
+.cm-s-eclipse span.cm-meta { color: #FF1717; }
+.cm-s-eclipse span.cm-keyword { line-height: 1em; font-weight: bold; color: #7F0055; }
+.cm-s-eclipse span.cm-atom { color: #219; }
+.cm-s-eclipse span.cm-number { color: #164; }
+.cm-s-eclipse span.cm-def { color: #00f; }
+.cm-s-eclipse span.cm-restriction { color: #2A00FF; }
+.cm-s-eclipse span.cm-variable { color: #2A00FF; }
+.cm-s-eclipse span.cm-variable-2 { color: #0000C0; }
+.cm-s-eclipse span.cm-variable-3, .cm-s-eclipse span.cm-type { color: #0000C0; }
+.cm-s-eclipse span.cm-property { color: black; }
+.cm-s-eclipse span.cm-operator { color: black; }
+.cm-s-eclipse span.cm-comment { color: #3F7F5F; }
+.cm-s-eclipse span.cm-string { color: #2A00FF; }
+.cm-s-eclipse span.cm-string-2 { color: #f50; }
+.cm-s-eclipse span.cm-qualifier { color: #555; }
+.cm-s-eclipse span.cm-builtin { color: #30a; }
+.cm-s-eclipse span.cm-bracket { color: #5f5f34;}
+.cm-s-eclipse span.cm-tag { color: #170; }
+.cm-s-eclipse span.cm-attribute { color: #00c; }
+.cm-s-eclipse span.cm-link { color: #219; }
+.cm-s-eclipse span.cm-error { color: #f00; }
+
+.cm-s-eclipse .CodeMirror-activeline-background { background: #e8f2ff; }
+.cm-s-eclipse .CodeMirror-matchingbracket { outline:1px solid grey; color:black !important; }

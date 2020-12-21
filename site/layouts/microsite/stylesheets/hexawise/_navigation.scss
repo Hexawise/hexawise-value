@@ -1,0 +1,149 @@
+.main_navigation {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  margin: 5px 5px 0px 0px;
+  float: right;
+  font-size: 10px;
+  width: 250px;
+
+  a,
+  a:visited,
+  a:hover {
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    color: #fff;
+  }
+
+  a:hover {
+    font-weight: normal;
+    color: $hex_purple;
+  }
+
+  a.active {
+    font-weight: bold;
+  }
+
+  .feedback-icon {
+    color: #fff;
+    font-size: 130%;
+    vertical-align: top;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    width: 100%;
+    font-size: 120%;
+
+    li {
+      display: inline;
+      padding: 0;
+      margin: 0;
+      color: #fff;
+
+      span.disabled {
+        color: $hex_gray;
+      }
+    }
+  }
+}
+
+#banner-help-button {
+  text-decoration: none;
+  color: black;
+}
+
+#login-status {
+  color: $hex_gray;
+  float: right;
+  position: absolute;
+  right: 15px;
+  top: 38px;
+  text-align: right;
+  line-height: 15px;
+
+  > div {
+    button.dropdown-toggle {
+      padding: 6px 8px;
+    }
+
+    ul {
+      li {
+        margin-left: 0px;
+      }
+    }
+  }
+}
+
+#manage-plans {
+  color: $hex_gray;
+  position: absolute;
+  left: 74px;
+  top: 38px;
+  text-align: left;
+  line-height: 15px;
+
+  .dropdown-toggle {
+    padding: 14px 8px;
+  }
+
+  .manage-plans-button-group {
+    button {
+      padding: 6px 10px;
+    }
+
+    i.fa-plus {
+      color: $hex_green;
+    }
+    i {
+      margin-left: 5px;
+    }
+  }
+}
+
+#plan-nav {
+  width: 50%;
+  text-align:center;
+  padding: 0;
+  margin-left: 10px;
+  padding-left: 10px;
+  margin-top: 6px;
+  height: 43px;
+  display: flex;
+
+  button {
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    background-color: $hex_purple;
+    color: white;
+    height: 40px;
+    max-width: 200px;
+    text-align: center;
+    border: 1px solid darken($hex_purple, 7%);
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+    padding: 10px;
+  }
+
+  button:hover {
+    background-color: lighten($hex_purple, 7%);
+  }
+
+  button.current {
+    background-color: $hex_orange;
+    border: 1px solid darken($hex_orange, 7%);
+  }
+
+  button.first {
+    border-radius: 4px 0 0 4px;
+  }
+
+  button.last {
+    border-radius: 0 4px 4px 0;
+  }
+}

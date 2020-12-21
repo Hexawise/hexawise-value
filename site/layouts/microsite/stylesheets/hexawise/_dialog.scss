@@ -1,0 +1,63 @@
+#MB_frame.tour { padding:0; }
+#MB_frame.tour #MB_content { padding:15px 0 0 0; }
+
+#MB_caption {
+  @extend .truncated;
+}
+
+.styled#dialogSuccess {
+  background-color: #CCFFCC;
+  border: solid 1px #66FF66;
+  padding: 5px;
+  margin: 0 15px 10px 10px;
+  cursor:pointer;
+
+  #dialogClose {
+    float:right;
+  }
+}
+
+.styled#dialogErrors, .styled#cancel-warning {
+    background-color: #FFCCCC;
+    border: solid 1px #CC6666;
+    padding: 5px;
+    margin: 0 15px 10px 10px;
+    color: #FF0000;
+}
+
+.styled#cancel-warning {
+    font-size: 150%;
+}
+
+p.dialog {
+    line-height: 1.2em;
+    margin-top: 0.5em;
+}
+
+input.failed {
+    background-color: #FF8888;
+}
+
+input.ajax-login {
+    width: 300px;
+    margin: 5px 0 10px 0;
+}
+
+a.disabled { /* taken from bootstrap's disable a link in a menu */
+  color: $hex_gray;
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+  cursor: default;
+}
+
+#checking-vps-for-mp-msg {
+  float: left;
+  font-style: oblique;
+  color: $hex_purple;
+  margin: 10px 0 0 20px;
+}
+
+#too-many-parameters-warning-msg {
+  margin-bottom: 8px;
+}

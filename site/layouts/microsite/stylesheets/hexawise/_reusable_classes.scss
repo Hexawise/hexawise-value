@@ -1,0 +1,92 @@
+.bolder {
+  font-weight: bolder;
+}
+
+.hover__no-underline:hover {
+  text-decoration: none;
+}
+
+.hover__underline:hover {
+  @extend .text-underline;
+}
+
+.hover__purple {
+  &:hover {
+    @extend .purple;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.sortable-header {
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.truncated {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Positioning
+
+.align-items-center {
+  align-items: center;
+}
+
+.column {
+  flex-direction: column; 
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.jc-center {
+  justify-content: center; 
+}
+
+.jc-flex-end {
+  justify-content: flex-end;
+}
+
+.jc-space-between {
+  justify-content: space-between;
+}
+
+// Colors
+
+.gray {
+  color: $hex_gray;
+}
+
+.green {
+  color: green;
+}
+
+.purple {
+  color: $hex_purple;
+}
+
+.bg-red {
+  background-color: $hex_red;
+}
+
+.red {
+  color: $hex_red;
+}
+
+.white {
+  color: white;
+}
