@@ -22,18 +22,18 @@ collections: # A list of collections the CMS should be able to edit
         pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$',"A slug can't have spaces or special characters"]
         hint: >-
           The URL slug for the microsite (the 'your-slug' in https://value.hexawise.com/your-slug)
-      - {label: "Intro Header", name: "intro_header", widget: "string", required: true}
-      - {label: "Intro Body", name: "intro_body", widget: "string", required: true}
+      - {label: "Intro Header", name: "intro_header", widget: "string", default: 'Hexawise is a test design optimization tool that allows users to quickly generate tests from a model of variation ideas of their System Under Test.', required: true}
+      - {label: "Intro Body", name: "intro_body", widget: "string", default: 'Hexawise is used alongside various Test Management and Automation tools.', required: true}
       - {label: "Intro Image", name: "image", widget: "image", default: "/img/hexawise-tosca.png", required: true}
-      - {label: "Section Header #1", name: "section_header_1", widget: "string", required: true}
-      - {label: "Section Header #2", name: "section_header_2", widget: "string", required: true}
-      - {label: "Section Header #3", name: "section_header_3", widget: "string", required: false}
-      - {label: "Section Header #4", name: "section_header_4", widget: "string", required: false}
+      - {label: "Section Header #1", name: "section_header_1", widget: "string", default: 'Hexawise tests are different', required: true}
+      - {label: "Section Header #2", name: "section_header_2", widget: "string", default: 'Find more defects', required: true}
+      - {label: "Section Header #3", name: "section_header_3", widget: "string", default: 'Get to market faster', required: false}
+      - {label: "Section Header #4", name: "section_header_4", widget: "string", default: 'Accelerate test automation', required: false}
       - {label: "Section Header #5", name: "section_header_5", widget: "string", required: false}
-      - {label: "Section Text #1", name: "section_text_1", widget: "string", required: true}
-      - {label: "Section Text #2", name: "section_text_2", widget: "string", required: true}
-      - {label: "Section Text #3", name: "section_text_3", widget: "string", required: false}
-      - {label: "Section Text #4", name: "section_text_4", widget: "string", required: false}
+      - {label: "Section Text #1", name: "section_text_1", widget: "string", default: 'Hexawise tests are different', required: true}
+      - {label: "Section Text #2", name: "section_text_2", widget: "string", default: 'You consistently find more defects with your optimized Hexawise tests', required: true}
+      - {label: "Section Text #3", name: "section_text_3", widget: "string", default: 'Increase speed to market, as well as quality, by quickly selecting the right tests for execution.', required: false}
+      - {label: "Section Text #4", name: "section_text_4", widget: "string", default: 'Using Hexawise to generate the right tests for automation.', required: false}
       - {label: "Section Text #5", name: "section_text_5", widget: "string", required: false}
       - {label: "Section Video #1", name: "section_video_1", widget: "file", required: true}
       - {label: "Section Video #2", name: "section_video_2", widget: "file", required: true}
@@ -42,4 +42,3 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Section Video #5", name: "section_video_5", widget: "file", required: false}
       - {label: "CTA Contact #1", name: "contact_2", widget: "string", required: true}
       - {label: "CTA Contact #2", name: contact_2", widget: "string", required: false}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
