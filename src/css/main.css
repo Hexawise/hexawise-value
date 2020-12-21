@@ -4,7 +4,3 @@
 @import "stylesheets/features.scss";
 @import "stylesheets/hexawise.scss";
 @import "stylesheets/landing.scss";
-
-h1 {
-  /* sanity check, remove after testing */
-  font-size: 9em; }
