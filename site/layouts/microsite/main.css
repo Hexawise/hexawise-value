@@ -1,7 +1,7 @@
-@import "/stylesheets/application.scss";
-@import "/stylesheets/bootstrap_and_overrides.scss";
-@import "/stylesheets/hexawise.scss";
-@import "/stylesheets/landing.scss";
+@import "stylesheets/application.scss";
+@import "stylesheets/bootstrap_and_overrides.scss";
+@import "stylesheets/hexawise.scss";
+@import "stylesheets/landing.scss";
 
 h1 {
   /* sanity check, remove after testing */
