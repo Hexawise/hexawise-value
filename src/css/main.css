@@ -4,3 +4,9 @@
 @import "stylesheets/features.scss";
 @import "stylesheets/hexawise.scss";
 @import "stylesheets/landing.scss";
+
+.title-header {
+	color: white;
+	font-weight: bold;
+	font-size: 44px;
+}
