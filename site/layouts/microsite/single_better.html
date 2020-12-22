@@ -1,0 +1,115 @@
+{{ define "main" }}
+<div id="microsite-header" class="hero-call-to-action container-fluid purple text-center mt-1" style="background-image: url({{ .Params.intro_design }})">
+  <div class='hexawise-container title-header container py-5'>
+    <h3>{{ .Title }}</h3>
+    <div class="subheader-container title-subheader mx-auto">
+      <div><large>{{ .Description }}</large></div>
+    </div>
+  </div>
+</div>
+
+<div class="hexawise-container container d-none d-md-block">
+  <h6>{{ .Params.intro_header }}</h6>
+  <div class="d-flex flex-lg-nowrap flex-wrap align-items-center">
+    <div>
+      <p>{{ .Params.intro_body }}</p>
+    </div>
+  <img class="img-fluid" src="{{ .Params.image }}" style="width:800px;height:400px;">
+  </div>
+</div>
+
+<div id="features-container" class="hexawise-container container d-none d-md-block">
+  <nav id="features-navbar" class="scrollspy-navbar navbar navbar-expand px-0 pb-0 sticky-top">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active">{{ .Params.section_header_1 }}</a>
+      <a class="nav-item nav-link">{{ .Params.section_header_2 }}</a>
+      <a class="nav-item nav-link">{{ .Params.section_header_3 }}</a>
+      <a class="nav-item nav-link">{{ .Params.section_header_4 }}</a>
+      <a class="nav-item nav-link">{{ .Params.section_header_5 }}</a>
+    </div>
+  </nav>
+	
+	<div id="different" class="feature-section">
+	  <div class="row w-100">
+	    <div class="p-3">
+	      <h5>{{ .Params.section_text_1 }}</h5>
+	    </div>
+	  </div>
+	  <div class="row w-100">
+	    <video id='section-1-video' style='width: 100%; height: 100%;'>
+	      <source src="{{ .Params.section_video_1_url }}" type='video/mp4'>
+	    </video>
+	  </div>
+	</div>
+
+	<div id="different" class="feature-section">
+	  <div class="row w-100">
+	    <div class="p-3">
+	      <h5>{{ .Params.section_text_2 }}</h5>
+	    </div>
+	  </div>
+	  <div class="row w-100">
+	    <video id='section-2-video' style='width: 100%; height: 100%;'>
+	      <source src="{{ .Params.section_video_2_url }}" type='video/mp4'>
+	    </video>
+	  </div>
+	</div>
+
+	<div id="different" class="feature-section">
+	  <div class="row w-100">
+	    <div class="p-3">
+	      <h5>{{ .Params.section_text_3 }}</h5>
+	    </div>
+	  </div>
+	  <div class="row w-100">
+	    <video id='section-3-video' style='width: 100%; height: 100%;'>
+	      <source src="{{ .Params.section_video_3_url }}" type='video/mp4'>
+	    </video>
+	  </div>
+	</div>
+
+	<div id="different" class="feature-section">
+	  <div class="row w-100">
+	    <div class="p-3">
+	      <h5>{{ .Params.section_text_4 }}</h5>
+	    </div>
+	  </div>
+	  <div class="row w-100">
+	    <video id='section-4-video' style='width: 100%; height: 100%;'>
+	      <source src="{{ .Params.section_video_4_url }}" type='video/mp4'>
+	    </video>
+	  </div>
+	</div>
+
+	<div id="different" class="feature-section">
+	  <div class="row w-100">
+	    <div class="p-3">
+	      <h5>{{ .Params.section_text_5 }}</h5>
+	    </div>
+	  </div>
+	  <div class="row w-100">
+	    <video id='section-5-video' style='width: 100%; height: 100%;'>
+	      <source src="{{ .Params.section_video_5_url }}" type='video/mp4'>
+	    </video>
+	  </div>
+	</div>
+</div>
+
+<div class="footer-call-to-action container-fluid purple px-sm-5 py-5">
+  <div class="container">
+    <div class="row text-center justify-content-center">
+      <div class="col px-0">
+        <div class="mx-auto footer-header">
+          <h1>Want more information?</h1>
+          <large class="text-center footer-subheader">
+            Reach out to the below contacts to learn more about the significant benefits that were achieved during the Hexawise POC at Guidewire:
+          </large>
+          <br>
+          <h6 class="footer-subheader">{{ .Params.contact_1 }}</h6>
+          <h6 class="footer-subheader">{{ .Params.contact_2 }}</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
