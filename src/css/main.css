@@ -5,6 +5,10 @@
 @import "stylesheets/hexawise.scss";
 @import "stylesheets/landing.scss";
 
+.microsite-header {
+	background-image: url("img/circuits.png");
+}
+
 .title-header {
 	color: white;
 	font-weight: bold;
