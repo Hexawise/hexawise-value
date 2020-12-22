@@ -6,7 +6,7 @@
 @import "stylesheets/landing.scss";
 
 .microsite-header {
-	background-image: url("img/circuits.png");
+	background-image: url("static/img/circuits.png");
 }
 
 .title-header {
