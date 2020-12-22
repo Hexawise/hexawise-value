@@ -17,11 +17,13 @@
 }
 
 .footer-header {
+	color: white;
 	font-weight: bold;
 	font-size: 38px;
 }
 
 .footer-subheader {
+	color: white;
 	font-weight: normal;
 	font-size: 18px;
 }
