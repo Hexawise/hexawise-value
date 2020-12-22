@@ -36,10 +36,10 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Section Text #3", name: "section_text_3", widget: "string", default: 'Increase speed to market, as well as quality, by quickly selecting the right tests for execution.', required: false}
       - {label: "Section Text #4", name: "section_text_4", widget: "string", default: 'Using Hexawise to generate the right tests for automation.', required: false}
       - {label: "Section Text #5", name: "section_text_5", widget: "string", required: false}
-      - {label: "Section Video #1", name: "section_video_1", widget: "file", default: '/img/hexawise-tests-are-different-animation.mp4', required: true}
-      - {label: "Section Video #2", name: "section_video_2", widget: "file", default: '/img/guidewire-no-matrices.mp4', required: true}
-      - {label: "Section Video #3", name: "section_video_3", widget: "file", required: false}
-      - {label: "Section Video #4", name: "section_video_4", widget: "file", required: false}
-      - {label: "Section Video #5", name: "section_video_5", widget: "file", required: false}
+      - {label: "Section Video #1", name: "section_video_1_url", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/hexawise-tests-are-different-animation.mp4', required: true}
+      - {label: "Section Video #2", name: "section_video_2_url", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/traditional-vs-hexawise-tests-animation.mp4', required: true}
+      - {label: "Section Video #3", name: "section_video_3_url", widget: "string", required: false}
+      - {label: "Section Video #4", name: "section_video_4_url", widget: "string", required: false}
+      - {label: "Section Video #5", name: "section_video_5_url", widget: "string", required: false}
       - {label: "CTA Contact #1", name: "contact_2", widget: "string", required: true}
       - {label: "CTA Contact #2", name: contact_2", widget: "string", required: false}
