@@ -29,18 +29,8 @@
 }
 
 .hexawise-container {
-	content: ' ';
-	display: block;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	opacity: 0;
 	background: radial-gradient(505.00px at 50% 50%, #775BC2 0%, rgba(119, 91, 194, 0) 100%);
 	background-size: 95%;
-	animation: fadeIn 0.5s linear 0.5s forwards;
 }
 
 /* TODO: Add CeraPro and Harmonia Sans */
