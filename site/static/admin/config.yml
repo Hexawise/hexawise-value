@@ -24,7 +24,6 @@ collections: # A list of collections the CMS should be able to edit
           The URL slug for the microsite (the 'your-slug' in https://value.hexawise.com/your-slug)
       - {label: "Intro Header", name: "intro_header", widget: "string", default: 'Hexawise is a test design optimization tool that allows users to quickly generate tests from a model of variation ideas of their System Under Test.', required: true}
       - {label: "Intro Body", name: "intro_body", widget: "string", default: 'Hexawise is used alongside various Test Management and Automation tools.', required: true}
-      - {label: "Intro Design", name: "intro_design", widget: image, default: "/img/circuits.png", required: true, hint: "The pattern that appears behind the intro header and body text."}
       - {label: "Intro Image", name: "image", widget: "image", default: "/img/hexawise-tosca.png", required: true}
       - {label: "Section Header #1", name: "section_header_1", widget: "string", default: 'Hexawise tests are different', required: true}
       - {label: "Section Header #2", name: "section_header_2", widget: "string", default: 'Find more defects', required: true}
