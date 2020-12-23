@@ -24,41 +24,54 @@
   </div>
 </div>
 
-<div id="section-3" class="feature-section">
-  <div class="row w-100">
-    <div class="p-3">
-      <h5>{{ .Params.section_text_3 }}</h5>
-    </div>
-  </div>
-  <div class="row w-100">
-    <video id='section-3-video' style='width: 100%; height: 100%;'>
-      <source src="{{ .Params.section_video_3_url }}" type='video/mp4'>
-    </video>
-  </div>
-</div>
 
-<div id="section-4" class="feature-section">
-  <div class="row w-100">
-    <div class="p-3">
-      <h5>{{ .Params.section_text_4 }}</h5>
-    </div>
-  </div>
-  <div class="row w-100">
-    <video id='section-4-video' style='width: 100%; height: 100%;'>
-      <source src="{{ .Params.section_video_4_url }}" type='video/mp4'>
-    </video>
-  </div>
-</div>
+{{ if .Params.section_text_3 }}
+	<div id="section-3" class="feature-section">
+	  <div class="row w-100">
+	    <div class="p-3">
+	      <h5>{{ .Params.section_text_3 }}</h5>
+	    </div>
+	  </div>
+	  {{ if .Params.section_video_3_url }}
+		<div class="row w-100">
+		  <video id='section-3-video' style='width: 100%; height: 100%;'>
+		    <source src="{{ .Params.section_video_3_url }}" type='video/mp4'>
+		  </video>
+		</div>
+	  {{ end }}
+	</div>
+{{ end }}
 
-<div id="section-5" class="feature-section">
-  <div class="row w-100">
-    <div class="p-3">
-      <h5>{{ .Params.section_text_5 }}</h5>
-    </div>
-  </div>
-  <div class="row w-100">
-    <video id='section-5-video' style='width: 100%; height: 100%;'>
-      <source src="{{ .Params.section_video_5_url }}" type='video/mp4'>
-    </video>
-  </div>
-</div>
+{{ if .Params.section_text_4 }}
+	<div id="section-4" class="feature-section">
+	  <div class="row w-100">
+	    <div class="p-3">
+	      <h5>{{ .Params.section_text_4 }}</h5>
+	    </div>
+	  </div>
+	  {{ if .Params.section_video_4_url }}
+		<div class="row w-100">
+		  <video id='section-4-video' style='width: 100%; height: 100%;'>
+		    <source src="{{ .Params.section_video_4_url }}" type='video/mp4'>
+		  </video>
+		</div>
+	  {{ end }}
+	</div>
+{{ end }}
+
+{{ if .Params.section_text_5}}
+	<div id="section-5" class="feature-section">
+	  <div class="row w-100">
+	    <div class="p-3">
+	      <h5>{{ .Params.section_text_5 }}</h5>
+	    </div>
+	  </div>
+	  {{ if .Params.section_video_5_url }}
+		<div class="row w-100">
+		  <video id='section-5-video' style='width: 100%; height: 100%;'>
+		    <source src="{{ .Params.section_video_5_url }}" type='video/mp4'>
+		  </video>
+		</div>
+	  {{ end }}
+	</div>
+{{ end }}

@@ -2,8 +2,14 @@
 	<div class="navbar-nav">
 	  <a class="nav-item nav-link active">{{ .Params.section_header_1 }}</a>
 	  <a class="nav-item nav-link">{{ .Params.section_header_2 }}</a>
-	  <a class="nav-item nav-link">{{ .Params.section_header_3 }}</a>
-	  <a class="nav-item nav-link">{{ .Params.section_header_4 }}</a>
-	  <a class="nav-item nav-link">{{ .Params.section_header_5 }}</a>
+	  {{ if .Params.section_header_3 }}
+		<a class="nav-item nav-link">{{ .Params.section_header_3 }}</a>
+	  {{ end }}
+	  {{ if .Params.section_header_4 }}
+		<a class="nav-item nav-link">{{ .Params.section_header_4 }}</a>
+	  {{ end }}
+	  {{ if .Params.section_header_5 }}
+		<a class="nav-item nav-link">{{ .Params.section_header_5 }}</a>
+	  {{ end }}
 	</div>
 </nav>

@@ -9,7 +9,9 @@
           </large>
           <br>
           <h6 class="footer-subheader">{{ .Params.contact_1 }}</h6>
-          <h6 class="footer-subheader">{{ .Params.contact_2 }}</h6>
+          {{ if .Params.contact_2 }}
+            <h6 class="footer-subheader">{{ .Params.contact_2 }}</h6>
+          {{ end }}
         </div>
       </div>
     </div>
