@@ -36,12 +36,12 @@
       height: 100%;
       z-index: 1;
       opacity: 0;
-      background: radial-gradient(505.00px at 50% 50%, #775BC2 0%, rgba(119, 91, 194, 0) 100%), image-url('/circuits.png') no-repeat center;
+      background: radial-gradient(505.00px at 50% 50%, #775BC2 0%, rgba(119, 91, 194, 0) 100%), image-url('site/static/img/circuits.png') no-repeat center;
       background-size: 95%;
       animation: fadeIn 0.5s linear 0.5s forwards;
 
       @include media-breakpoint-down(md) {
-        background: radial-gradient(505.00px at 50% 50%, #775BC2 20%, rgba(119, 91, 194, 0) 100%), image-url('/circuits.png') no-repeat center;
+        background: radial-gradient(505.00px at 50% 50%, #775BC2 20%, rgba(119, 91, 194, 0) 100%), image-url('site/static/img/circuits.png') no-repeat center;
       }
 
       @include media-breakpoint-only(xs) {
