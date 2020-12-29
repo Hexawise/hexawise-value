@@ -11,12 +11,12 @@ collections: # A list of collections the CMS should be able to edit
     label: "Microsite"
     folder: "site/content/microsite"
     create: true
-    slug: '{{slug}}'
+    url: '/{{url}}'
     fields:
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Subtitle", name: "description", widget: "text", required: true}
       - widget: string
-        name: "slug"
+        name: "url"
         label: "Slug"
         required: true
         pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$',"A slug can't have spaces or special characters"]
