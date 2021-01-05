@@ -17,7 +17,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Subtitle", name: "description", widget: "text", required: true}
       - widget: string
         name: "url"
-        label: "Slug"
+        label: "URL"
         required: true
         pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$',"A slug can't have spaces or special characters"]
         hint: >-
