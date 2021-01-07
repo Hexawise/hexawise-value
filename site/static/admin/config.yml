@@ -14,7 +14,7 @@ collections: # A list of collections the CMS should be able to edit
     url: '/{{url}}'
     fields:
       - {label: "Title", name: "title", widget: "string", required: true}
-      - {label: "Subtitle", name: "description", widget: "text", required: true}
+      - {label: "Subtitle", name: "description", widget: "text", default: 'Demonstrating how teams achieved significant benefits with Hexawise in test planning, execution, and automation.', required: true}
       - widget: string
         name: "url"
         label: "URL"
