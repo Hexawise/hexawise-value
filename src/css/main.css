@@ -10,6 +10,7 @@
 	font-style: normal;
 	font-weight: normal;
 	line-height: 27px;
+	font-family: "HarmoniaSansStd-Bold", sans-serif;
 }
 
 .section-text {
@@ -17,17 +18,22 @@
 	font-style: normal;
 	font-weight: normal;
 	line-height: 44px;
+	font-family: "CeraPro-Bold", sans-serif;
 }
 
 .title-header {
 	color: white;
-	font-weight: bold;
+	font-weight: normal;
 	font-size: 44px;
+	line-height: 61px;
+	font-family: "CeraPro-Bold", sans-serif;
 }
 
 .title-subheader {
 	font-weight: normal;
 	font-size: 24px;
+	line-height: 30px;
+	font-family: "HarmoniaSansStd-Regular", sans-serif;
 }
 
 .intro-header {
@@ -36,6 +42,7 @@
 	font-weight: normal;
 	line-height: 38px;
 	margin-bottom: 0.5rem;
+	font-family: "CeraPro-Medium", sans-serif;
 }
 
 .intro-body {
@@ -44,18 +51,25 @@
 	font-weight: normal;
 	line-height: 27px;
 	margin-bottom: 1rem;
+	font-family: "HarmoniaSansStd-Regular", sans-serif;
 }
 
 .footer-header {
 	color: white;
-	font-weight: bold;
-	font-size: 38px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 44px;
+	line-height: 61px;
+	font-family: "CeraPro-Bold", sans-serif;
 }
 
 .footer-subheader {
 	color: white;
 	font-weight: normal;
 	font-size: 18px;
+	font-style: normal;
+	line-height: 30px;
+	font-family: "HarmoniaSansStd-Regular", sans-serif;
 }
 
 /* TODO: Add CeraPro and Harmonia Sans */
