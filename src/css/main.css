@@ -16,6 +16,22 @@
 	font-size: 24px;
 }
 
+.intro-header {
+	font-size: 24px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 38px;
+	margin-bottom: 0.5rem;
+}
+
+.intro-body {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 27px;
+	margin-bottom: 1rem;
+}
+
 .footer-header {
 	color: white;
 	font-weight: bold;
