@@ -5,6 +5,13 @@
 @import "stylesheets/hexawise.scss";
 @import "stylesheets/landing.scss";
 
+.h5 {
+	font-size: 28px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 44px;
+}
+
 .title-header {
 	color: white;
 	font-weight: bold;
