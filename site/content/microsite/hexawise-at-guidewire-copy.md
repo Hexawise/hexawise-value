@@ -1,5 +1,5 @@
 ---
-title: Not Hexawise at Guidewire (copy)
+title: Hexawise at Guidewire (copy)
 description: Demonstrating how Guidewire teams achieved significant benefits
   with Hexawise in test planning, execution, and automation.
 url: guidewire-copy
