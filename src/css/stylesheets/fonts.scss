@@ -1,0 +1,153 @@
+@mixin font-face($font-family, $url, $style: normal) {
+  @font-face {
+    font-family: '#{$font-family}';
+    src: url('../fonts/#{$url}.eot'),
+         url('../fonts/#{$url}.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/#{$url}.woff') format('woff');
+    font-weight: normal;
+    font-style: $style;
+  }
+}
+
+// CeraPro
+@include font-face("CeraPro-Regular", "CeraPro-Regular");
+@include font-face("CeraPro-Regular", "CeraPro-RegularItalic", italic);
+@include font-face("CeraPro-Thin", "CeraPro-Thin");
+@include font-face("CeraPro-Thin", "CeraPro-ThinItalic", italic);
+@include font-face("CeraPro-Light", "CeraPro-Light");
+@include font-face("CeraPro-Light", "CeraPro-LightItalic", italic);
+@include font-face("CeraPro-Medium", "CeraPro-Medium");
+@include font-face("CeraPro-Medium", "CeraPro-MediumItalic", italic);
+@include font-face("CeraPro-Bold", "CeraPro-Bold");
+@include font-face("CeraPro-Bold", "CeraPro-BoldItalic", italic);
+@include font-face("CeraPro-Black", "CeraPro-Black");
+@include font-face("CeraPro-Black", "CeraPro-BlackItalic", italic);
+
+// HarmoniaSans
+@include font-face("HarmoniaSansStd-Regular", "38BE75_0_0");
+@include font-face("HarmoniaSansStd-Italic", "38BE75_1_0");
+@include font-face("HarmoniaSansStd-Bold", "38BE75_2_0");
+@include font-face("HarmoniaSansStd-BoldItalic", "38BE75_3_0");
+
+$primary-font-regular: 'CeraPro-Regular', sans-serif;
+$primary-font-medium: 'CeraPro-Medium', sans-serif;
+$primary-font-bold: 'CeraPro-Bold', sans-serif;
+$secondary-font-regular: 'HarmoniaSansStd-Regular', sans-serif;
+$secondary-font-bold: 'HarmoniaSansStd-Bold', sans-serif;
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-family: $primary-font-bold;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 61px;
+}
+
+h2 {
+  font-family: $primary-font-bold;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 57px;
+}
+
+h3 {
+  font-family: 'CeraPro-Bold', sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 52px;
+}
+
+h4 {
+  font-family: $primary-font-bold;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 48px;
+}
+
+h5 {
+  font-family: $primary-font-bold;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 44px;
+}
+
+h6 {
+  font-family: $primary-font-medium;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 38px;
+}
+
+large {
+  font-family: $secondary-font-regular;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 30px;
+
+  a {
+    font-size: 18px;
+  }
+}
+
+p, a, button, li {
+  font-family: $secondary-font-regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 27px;
+}
+
+b {
+  color: $black;
+}
+
+b, b > a {
+  font-family: $secondary-font-bold;
+  font-style: normal;
+  font-weight: normal;
+
+  a {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+label {
+  color: #777777;
+  font-family: $secondary-font-regular;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+small {
+  color: #777777;
+  font-family: $secondary-font-regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+
+  a {
+    font-size: 14px;
+  }
+
+  b {
+    color: $text-white;
+    font-family: $secondary-font-bold;
+    font-style: normal;
+    font-weight: normal;
+  }
+}
