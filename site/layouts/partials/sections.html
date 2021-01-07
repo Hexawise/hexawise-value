@@ -2,6 +2,9 @@
   <div class="row w-100">
     <div class="p-3">
       <h5 class="section-text">{{ .Params.section_text_1 }}</h5>
+      {{ if .Params.section_subtitle_1 }}
+      	<p class="section-subtitle">{{ }}</p>
+      {{ end }}
     </div>
   </div>
   <div class="row w-100">
@@ -15,6 +18,9 @@
   <div class="row w-100">
     <div class="p-3">
       <h5 class="section-text">{{ .Params.section_text_2 }}</h5>
+      {{ if .Params.section_subtitle_2 }}
+      	<p class="section-subtitle">{{ .Params.section_subtitle_2 }}</p>
+      {{ end }}
     </div>
   </div>
   <div class="row w-100">
@@ -30,6 +36,9 @@
 	  <div class="row w-100">
 	    <div class="p-3">
 	      <h5 class="section-text">{{ .Params.section_text_3 }}</h5>
+	      {{ if .Params.section_subtitle_3 }}
+      	  	<p class="section-subtitle">{{ .Params.section_subtitle_3 }}</p>
+      	  {{ end }}
 	    </div>
 	  </div>
 	  {{ if .Params.section_video_3_url }}
@@ -47,6 +56,9 @@
 	  <div class="row w-100">
 	    <div class="p-3">
 	      <h5 class="section-text">{{ .Params.section_text_4 }}</h5>
+	      {{ if .Params.section_subtitle_4 }}
+      	  	<p class="section-subtitle">{{ .Params.section_subtitle_4 }}</p>
+      	  {{ end }}
 	    </div>
 	  </div>
 	  {{ if .Params.section_video_4_url }}
@@ -64,6 +76,9 @@
 	  <div class="row w-100">
 	    <div class="p-3">
 	      <h5 class="section-text">{{ .Params.section_text_5 }}</h5>
+	      {{ if .Params.section_subtitle_5 }}
+      	  	<p class="section-subtitle">{{ .Params.section_subtitle_5 }}</p>
+      	  {{ end }}
 	    </div>
 	  </div>
 	  {{ if .Params.section_video_5_url }}
