@@ -124,3 +124,35 @@ html {
     }
   }
 }
+
+.footer-call-to-action {
+  background: radial-gradient(216.11px at 50% 50%, rgba(119, 91, 194, 0.86) 0%, #775BC2 100%);
+}
+
+#microsite-header {
+  height: 336px;
+
+  @include media-breakpoint-only(xs) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .container {
+    position: relative;
+    height: 100%;
+
+    &:before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 1;
+      background: url('/img/circuits.png') no-repeat center;
+      background-size: 95%;
+    }
+  }
+}

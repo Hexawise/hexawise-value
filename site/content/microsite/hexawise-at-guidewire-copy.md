@@ -21,5 +21,5 @@ section_video_1_url: https://s3.amazonaws.com/media.hexawise.com/video/hexawise-
 section_video_2_url: https://s3.amazonaws.com/media.hexawise.com/video/hexawise-guidewire-faster-test-selection.mp4
 section_video_3_url: https://s3.amazonaws.com/media.hexawise.com/video/hexawise-guidewire-communicate-coverage.mp4
 section_video_4_url: https://s3.amazonaws.com/media.hexawise.com/video/hexawise-guidewire-faster-automation.mp4
-contact_2: scott.johnson@hexawise.com
+contact_1: scott.johnson@hexawise.com
 ---

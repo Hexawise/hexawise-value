@@ -20,5 +20,5 @@ section_text_4: Using Hexawise to generate the right tests for automation.
 section_text_5: Text for the fifth section
 section_video_1_url: https://s3.amazonaws.com/media.hexawise.com/video/hexawise-tests-are-different-animation.mp4
 section_video_2_url: https://s3.amazonaws.com/media.hexawise.com/video/traditional-vs-hexawise-tests-animation.mp4
-contact_2: scott.johnson@hexawise.com
+contact_1: scott.johnson@hexawise.com
 ---
