@@ -1,15 +1,17 @@
+{{ with .Params }}
 <nav id="features-navbar" class="scrollspy-navbar navbar navbar-expand px-0 pb-0 sticky-top">
 	<div class="navbar-nav">
-	  <a class="nav-item nav-link section-header active" href="#section-1">{{ .Params.section_header_1 }}</a>
-	  <a class="nav-item nav-link section-header" href="#section-2">{{ .Params.section_header_2 }}</a>
-	  {{ if .Params.section_header_3 }}
-		<a class="nav-item nav-link section-header" href="#section-3">{{ .Params.section_header_3 }}</a>
+	  <a class="nav-item nav-link section-header active" data-target="#section-1" href="/{{ .url }}/#section-1">{{ .section_header_1 }}</a>
+	  <a class="nav-item nav-link section-header" data-target="#section-2" href="/{{ .url }}/#section-2">{{ .section_header_2 }}</a>
+	  {{ if .section_header_3 }}
+		<a class="nav-item nav-link section-header" data-target="#section-3" href="/{{ .url }}/#section-3">{{ .section_header_3 }}</a>
 	  {{ end }}
-	  {{ if .Params.section_header_4 }}
-		<a class="nav-item nav-link section-header" href="#section-4">{{ .Params.section_header_4 }}</a>
+	  {{ if .section_header_4 }}
+		<a class="nav-item nav-link section-header" data-target="#section-4" href="/{{ .url }}/#section-4">{{ .section_header_4 }}</a>
 	  {{ end }}
-	  {{ if .Params.section_header_5 }}
-		<a class="nav-item nav-link section-header" href="#section-5">{{ .Params.section_header_5 }}</a>
+	  {{ if .section_header_5 }}
+		<a class="nav-item nav-link section-header" data-target="#section-5" href="/{{ .url }}/#section-5">{{ .section_header_5 }}</a>
 	  {{ end }}
 	</div>
 </nav>
+{{ end }}
