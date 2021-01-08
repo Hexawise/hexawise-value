@@ -1,8 +1,12 @@
+@import "stylesheets/fonts.scss";
+
 html {
   position: relative;
   min-height: 100%;
 
   body {
+    position: relative;
+
     #top-navigation {
       @extend .container;
       @extend .navbar;
@@ -95,7 +99,6 @@ html {
 
     .footer {
       width: 100%;
-      height: 195px;
       line-height: 60px;
       color: $black;
     
@@ -137,6 +140,22 @@ html {
     position: relative;
     height: 100%;
 
+    > h3, > div {
+      @extend %animation-element-container;
+    }
+
+    h3 {
+      animation: slideAndFadeIn 0.3s linear 1s forwards;
+    }
+
+    .subheader-container {
+      animation: slideAndFadeIn 0.3s linear 1.3s forwards;
+    }
+
+    .mt-4 {
+      animation: fadeIn 0.3s linear 1.6s forwards;
+    }
+
     &:before {
       content: ' ';
       display: block;
@@ -146,9 +165,183 @@ html {
       width: 100%;
       height: 100%;
       z-index: 1;
-      opacity: 1;
-      background: url('/img/circuits.png') no-repeat center;
+      opacity: 0;
+      background: radial-gradient(505.00px at 50% 50%, #775BC2 0%, rgba(119, 91, 194, 0) 100%), url('/img/circuits.png') no-repeat center;
       background-size: 95%;
+      animation: fadeIn 0.5s linear 0.5s forwards;
+
+      @include media-breakpoint-down(md) {
+        background: radial-gradient(505.00px at 50% 50%, #775BC2 20%, rgba(119, 91, 194, 0) 100%), url('/img/circuits.png') no-repeat center;
+      }
+
+      @include media-breakpoint-only(xs) {
+        background-size: 130%;
+      }
     }
   }
+}
+
+%image-shadow {
+  background: $light-gray;
+  border: 10px solid $white;
+  box-sizing: border-box;/* Card */
+  box-shadow: 0px 8px 35px rgba(51, 51, 51, 0.07);
+  border-radius: 3px;
+}
+
+%animation-element-container {
+  opacity: 0;
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideAndFadeIn {
+  0%   { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+
+button, .btn {
+  border-radius: 4px;
+  border-color: transparent;
+  color: $text-white;
+  cursor: pointer;
+
+  &.big {
+    @extend .py-2;
+    width: 172px;
+    line-height: 26px;
+    font-size: 16px;
+
+    &.white {
+      @extend .px-4;
+    }
+
+    &.purple-border {
+      border-color: $purple;
+    }
+  }
+
+  &.white {
+    background-color: #ffffff;
+    color: $purple;
+
+    &:hover {
+      color: $purple;
+      box-shadow: 0px 6px 40px rgba($color: $white, $alpha: 0.4);
+    }
+  }
+
+  &:hover {
+    color: $faded-white;
+  }
+
+  &.inactive {
+    opacity: 0.5;
+  }
+
+  &.orange:hover {
+    box-shadow: 0px 6px 20px rgba($color: $orange, $alpha: 0.5);
+  }
+
+  &.purple:hover {
+    box-shadow: 0px 6px 20px rgba($color: $purple, $alpha: 0.5);
+  }
+}
+
+.hero-call-to-action {
+  h3 {
+    line-height: 61px;
+    font-size: 44px;
+    text-align: center;
+  }
+
+  .subheader-container {
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .hero-call-to-action {
+    .subheader-container {
+      width: 100%;
+    }
+  }
+}
+
+.scrollspy-navbar {
+  background-color: white;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: scrollbar;
+  overflow-x: auto;
+  width: 100%;
+
+  scrollbar-width: none;
+
+
+  border-bottom: 1px solid #F0F0F0;
+
+  .navbar-nav {
+    .nav-item:last-child {
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+  }
+
+  .nav-item {
+    @extend .ml-3;
+    @extend .mr-5;
+    @extend .px-0;
+    @extend .mr-4;
+  
+    border: none;
+    border-bottom: 4px solid #FFFFFF;
+    opacity: 0.5;
+    white-space: nowrap;
+    cursor: pointer;
+    color: $black;
+
+    font-family: $secondary-font-bold;
+    font-style: normal;
+    font-weight: normal;
+  
+    &.active {
+      background: none;
+      color: $black;
+      opacity: 1;
+      border-bottom: solid $purple 4px;
+    }
+  }
+}
+
+#footer > div > div {
+  &#footer-logo {
+    @extend .col-12; 
+    @extend .col-lg;
+    @extend .pb-5;
+  }
+
+  @extend .col-6;
+  @extend .col-sm;
+  @extend .py-2;
+}
+
+// Stickfill Rules
+.sticky-top {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.sticky-top:before,
+.sticky-top:after {
+    content: '';
+    display: table;
 }

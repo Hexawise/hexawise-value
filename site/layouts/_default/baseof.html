@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="{{ $.Site.Language.Lang }}">
   {{ partial "head" . }}
-  <body class="sans-serif">
+  <body data-spy="scroll" data-target=".scrollspy-navbar">
 
     {{ block "main" . }}{{ end }}
 
