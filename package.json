@@ -70,7 +70,6 @@
   "dependencies": {
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
-    "popper.js": "^1.16.1",
-    "stickyfill": "^1.1.1-strict"
+    "popper.js": "^1.16.1"
   }
 }
