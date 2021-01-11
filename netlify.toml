@@ -8,9 +8,3 @@
 
 [context.deploy-preview]
   command = "yarn build:preview"
-
-[[redirects]]
-  from = "/"
-  to = "https://hexawise.com"
-  status = 301
-  force = true
