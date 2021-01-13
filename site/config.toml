@@ -12,4 +12,4 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
   from = "/index.html"
   to = "https://hexawise.com"
   status = 301
-  force = false
+  force = true
