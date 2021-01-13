@@ -23,23 +23,23 @@ collections: # A list of collections the CMS should be able to edit
         hint: >-
           The URL slug for the microsite (the 'your-slug' in https://value.hexawise.com/your-slug)
       - {label: "Intro Header", name: "intro_header", widget: "string", default: 'Hexawise is a test design optimization tool that allows users to quickly generate tests from a model of variation ideas of their System Under Test.', required: true}
-      - {label: "Intro Body", name: "intro_body", widget: "string", default: 'Hexawise is used alongside various Test Management and Automation tools.', required: true}
+      - {label: "Intro Body", name: "intro_body", widget: "markdown", required: true}
       - {label: "Intro Image", name: "image", widget: "image", default: "/img/hexawise-tosca.png", required: true}
       - {label: "Section Header #1", name: "section_header_1", widget: "string", default: 'Hexawise tests are different', required: true}
       - {label: "Section Header #2", name: "section_header_2", widget: "string", default: 'Find more defects', required: true}
       - {label: "Section Header #3", name: "section_header_3", widget: "string", default: 'Get to market faster', required: false}
       - {label: "Section Header #4", name: "section_header_4", widget: "string", default: 'Accelerate test automation', required: false}
       - {label: "Section Header #5", name: "section_header_5", widget: "string", required: false}
-      - {label: "Section Text #1", name: "section_text_1", widget: "string", default: 'Hexawise tests are different', required: true}
-      - {label: "Section Text #2", name: "section_text_2", widget: "string", default: 'You consistently find more defects with your optimized Hexawise tests', required: true}
-      - {label: "Section Text #3", name: "section_text_3", widget: "string", default: 'Increase speed to market, as well as quality, by quickly selecting the right tests for execution.', required: false}
-      - {label: "Section Text #4", name: "section_text_4", widget: "string", default: 'Using Hexawise to generate the right tests for automation.', required: false}
-      - {label: "Section Text #5", name: "section_text_5", widget: "string", required: false}
-      - {label: "Section Subtitle #1", name: "section_subtitle_1", widget: "string", required: false}
-      - {label: "Section Subtitle #2", name: "section_subtitle_2", widget: "string", required: false}
-      - {label: "Section Subtitle #3", name: "section_subtitle_3", widget: "string", required: false}
-      - {label: "Section Subtitle #4", name: "section_subtitle_4", widget: "string", required: false}
-      - {label: "Section Subtitle #5", name: "section_subtitle_5", widget: "string", required: false}
+      - {label: "Section Text #1", name: "section_text_1", widget: "markdown", default: 'Hexawise tests are different', required: true}
+      - {label: "Section Text #2", name: "section_text_2", widget: "markdown", default: 'You consistently find more defects with your optimized Hexawise tests', required: true}
+      - {label: "Section Text #3", name: "section_text_3", widget: "markdown", default: 'Increase speed to market, as well as quality, by quickly selecting the right tests for execution.', required: false}
+      - {label: "Section Text #4", name: "section_text_4", widget: "markdown", default: 'Using Hexawise to generate the right tests for automation.', required: false}
+      - {label: "Section Text #5", name: "section_text_5", widget: "markdown", required: false}
+      - {label: "Section Image #1", name: "section_image_1", widget: "image", required: false}
+      - {label: "Section Image #2", name: "section_image_2", widget: "image", required: false}
+      - {label: "Section Image #3", name: "section_image_3", widget: "image", required: false}
+      - {label: "Section Image #4", name: "section_image_4", widget: "image", required: false}
+      - {label: "Section Image #5", name: "section_image_5", widget: "image", required: false}
       - {label: "Section Video #1", name: "section_video_1_url", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/hexawise-tests-are-different-animation.mp4', required: true}
       - {label: "Section Video #2", name: "section_video_2_url", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/traditional-vs-hexawise-tests-animation.mp4', required: true}
       - {label: "Section Video #3", name: "section_video_3_url", widget: "string", required: false}
