@@ -1,6 +1,6 @@
 baseurl = "/"
-languageCode = "en-us"
-languageLang = "en"
+languageCode = "eo"
+languageLang = "eo"
 title = ""
 
 # RSS, categories and tags disabled for an easy start
