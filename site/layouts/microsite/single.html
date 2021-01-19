@@ -8,6 +8,46 @@
 </div>
 {{ partial "footer.html" . }}
 <script>
-// set-up scroll spy
+  Hex.Content.Shared.setupScrollSpyAndStickTop();
+
+  function conditionallyPlayVideo(video) {
+    var x = video.offsetLeft,
+        y = video.offsetTop,
+        w = video.offsetWidth,
+        h = video.offsetHeight,
+        r = x + w, //right
+        b = y + h, //bottom
+        visibleX,
+        visibleY,
+        visible;
+
+    if (window.pageXOffset >= r ||
+        window.pageYOffset >= b ||
+        window.pageXOffset + window.innerWidth < x ||
+        window.pageYOffset + window.innerHeight < y
+       ) {
+
+      return;
+    }
+
+    visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+    visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+
+    visible = visibleX * visibleY / (w * h);
+
+    const threshold = 0.4;
+
+    if(visible > threshold && !video.ended) {
+      video.play()
+    }
+  }
+
+  function checkScroll() {
+    conditionallyPlayVideo(document.getElementById('section-1-video'))
+    conditionallyPlayVideo(document.getElementById('section-2-video'))
+  }
+
+  window.addEventListener('scroll', checkScroll, false);
+  window.addEventListener('resize', checkScroll, false);
 </script>
 {{ end }}
