@@ -5,6 +5,9 @@
       {{ if .Params.section_subtitle_1 }}
       	<p class="section-subtitle">{{ .Params.section_subtitle_1 }}</p>
       {{ end }}
+      {{ if .Params.section_image_1}}
+      	<img class="img-fluid" id="section-image-1" src="{{ .Params.section_image_1 }}">
+      {{ end }}
     </div>
   </div>
   <div class="row w-100">
@@ -20,6 +23,9 @@
       <h5 class="section-text">{{ .Params.section_text_2 }}</h5>
       {{ if .Params.section_subtitle_2 }}
       	<p class="section-subtitle">{{ .Params.section_subtitle_2 }}</p>
+      {{ end }}
+      {{ if .Params.section_image_2 }}
+      	<img class="img-fluid" id="section-image-2" src="{{ .Params.section_image_2 }}">
       {{ end }}
     </div>
   </div>
@@ -38,6 +44,9 @@
 	      <h5 class="section-text">{{ .Params.section_text_3 }}</h5>
 	      {{ if .Params.section_subtitle_3 }}
       	  	<p class="section-subtitle">{{ .Params.section_subtitle_3 }}</p>
+      	  {{ end }}
+      	  {{ if .Params.section_image_3 }}
+      		<img class="img-fluid" id="section-image-3" src="{{ .Params.section_image_3 }}">
       	  {{ end }}
 	    </div>
 	  </div>
@@ -59,6 +68,9 @@
 	      {{ if .Params.section_subtitle_4 }}
       	  	<p class="section-subtitle">{{ .Params.section_subtitle_4 }}</p>
       	  {{ end }}
+      	  {{ if .Params.section_image_4 }}
+      		<img class="img-fluid" id="section-image-4" src="{{ .Params.section_image_4 }}">
+      	  {{ end }}
 	    </div>
 	  </div>
 	  {{ if .Params.section_video_4_url }}
@@ -78,6 +90,9 @@
 	      <h5 class="section-text">{{ .Params.section_text_5 }}</h5>
 	      {{ if .Params.section_subtitle_5 }}
       	  	<p class="section-subtitle">{{ .Params.section_subtitle_5 }}</p>
+      	  {{ end }}
+      	  {{ if .Params.section_image_5 }}
+      		<img class="img-fluid" id="section-image-5" src="{{ .Params.section_image_5 }}">
       	  {{ end }}
 	    </div>
 	  </div>
