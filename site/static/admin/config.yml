@@ -30,8 +30,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Section 3 Header", name: "section_header_3", widget: "string", default: 'Get to market faster', required: false}
       - {label: "Section 4 Header", name: "section_header_4", widget: "string", default: 'Accelerate test automation', required: false}
       - {label: "Section 5 Header", name: "section_header_5", widget: "string", required: false}
-      - {label: "Section 1 Text", name: "section_text_1", widget: "markdown", default: 'You consistently find more defects with your optimized Hexawise tests.', required: true}
-      - {label: "Section 2 Text", name: "section_text_2", widget: "markdown", default: 'Increase speed to market, as well as quality, by quickly selecting the right tests for execution.', required: true}
+      - {label: "Section 1 Text", name: "section_1_text", widget: "markdown", default: 'You consistently find more defects with your optimized Hexawise tests.', required: true}
+      - {label: "Section 2 Text", name: "section_2_text", widget: "markdown", default: 'Increase speed to market, as well as quality, by quickly selecting the right tests for execution.', required: true}
       - {label: "Section 3 Text #1", name: "section_3_text_1", widget: "markdown", default: 'Using Hexawise’s clear coverage reports to make smarter testing decisions about test case counts and coverage.', required: false}
       - {label: "Section 3 Text #2", name: "section_3_text_2", widget: "markdown", default: 'Using Hexawise’s clear coverage reports to make smarter testing decisions about test case counts and coverage.', required: false}
       - {label: "Section 4 Text", name: "section_4_text", widget: "markdown", default: 'Hexawise will help you accelerate test automation.', required: false}
