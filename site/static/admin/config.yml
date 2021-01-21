@@ -25,11 +25,11 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Header", name: "intro_header", widget: "markdown", default: 'Hexawise is a test design optimization tool that allows users to quickly generate tests from a model of variation ideas of their System Under Test.', required: true}
       - {label: "Intro Body", name: "intro_body", widget: "markdown", required: true}
       - {label: "Intro Image", name: "image", widget: "image", default: "/img/hexawise-tosca.png", required: true}
-      - {label: "Section Header #1", name: "section_header_1", widget: "markdown", default: 'Hexawise tests are different', required: true}
-      - {label: "Section Header #2", name: "section_header_2", widget: "markdown", default: 'Find more defects', required: true}
-      - {label: "Section Header #3", name: "section_header_3", widget: "markdown", default: 'Get to market faster', required: false}
-      - {label: "Section Header #4", name: "section_header_4", widget: "markdown", default: 'Accelerate test automation', required: false}
-      - {label: "Section Header #5", name: "section_header_5", widget: "markdown", required: false}
+      - {label: "Section Header #1", name: "section_header_1", widget: "string", default: 'Hexawise tests are different', required: true}
+      - {label: "Section Header #2", name: "section_header_2", widget: "string", default: 'Find more defects', required: true}
+      - {label: "Section Header #3", name: "section_header_3", widget: "string", default: 'Get to market faster', required: false}
+      - {label: "Section Header #4", name: "section_header_4", widget: "string", default: 'Accelerate test automation', required: false}
+      - {label: "Section Header #5", name: "section_header_5", widget: "string", required: false}
       - {label: "Section Text #1", name: "section_text_1", widget: "markdown", default: 'Hexawise tests are different', required: true}
       - {label: "Section Text #2", name: "section_text_2", widget: "markdown", default: 'You consistently find more defects with your optimized Hexawise tests', required: true}
       - {label: "Section Text #3", name: "section_text_3", widget: "markdown", default: 'Increase speed to market, as well as quality, by quickly selecting the right tests for execution.', required: false}
