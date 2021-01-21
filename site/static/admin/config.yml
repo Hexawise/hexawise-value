@@ -35,15 +35,15 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Section Text #3", name: "section_text_3", widget: "markdown", default: 'Increase speed to market, as well as quality, by quickly selecting the right tests for execution.', required: false}
       - {label: "Section Text #4", name: "section_text_4", widget: "markdown", default: 'Using Hexawise to generate the right tests for automation.', required: false}
       - {label: "Section Text #5", name: "section_text_5", widget: "markdown", required: false}
-      - {label: "Section Image #1", name: "section_image_1", widget: "image", required: false}
-      - {label: "Section Image #2", name: "section_image_2", widget: "image", required: false}
-      - {label: "Section Image #3", name: "section_image_3", widget: "image", required: false}
-      - {label: "Section Image #4", name: "section_image_4", widget: "image", required: false}
-      - {label: "Section Image #5", name: "section_image_5", widget: "image", required: false}
-      - {label: "Section Video #1", name: "section_video_1_url", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/hexawise-tests-are-different-animation.mp4', required: true}
-      - {label: "Section Video #2", name: "section_video_2_url", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/traditional-vs-hexawise-tests-animation.mp4', required: true}
-      - {label: "Section Video #3", name: "section_video_3_url", widget: "string", required: false}
-      - {label: "Section Video #4", name: "section_video_4_url", widget: "string", required: false}
-      - {label: "Section Video #5", name: "section_video_5_url", widget: "string", required: false}
+      - {label: "Section Image #1", name: "section_2_image", widget: "image", required: false}
+      - {label: "Section Image #2", name: "section_3_image", widget: "image", required: false}
+      - {label: "Section Image #3", name: "section_4_image", widget: "image", required: false}
+      - {label: "Section Image #4", name: "section_5_image", widget: "image", required: false}
+      - {label: "Section Video #1", name: "section_1_video_1_url", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/hexawise-tests-are-different-animation.mp4', required: true}
+      - {label: "Section Video #2", name: "section_1_video_2_url", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/traditional-vs-hexawise-tests-animation.mp4', required: true}
+      - {label: "Section Video #3", name: "section_2_video_url", widget: "string", required: false}
+      - {label: "Section Video #3", name: "section_3_video_url", widget: "string", required: false}
+      - {label: "Section Video #4", name: "section_4_video_url", widget: "string", required: false}
+      - {label: "Section Video #5", name: "section_5_video_url", widget: "string", required: false}
       - {label: "CTA Contact #1", name: "contact_1", widget: "string", required: true}
       - {label: "CTA Contact #2", name: "contact_2", widget: "string", required: false}
