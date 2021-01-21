@@ -1,5 +1,5 @@
 ---
-title: Hexawise for Guidewire
+title: Hexawise for Guidewire (copy)
 description: Demonstrating how Guidewire teams achieved significant benefits
   with Hexawise in test planning, execution, and automation.
 url: hexawise-and-guidewire
