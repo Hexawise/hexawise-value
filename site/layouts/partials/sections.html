@@ -8,7 +8,7 @@
         </video>
       </div>
       <div class="row w-100 text-center mb-4">
-        <div id="section-1-text">{{% .Params.section_1_text %}}</div>
+        <div id="section-1-text">{{ .Params.section_1_text }}</div>
       </div>
     </div>
   </div>
@@ -16,7 +16,7 @@
 
 <div id="section-2" class="feature-section">
   <div class="row w-100">
-    <div id="section-2-text">{{% .Params.section_2_text %}}</div>
+    <div id="section-2-text">{{ .Params.section_2_text }}</div>
   </div>
   <div class="row w-100">
     <video muted id='section-2-video' style='width: 100%; height: 100%;'>
@@ -28,7 +28,7 @@
 {{ if .Params.section_3_text_1 }}
 <div id="section-3" class="feature-section">
   <div class="row">
-    <div id="section-3-text-1">{{% .Params.section_3_text_1 %}}</div>
+    <div id="section-3-text-1">{{ .Params.section_3_text_1 }}</div>
   </div>
   {{ if .Params.section_3_video_url_1 }}
   <div class="row w-100">
@@ -39,7 +39,7 @@
   {{ end }}
   {{ if .Params.section_3_text_2 }}
     <div class="row">
-      <div id="section-3-text-2">{{% .Params.section_3_text_2 %}}</div>
+      <div id="section-3-text-2">{{ .Params.section_3_text_2 }}</div>
     </div>
   {{ end }}
   {{ if .Params.section_3_video_url_2 }}
@@ -55,11 +55,11 @@
 {{ if .Params.section_4_text }}
 <div id="section-4" class="feature-section">
   <div class="row">
-    <div id="section-text-4">{{% .Params.section_4_text %}}</div>
+    <div id="section-text-4">{{ .Params.section_4_text }}</div>
   </div>
   {{ if .Params.section_4_image_text }}
     <div class="row">
-      <div id ="section-4-image-text">{{% .Params.section_4_image_text %}}</div>
+      <div id ="section-4-image-text">{{ .Params.section_4_image_text }}</div>
     </div>
   {{ end }}
   {{ if .Params.section_4_image }}
@@ -82,11 +82,11 @@
 {{ if .Params.section_5_text }}
 <div id="section-5" class="feature-section">
   <div class="row">
-    <div id="section-text-5">{{% .Params.section_5_text %}}</div>
+    <div id="section-text-5">{{ .Params.section_5_text }}</div>
   </div>
   {{ if .Params.section_5_image_text}}
     <div class="row">
-      <div id ="section-5-image-text">{{% .Params.section_5_image_text %}}</div>
+      <div id ="section-5-image-text">{{ .Params.section_5_image_text }}</div>
     </div>
   {{ end }}
   {{ if .Params.section_5_image }}

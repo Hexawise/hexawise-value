@@ -1,2 +1,7 @@
 languageCode = "en-US"
 title = ""
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
