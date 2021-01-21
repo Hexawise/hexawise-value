@@ -25,25 +25,29 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Header", name: "intro_header", widget: "markdown", default: 'Hexawise is a test design optimization tool that allows users to quickly generate tests from a model of variation ideas of their System Under Test.', required: true}
       - {label: "Intro Body", name: "intro_body", widget: "markdown", required: true}
       - {label: "Intro Image", name: "image", widget: "image", default: "/img/hexawise-tosca.png", required: true}
-      - {label: "Section Header #1", name: "section_header_1", widget: "string", default: 'Hexawise tests are different', required: true}
-      - {label: "Section Header #2", name: "section_header_2", widget: "string", default: 'Find more defects', required: true}
-      - {label: "Section Header #3", name: "section_header_3", widget: "string", default: 'Get to market faster', required: false}
-      - {label: "Section Header #4", name: "section_header_4", widget: "string", default: 'Accelerate test automation', required: false}
-      - {label: "Section Header #5", name: "section_header_5", widget: "string", required: false}
-      - {label: "Section Text #1", name: "section_text_1", widget: "markdown", default: 'Hexawise tests are different', required: true}
-      - {label: "Section Text #2", name: "section_text_2", widget: "markdown", default: 'You consistently find more defects with your optimized Hexawise tests', required: true}
-      - {label: "Section Text #3", name: "section_text_3", widget: "markdown", default: 'Increase speed to market, as well as quality, by quickly selecting the right tests for execution.', required: false}
-      - {label: "Section Text #4", name: "section_text_4", widget: "markdown", default: 'Using Hexawise to generate the right tests for automation.', required: false}
-      - {label: "Section Text #5", name: "section_text_5", widget: "markdown", required: false}
-      - {label: "Section Image #1", name: "section_2_image", widget: "image", required: false}
-      - {label: "Section Image #2", name: "section_3_image", widget: "image", required: false}
-      - {label: "Section Image #3", name: "section_4_image", widget: "image", required: false}
-      - {label: "Section Image #4", name: "section_5_image", widget: "image", required: false}
-      - {label: "Section Video #1", name: "section_1_video_1_url", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/hexawise-tests-are-different-animation.mp4', required: true}
-      - {label: "Section Video #2", name: "section_1_video_2_url", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/traditional-vs-hexawise-tests-animation.mp4', required: true}
-      - {label: "Section Video #3", name: "section_2_video_url", widget: "string", required: false}
-      - {label: "Section Video #3", name: "section_3_video_url", widget: "string", required: false}
-      - {label: "Section Video #4", name: "section_4_video_url", widget: "string", required: false}
-      - {label: "Section Video #5", name: "section_5_video_url", widget: "string", required: false}
+      - {label: "Section 1 Header", name: "section_header_1", widget: "string", default: 'Hexawise tests are different', required: true}
+      - {label: "Section 2 Header", name: "section_header_2", widget: "string", default: 'Find more defects', required: true}
+      - {label: "Section 3 Header", name: "section_header_3", widget: "string", default: 'Get to market faster', required: false}
+      - {label: "Section 4 Header", name: "section_header_4", widget: "string", default: 'Accelerate test automation', required: false}
+      - {label: "Section 5 Header", name: "section_header_5", widget: "string", required: false}
+      - {label: "Section 1 Text", name: "section_text_1", widget: "markdown", default: 'You consistently find more defects with your optimized Hexawise tests.', required: true}
+      - {label: "Section 2 Text", name: "section_text_2", widget: "markdown", default: 'Increase speed to market, as well as quality, by quickly selecting the right tests for execution.', required: true}
+      - {label: "Section 3 Text", name: "section_text_3", widget: "markdown", default: 'Using Hexawise’s clear coverage reports to make smarter testing decisions about test case counts and coverage.', required: false}
+      - {label: "Section 4 Text", name: "section_text_4", widget: "markdown", default: 'Hexawise will help you accelerate test automation.', required: false}
+      - {label: "Section 5 Text", name: "section_text_5", widget: "markdown", required: false}
+      - {label: "Section 2 Image", name: "section_2_image", widget: "image", required: false}
+      - {label: "Section 3 Image", name: "section_3_image", widget: "image", required: false}
+      - {label: "Section 4 Image", name: "section_4_image", widget: "image", required: false}
+      - {label: "Section 5 Image", name: "section_5_image", widget: "image", required: false}
+      - {label: "Section 2 Image Text", name: "section_2_image_text", widget: "markdown", required: false}
+      - {label: "Section 3 Image Text", name: "section_3_image_text", widget: "markdown", required: false}
+      - {label: "Section 4 Image Text", name: "section_4_image_text", widget: "markdown", required: false}
+      - {label: "Section 5 Image Text", name: "section_5_image_text", widget: "markdown", required: false}
+      - {label: "Section 1 Video #1", name: "section_1_video_1_url", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/hexawise-tests-are-different-animation.mp4', required: true}
+      - {label: "Section 1 Video #2", name: "section_1_video_2_url", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/traditional-vs-hexawise-tests-animation.mp4', required: true}
+      - {label: "Section 2 Video", name: "section_2_video_url", widget: "string", required: false}
+      - {label: "Section 3 Video", name: "section_3_video_url", widget: "string", required: false}
+      - {label: "Section 4 Video", name: "section_4_video_url", widget: "string", required: false}
+      - {label: "Section 5 Video", name: "section_5_video_url", widget: "string", required: false}
       - {label: "CTA Contact #1", name: "contact_1", widget: "string", required: true}
       - {label: "CTA Contact #2", name: "contact_2", widget: "string", required: false}
