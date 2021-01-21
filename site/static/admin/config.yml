@@ -3,6 +3,11 @@ backend:
   repo: hexawise/hexawise-value
   branch: main
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 media_folder: "site/static/img"
 public_folder: "img"
 
