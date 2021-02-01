@@ -19,8 +19,8 @@ section_2_text: Watch below at the difference in thoroughness between Hexawise
 section_3_text_1: |-
   ### Hexawise can can also help you
 
-  1. ### Increase speed to market
-  2. ### Accelerate test automation
+  * ### Increase speed to market
+  * ### Accelerate test automation
 
   ### if you'd like to schedule a meeting to learn more then click ***`here.`***
 section_3_text_2: ""
