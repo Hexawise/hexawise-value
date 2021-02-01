@@ -11,18 +11,18 @@ intro_body: Hexawise is a Test Design tool, but it can be smoothly integrated
 image: /img/hexawise-tosca.png
 section_header_1: Hexawise tests are different
 section_header_2: Find more defects
-section_header_3: Get to market faster
-section_header_4: Accelerate test automation
+section_header_3: ""
+section_header_4: ""
 section_1_text: You consistently find more defects with your optimized Hexawise tests.
-section_2_text: |-
+section_2_text: Watch below at the difference in thoroughness between Hexawise
+  tests and traditional tests.
+section_3_text_1: |-
   Hexawise can can also help you
 
   1. Increase speed to market
-  2.  Accelerate test automation
+  2. Accelerate test automation
 
   if you'd like to schedule a meeting to learn more then click ***`here.`***
-section_3_text_1: Using Hexawise’s clear coverage reports to make smarter
-  testing decisions about test case counts and coverage.
 section_3_text_2: ""
 section_4_text: ""
 section_1_video_url: https://s3.amazonaws.com/media.hexawise.com/video/hexawise-tests-are-different-animation.mp4
