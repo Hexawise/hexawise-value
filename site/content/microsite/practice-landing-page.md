@@ -17,12 +17,12 @@ section_1_text: You consistently find more defects with your optimized Hexawise 
 section_2_text: Watch below at the difference in thoroughness between Hexawise
   tests and traditional tests.
 section_3_text_1: |-
-  Hexawise can can also help you
+  ### Hexawise can can also help you
 
-  1. Increase speed to market
-  2. Accelerate test automation
+  1. ### Increase speed to market
+  2. ### Accelerate test automation
 
-  if you'd like to schedule a meeting to learn more then click ***`here.`***
+  ### if you'd like to schedule a meeting to learn more then click ***`here.`***
 section_3_text_2: ""
 section_4_text: ""
 section_1_video_url: https://s3.amazonaws.com/media.hexawise.com/video/hexawise-tests-are-different-animation.mp4
