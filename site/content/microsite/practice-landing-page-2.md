@@ -2,7 +2,7 @@
 title: Practice landing Page 2
 description: Here's a quick refresher on Hexawise and how it sepearates itself
   from traditional testing methods.
-url: practice-landing-page
+url: practice-landing-page-2
 intro_header: About Us
 intro_body: "We launched in 2009 with one goal: to help software testing teams
   quickly design objectively better tests. We believe that designing the right
