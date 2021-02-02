@@ -31,12 +31,12 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Body", name: "intro_body", widget: "markdown", default: 'Hexawise is used alongside various Test Management and Automation tools.', required: true}
       - {label: "Intro Image", name: "image", widget: "image", default: "/img/hexawise-tosca.png", required: true}
       - {label: "Section 1 Header", name: "section_header_1", widget: "string", default: 'Hexawise tests are different', required: true}
-      - {label: "Section 2 Header", name: "section_header_2", widget: "string", default: 'Find more defects', required: true}
+      - {label: "Section 2 Header", name: "section_header_2", widget: "string", default: 'Find more defects', required: false}
       - {label: "Section 3 Header", name: "section_header_3", widget: "string", default: 'Get to market faster', required: false}
       - {label: "Section 4 Header", name: "section_header_4", widget: "string", default: 'Accelerate test automation', required: false}
       - {label: "Section 5 Header", name: "section_header_5", widget: "string", required: false}
       - {label: "Section 1 Text", name: "section_1_text", widget: "markdown", default: 'You consistently find more defects with your optimized Hexawise tests.', required: true}
-      - {label: "Section 2 Text", name: "section_2_text", widget: "markdown", default: 'Increase speed to market, as well as quality, by quickly selecting the right tests for execution.', required: true}
+      - {label: "Section 2 Text", name: "section_2_text", widget: "markdown", default: 'Increase speed to market, as well as quality, by quickly selecting the right tests for execution.', required: false}
       - {label: "Section 3 Text #1", name: "section_3_text_1", widget: "markdown", default: 'Using Hexawise’s clear coverage reports to make smarter testing decisions about test case counts and coverage.', required: false}
       - {label: "Section 3 Text #2", name: "section_3_text_2", widget: "markdown", default: 'Using Hexawise’s clear coverage reports to make smarter testing decisions about test case counts and coverage.', required: false}
       - {label: "Section 4 Text", name: "section_4_text", widget: "markdown", default: 'Hexawise will help you accelerate test automation.', required: false}
@@ -45,12 +45,18 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Section 5 Image", name: "section_5_image", widget: "image", required: false}
       - {label: "Section 4 Image Text", name: "section_4_image_text", widget: "markdown", required: false}
       - {label: "Section 5 Image Text", name: "section_5_image_text", widget: "markdown", required: false}
-      - {label: "Section 1 Video", name: "section_1_video_url", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/hexawise-tests-are-different-animation.mp4', required: true}
-      - {label: "Section 2 Video", name: "section_2_video_url", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/traditional-vs-hexawise-tests-animation.mp4', required: true}
+      - {label: "Section 1 Video", name: "section_1_video_url", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/hexawise-tests-are-different-animation.mp4', required: false}
+      # - {label: "Section 1 Video Autoplays?", name: "s1_video_auto", widget: "boolean", default: true}
+      - {label: "Section 2 Video", name: "section_2_video_url", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/traditional-vs-hexawise-tests-animation.mp4', required: false}
+      # - {label: "Section 2 Video Autoplays?", name: "s2_video_auto", widget: "boolean", default: true}
       - {label: "Section 3 Video #1", name: "section_3_video_url_1", widget: "string", required: false}
+      # - {label: "Section 3 Video #1 Autoplays?", name: "s3_video_auto_1", widget: "boolean", default: false}
       - {label: "Section 3 Video #2", name: "section_3_video_url_2", widget: "string", required: false}
+      # - {label: "Section 3 Video #2 Autoplays?", name: "s3_video_auto_2", widget: "boolean", default: false}
       - {label: "Section 4 Video", name: "section_4_video_url", widget: "string", required: false}
+     #  - {label: "Section 4 Video Autoplays?", name: "s4_video_auto", widget: "boolean", default: false}
       - {label: "Section 5 Video", name: "section_5_video_url", widget: "string", required: false}
-      - {label: "CTA Contact Text", name: "cta_text", widget: "string", default: 'Reach out to the below contacts to learn more about the significant benefits of Hexawise', required: true}
-      - {label: "CTA Contact #1", name: "contact_1", widget: "string", required: true}
+      # - {label: "Section 5 Video Autoplays?", name: "s5_video_auto", widget: "boolean", default: false}
+      - {label: "CTA Contact Text", name: "cta_text", widget: "string", default: 'Reach out to the below contacts to learn more about the significant benefits of Hexawise', required: false}
+      - {label: "CTA Contact #1", name: "contact_1", widget: "string", required: false}
       - {label: "CTA Contact #2", name: "contact_2", widget: "string", required: false}
