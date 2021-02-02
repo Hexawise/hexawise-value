@@ -51,5 +51,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Section 3 Video #2", name: "section_3_video_url_2", widget: "string", required: false}
       - {label: "Section 4 Video", name: "section_4_video_url", widget: "string", required: false}
       - {label: "Section 5 Video", name: "section_5_video_url", widget: "string", required: false}
+      - {label: "CTA Contact Text", name: "cta_text", widget: "string", default: 'Reach out to the below contacts to learn more about the significant benefits of Hexawise', required: true}
       - {label: "CTA Contact #1", name: "contact_1", widget: "string", required: true}
       - {label: "CTA Contact #2", name: "contact_2", widget: "string", required: false}
