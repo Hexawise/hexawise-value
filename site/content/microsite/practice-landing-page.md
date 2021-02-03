@@ -1,5 +1,5 @@
 ---
-title: Practice landing Page
+title: Test Smarter, Not Harder
 description: Here's a quick refresher on Hexawise and how it separates itself
   from traditional testing methods.
 url: practice-landing-page
