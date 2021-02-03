@@ -1,5 +1,5 @@
 ---
-title: Practice landing Page 2
+title: Test Smarter, Not Harder
 description: Here's a quick refresher on Hexawise and how it sepearates itself
   from traditional testing methods.
 url: practice-landing-page-2
@@ -25,8 +25,8 @@ section_1_text: The reason Hexawise is in use at a large and growing number of
 section_2_text: |-
   #### Our Solution
 
-  ![](img/average-hexawise-benefits.png)
-section_3_text_1: ""
+  ![](img/hexawise-benefits-combined.png)
+section_3_text_1: "![]()"
 section_3_text_2: ""
 section_4_text: ""
 section_1_video_url: https://s3.amazonaws.com/media.hexawise.com/video/hexawise-tests-are-different-animation.mp4
