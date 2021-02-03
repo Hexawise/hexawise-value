@@ -1,6 +1,6 @@
 ---
 title: Practice landing Page
-description: Here's a quick refresher on Hexawise and how it sepearates itself
+description: Here's a quick refresher on Hexawise and how it separates itself
   from traditional testing methods.
 url: practice-landing-page
 intro_header: Hexawise is a test design optimization tool that allows users to
@@ -27,5 +27,6 @@ section_3_text_2: ""
 section_4_text: ""
 section_1_video_url: https://s3.amazonaws.com/media.hexawise.com/video/hexawise-tests-are-different-animation.mp4
 section_2_video_url: https://s3.amazonaws.com/media.hexawise.com/video/traditional-vs-hexawise-tests-animation.mp4
+cta_text: "Email us here for timely responses to any questions:"
 contact_1: owen.winters@hexawise.com
 ---
