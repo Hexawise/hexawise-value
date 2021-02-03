@@ -14,7 +14,7 @@ section_header_2: Find more defects
 section_header_3: ""
 section_header_4: ""
 section_1_text: "##### You consistently find more defects with your optimized Hexawise tests."
-section_2_text: "###### Watch below at the difference in thoroughness between
+section_2_text: "##### Watch below at the difference in thoroughness between
   Hexawise tests and traditional tests."
 section_3_text_1: |-
   ### Hexawise can can also help you
