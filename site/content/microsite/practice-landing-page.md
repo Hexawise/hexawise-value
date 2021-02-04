@@ -1,6 +1,6 @@
 ---
-title: Practice landing Page
-description: Here's a quick refresher on Hexawise and how it sepearates itself
+title: Test Smarter, Not Harder
+description: Here's a quick refresher on Hexawise and how it separates itself
   from traditional testing methods.
 url: practice-landing-page
 intro_header: Hexawise is a test design optimization tool that allows users to
@@ -13,9 +13,9 @@ section_header_1: Hexawise tests are different
 section_header_2: Find more defects
 section_header_3: ""
 section_header_4: ""
-section_1_text: You consistently find more defects with your optimized Hexawise tests.
-section_2_text: Watch below at the difference in thoroughness between Hexawise
-  tests and traditional tests.
+section_1_text: "##### You consistently find more defects with your optimized Hexawise tests."
+section_2_text: "##### Watch below at the difference in thoroughness between
+  Hexawise tests and traditional tests."
 section_3_text_1: |-
   ### Hexawise can can also help you
 
@@ -27,5 +27,6 @@ section_3_text_2: ""
 section_4_text: ""
 section_1_video_url: https://s3.amazonaws.com/media.hexawise.com/video/hexawise-tests-are-different-animation.mp4
 section_2_video_url: https://s3.amazonaws.com/media.hexawise.com/video/traditional-vs-hexawise-tests-animation.mp4
+cta_text: "Email us here for timely responses to any questions:"
 contact_1: owen.winters@hexawise.com
 ---
