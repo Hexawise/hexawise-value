@@ -1,16 +1,33 @@
 {{ with .Params }}
 <nav id="features-navbar" class="scrollspy-navbar navbar navbar-expand px-0 pb-0 sticky-top">
 	<div class="navbar-nav">
-	  <a class="nav-item nav-link section-header active" data-target="#section-1" href="/{{ .url }}/#section-1">{{ $.RenderString .section_header_1 }}</a>
-	  <a class="nav-item nav-link section-header" data-target="#section-2" href="/{{ .url }}/#section-2">{{ $.RenderString .section_header_2 }}</a>
+	  <div>
+	  	<i class="fal fa-{{ .Params.section_icon_1 }}"></i>
+	    <a class="nav-item nav-link section-header active" data-target="#section-1" href="/{{ .url }}/#section-1">{{ $.RenderString .section_header_1 }}</a>
+	  </div>
+	  {{ if .section_header_2 }}
+	  <div>
+	  	<i class="fal fa-{{ .Params.section_icon_2 }}"></i>
+	    <a class="nav-item nav-link section-header" data-target="#section-2" href="/{{ .url }}/#section-2">{{ $.RenderString .section_header_2 }}</a>
+	  </div>
+	  {{ end }}
 	  {{ if .section_header_3 }}
+	  <div>
+	  	<i class="fal fa-{{ .Params.section_icon_3 }}"></i>
 		<a class="nav-item nav-link section-header" data-target="#section-3" href="/{{ .url }}/#section-3">{{ $.RenderString .section_header_3 }}</a>
+	  </div>
 	  {{ end }}
 	  {{ if .section_header_4 }}
+	  <div>
+	  	<i class="fal fa-{{ .Params.section_icon_4 }}"></i>
 		<a class="nav-item nav-link section-header" data-target="#section-4" href="/{{ .url }}/#section-4">{{ $.RenderString .section_header_4 }}</a>
+	  </div>
 	  {{ end }}
 	  {{ if .section_header_5 }}
+	  <div>
+	  	<i class="fal fa-{{ .Params.section_icon_5 }}"></i>
 		<a class="nav-item nav-link section-header" data-target="#section-5" href="/{{ .url }}/#section-5">{{ $.RenderString .section_header_5 }}</a>
+	  </div>
 	  {{ end }}
 	</div>
 </nav>
