@@ -69,7 +69,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Section 4 Navbar Text", name: "section_navbar_4", widget: "string", default: 'Accelerate test automation', required: false}
       - {label: "Section 4 Icon", name: "section_icon_4", widget: "string", required: false}
       - {label: "Section 4 Header", name: "section_header_4", widget: "markdown", default: "Hexawise will help you accelerate test automation", required: false}
-      - {label: "Section 4 Text", name: "section_text_4", }
+      - {label: "Section 4 Text", name: "section_text_4", widget: "markdown", default: "Use Hexawise to generate the right tests for automation.", required: false}
       - {label: "Section 4 Image", name: "section_image_4", widget: "image", required: false}
       - {label: "Section 4 Image Text", name: "section_image_text_4", widget: "markdown", required: false}
       - {label: "Section 4 Video", name: "section_4_video_url", widget: "string", required: false}
@@ -78,6 +78,8 @@ collections: # A list of collections the CMS should be able to edit
      # SECTION 5 FIELDS
       - {label: "Section 5 Navbar Text", name: "section_navbar_5", widget: "string", required: false}
       - {label: "Section 5 Icon", name: "section_icon_5", widget: "string", required: false}
+      - {label: "Section 5 Header", name: "section_header_5", widget: "markdown", required: false}
+      - {label: "Section 5 Text", name: "section_text_5", widget: "markdown", required: false}
       - {label: "Section 5 Image", name: "section_image_5", widget: "image", required: false}
       - {label: "Section 5 Image Text", name: "section_image_text_5", widget: "markdown", required: false}
       - {label: "Section 5 Video", name: "section_5_video_url", widget: "string", required: false}
