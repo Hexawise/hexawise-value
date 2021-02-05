@@ -29,7 +29,7 @@ collections: # A list of collections the CMS should be able to edit
           The URL slug for the microsite (the 'your-slug' in https://value.hexawise.com/your-slug)
 
       # INTRO FIELDS
-      - {label: "Intro Header", name: "intro_header", widget: "markdown", default: 'Hexawise is a test design optimization tool that allows users to quickly generate tests from a model of variation ideas of their System Under Test.', required: true}
+      - {label: "Intro Header", name: "intro_header", widget: "markdown", default: "Hexawise is a <u>test design optimization tool</u> that allows users to quickly generate tests from a model of variation ideas of their System Under Test.", required: true}
       - {label: "Intro Body", name: "intro_body", widget: "markdown", default: 'Hexawise is used alongside various Test Management and Automation tools.', required: true}
       - {label: "Intro Image", name: "image", widget: "image", default: "/img/hexawise-tosca.png", required: true}
 
@@ -42,7 +42,7 @@ collections: # A list of collections the CMS should be able to edit
         hint: >-
           The font awesome icon's identifier (the 'user-circle' in fa-user-circle)
       - {label: "Section 1 Header", name: section_header_1, widget: "markdown", default: "Hexawise tests are different", required: true}
-      - {label: "Section 1 Text", name: "section_text_1", widget: "markdown", default: 'You consistently find more defects with your optimized Hexawise tests.', required: false}
+      - {label: "Section 1 Text", name: "section_text_1", widget: "markdown", default: 'Why are these tests important?', required: false}
       - {label: "Section 1 Video", name: "section_1_video_url", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/hexawise-tests-are-different-animation.mp4', required: false}
       # - {label: "Section 1 Video Autoplays?", name: "video_autoplay_1", widget: "boolean", default: true, required: false}
 
