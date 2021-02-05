@@ -1,10 +1,12 @@
 <div id="section-1" class="feature-section">
   <div class="row w-100">
     <div class="p-3">
-      {{ if .Params.section_icon_1 }}
-      <i class="fa fa-{{ .Params.section_icon_1 }}"></i>
-      {{ end }}
-      <h5 id="section-1-header" class="section-text">{{ .RenderString .Params.section_header_1 }}</h5>
+      <h5 id="section-1-header" class="section-text">
+        {{ if .Params.section_icon_1 }}
+          <i class="fa fa-{{ .Params.section_icon_1 }}"></i>
+        {{ end }}
+        {{ .RenderString .Params.section_header_1 }}
+      </h5>
       <div class="row w-100">
         <video muted id='section-1-video' style='width: 100%; height: 100%;'>
           <source src="{{ .Params.section_video_url_1 }}" type='video/mp4'>
@@ -23,10 +25,12 @@
 <div id="section-2" class="feature-section">
   <div class="row w-100">
     <div id="section-2-text">
-      {{ if .Params.section_icon_2 }}
-      <i class="fa fa-{{ .Params.section_icon_2 }}"></i>
-      {{ end }}
-      <h5>{{ .RenderString .Params.section_header_2 }}</h5>
+      <h5 id="section-2-header" class="section-text">
+        {{ if .Params.section_icon_2 }}
+          <i class="fa fa-{{ .Params.section_icon_2 }}"></i>
+        {{ end }}
+        {{ .RenderString .Params.section_header_2 }}
+      </h5>
       {{ .RenderString .Params.section_text_2 }}
     </div>
   </div>
@@ -42,10 +46,12 @@
 <div id="section-3" class="feature-section">
   <div class="row">
     <div class="p-3" id="section-3-text-1">
-      {{ if .Params.section_icon_3 }}
-      <i class="fa fa-{{ .Params.section_icon_3 }}"></i>
-      {{ end }}
-      <h5>{{ .RenderString .Params.section_header_3 }}</h5>
+      <h5 id="section-3-header" class="section-text">
+        {{ if .Params.section_icon_3 }}
+          <i class="fa fa-{{ .Params.section_icon_3 }}"></i>
+        {{ end }}
+        {{ .RenderString .Params.section_header_3 }}
+      </h5>
       {{ .RenderString .Params.section_text_3_1 }}
     </div>
   </div>
@@ -75,10 +81,12 @@
 <div id="section-4" class="feature-section">
   <div class="row">
     <div class="p-3" id="section-4-text">
-      {{ if .Params.section_icon_4 }}
-      <i class="fa fa-{{ .Params.section_icon_4 }}"></i>
-      {{ end }}
-      <h5>{{ .RenderString .Params.section_header_4 }}</h5>
+      <h5 id="section-4-header" class="section-text">
+        {{ if .Params.section_icon_4 }}
+          <i class="fa fa-{{ .Params.section_icon_4 }}"></i>
+        {{ end }}
+        {{ .RenderString .Params.section_header_4 }}
+      </h5>
       {{ .RenderString .Params.section_text_4 }}
     </div>
   </div>
@@ -108,10 +116,12 @@
 <div id="section-5" class="feature-section">
   <div class="row">
     <div class="p-3" id="section-5-text">
-      {{ if .Params.section_icon_5 }}
-      <i class="fa fa-{{ .Params.section_icon_5 }}"></i>
-      {{ end }}
-      <h5>{{ .RenderString .Params.section_header_5 }}</h5>
+      <h5 id="section-5-header" class="section-text">
+        {{ if .Params.section_icon_5 }}
+          <i class="fa fa-{{ .Params.section_icon_5 }}"></i>
+        {{ end }}
+        {{ .RenderString .Params.section_header_5 }}
+      </h5>
       {{ .RenderString .Params.section_text_5 }}
     </div>
   </div>
