@@ -13,11 +13,13 @@ section_icon_1: random
 section_header_1: Hexawise tests are different
 section_text_1: <h5>Why are these differences important?</h5>
 section_video_url_1: https://s3.amazonaws.com/media.hexawise.com/guidewire-no-matrices.mp4
+video_autoplay_1: true
 section_navbar_2: Find more defects
 section_icon_2: search
 section_header_2: Because you consistently <u>find more defects</u> with your
   optimized Hexawise tests.
 section_video_url_2: https://s3.amazonaws.com/media.hexawise.com/guidewire-matrices.mp4
+video_autoplay_2: true
 section_navbar_3: Get to market faster
 section_icon_3: fast-forward
 section_header_3: Hexawise speeds time to market
