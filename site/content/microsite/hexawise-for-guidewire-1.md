@@ -18,8 +18,10 @@ section_header_2: Because you consistently <u>find more defects</u> with your
 section_2_video_url: https://s3.amazonaws.com/media.hexawise.com/guidewire-matrices.mp4
 section_navbar_3: Get to market faster
 section_header_3: Hexawise speeds time to market
-section_text_3_1: <large>Increase speed to market, as well as quality, by
-  quickly selecting the right tests for execution.</large>
+section_text_3_1: >-
+  <h6>Faster test case selection</h6>\
+
+  <large>Once Guidewire models are placed inside Hexawise, the right tests for execution are quickly selected.</large>
 section_video_url_3_1: https://s3.amazonaws.com/media.hexawise.com/video/hexawise-guidewire-faster-test-selection.mp4
 section_text_3_2: >-
   <h6>Smarter testing decisions</h6>
