@@ -22,7 +22,7 @@ section_text_3_1: <large>Increase speed to market, as well as quality, by
   quickly selecting the right tests for execution.</large>
 section_video_url_3_1: https://s3.amazonaws.com/media.hexawise.com/video/hexawise-guidewire-faster-test-selection.mp4
 section_text_3_2: >-
-  <h6>Smarter testing decisions</h6>\
+  <h6>Smarter testing decisions</h6>
 
   <large>Use Hexawise’s clear coverage reports to make smarter testing decisions about test case counts and coverage.</large>
 section_video_url_3_2: https://s3.amazonaws.com/media.hexawise.com/video/hexawise-guidewire-communicate-coverage.mp4
