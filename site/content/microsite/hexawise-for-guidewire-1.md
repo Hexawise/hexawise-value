@@ -6,9 +6,9 @@ url: hexawise-for-guidewire
 intro_header: Hexawise is a <u>test design optimization</u> tool that allows
   users to quickly generate tests from a model of variation ideas of their
   System Under Test.
-section_1_video_url: https://s3.amazonaws.com/media.hexawise.com/guidewire-no-matrices.mp4
-section_2_video_url: https://s3.amazonaws.com/media.hexawise.com/guidewire-matrices.mp4
-section_4_video_url: https://s3.amazonaws.com/media.hexawise.com/video/hexawise-guidewire-faster-automation.mp4
+section_video_url_1: https://s3.amazonaws.com/media.hexawise.com/guidewire-no-matrices.mp4
+section_video_url_2: https://s3.amazonaws.com/media.hexawise.com/guidewire-matrices.mp4
+section_video_url_4: https://s3.amazonaws.com/media.hexawise.com/video/hexawise-guidewire-faster-automation.mp4
 intro_body: Hexawise is used alongside various Test Management and Automation tools.
 image: /img/hexawise-tosca.png
 section_navbar_1: Hexawise tests are different
