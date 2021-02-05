@@ -2,7 +2,7 @@
   <div class="row w-100">
     <div class="p-3">
       {{ if .Params.section_icon_1 }}
-      <i class="section-1-icon" class="fa fa-{{ .Params.section_icon_1 }}"></i>
+      <i class="fa fa-{{ .section_icon_1 }}"></i>
       {{ end }}
       <h5 id="section-1-header" class="section-text">{{ .RenderString .Params.section_header_1 }}</h5>
       <div class="row w-100">
@@ -24,7 +24,7 @@
   <div class="row w-100">
     <div id="section-2-text">
       {{ if .Params.section_icon_2 }}
-      <i class="section-2-icon" class="fa fa-{{ .Params.section_icon_2 }}"></i>
+      <i class="fa fa-{{ .section_icon_2 }}"></i>
       {{ end }}
       <h5>{{ .RenderString .Params.section_header_2 }}</h5>
       {{ .RenderString .Params.section_text_2 }}
@@ -43,7 +43,7 @@
   <div class="row">
     <div class="p-3" id="section-3-text-1">
       {{ if .Params.section_icon_3 }}
-      <i class="section-3-icon" class="fa fa-{{ .Params.section_icon_3 }}"></i>
+      <i class="fa fa-{{ .section_icon_3 }}"></i>
       {{ end }}
       <h5>{{ .RenderString .Params.section_header_3 }}</h5>
       {{ .RenderString .Params.section_text_3_1 }}
@@ -76,7 +76,7 @@
   <div class="row">
     <div class="p-3" id="section-4-text">
       {{ if .Params.section_icon_4 }}
-      <i class="section-4-icon" class="fa fa-{{ .Params.section_icon_4 }}"></i>
+      <i class="fa fa-{{ .section_icon_4 }}"></i>
       {{ end }}
       <h5>{{ .RenderString .Params.section_header_4 }}</h5>
       {{ .RenderString .Params.section_text_4 }}
@@ -109,7 +109,7 @@
   <div class="row">
     <div class="p-3" id="section-5-text">
       {{ if .Params.section_icon_5 }}
-      <i class="section-5-icon" class="fa fa-{{ .Params.section_icon_5 }}"></i>
+      <i class="fa fa-{{ .section_icon_5 }}"></i>
       {{ end }}
       <h5>{{ .RenderString .Params.section_header_5 }}</h5>
       {{ .RenderString .Params.section_text_5 }}
