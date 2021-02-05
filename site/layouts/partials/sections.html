@@ -7,11 +7,17 @@
         {{ end }}
         {{ .RenderString .Params.section_header_1 }}
       </h5>
+      {{ if .Params.section_video_1}}
       <div class="row w-100">
-        <video muted id='section-1-video' style='width: 100%; height: 100%;'>
+        {{ if .Params_video_autoplay_1 }}
+        <video muted class='autoplay' id='section-1-video' style='width: 100%; height: 100%;'>
+        {{ else }}
+        <video controls id='section-1-video' style='width: 100%; height: 100%;'>
+        {{ end }}
           <source src="{{ .Params.section_video_url_1 }}" type='video/mp4'>
         </video>
       </div>
+      {{ end }}
       <div class="row w-100 text-center mb-4">
         <div id="section-1-text">
           {{ .RenderString .Params.section_text_1 }}
@@ -34,11 +40,17 @@
       {{ .RenderString .Params.section_text_2 }}
     </div>
   </div>
+  {{ if .Params.section_video_2 }}
   <div class="row w-100">
-    <video muted id='section-2-video' style='width: 100%; height: 100%;'>
+    {{ if .Params_video_autoplay_2 }}
+    <video muted class='autoplay' id='section-2-video' style='width: 100%; height: 100%;'>
+    {{ else }}
+    <video controls id='section-2-video' style='width: 100%; height: 100%;'>
+    {{ end }}
       <source src="{{ .Params.section_video_url_2 }}" type='video/mp4'>
     </video>
   </div>
+  {{ end }}
 </div>
 {{ end }}
 
@@ -57,7 +69,11 @@
   </div>
   {{ if .Params.section_video_url_3_1 }}
   <div class="row w-100 p-5">
-  	<video controls id='section-3-video-1' style='width: 100%; height: 100%;'>
+    {{ if .Params_video_autoplay_3_1 }}
+    <video muted class='autoplay' id='section-3-video-1' style='width: 100%; height: 100%;'>
+    {{ else }}
+    <video controls id='section-3-video-1' style='width: 100%; height: 100%;'>
+    {{ end }}
   		<source src="{{ .Params.section_video_url_3_1 }}" type='video/mp4'>
   	</video>
   </div>
@@ -69,7 +85,11 @@
   {{ end }}
   {{ if .Params.section_video_url_3_2 }}
   <div class="row w-100 p-5">
+    {{ if .Params_video_autoplay_3_2 }}
+    <video muted class='autoplay' id='section-3-video-2' style='width: 100%; height: 100%;'>
+    {{ else }}
     <video controls id='section-3-video-2' style='width: 100%; height: 100%;'>
+    {{ end }}
       <source src="{{ .Params.section_video_url_3_2 }}" type='video/mp4'>
     </video>
   </div>
@@ -104,7 +124,11 @@
   {{ end }}
   {{ if .Params.section_video_url_4 }}
     <div class="row w-100 p-5">
+      {{ if .Params_video_autoplay_4 }}
+      <video muted class='autoplay' id='section-4-video' style='width: 100%; height: 100%;'>
+      {{ else }}
       <video controls id='section-4-video' style='width: 100%; height: 100%;'>
+      {{ end }}
         <source src="{{ .Params.section_video_url_4 }}" type='video/mp4'>
       </video>
     </div>
@@ -139,7 +163,11 @@
   {{ end }}
   {{ if .Params.section_video_url_5 }}
     <div class="row w-100 p-4">
+      {{ if .Params_video_autoplay_5 }}
+      <video muted class='autoplay' id='section-5-video' style='width: 100%; height: 100%;'>
+      {{ else }}
       <video controls id='section-5-video' style='width: 100%; height: 100%;'>
+      {{ end }}
         <source src="{{ .Params.section_video_url_5 }}" type='video/mp4'>
       </video>
     </div>

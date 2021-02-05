@@ -41,8 +41,7 @@
   }
 
   function checkScroll() {
-    conditionallyPlayVideo(document.getElementById('section-1-video'))
-    conditionallyPlayVideo(document.getElementById('section-2-video'))
+    conditionallyPlayVideo(document.getElementsByClassName('autoplay'))
   }
 
   window.addEventListener('scroll', checkScroll, false);
