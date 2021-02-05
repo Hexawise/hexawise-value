@@ -1,7 +1,7 @@
 ---
 title: Hexawise for Guidewire
-description: Demonstrating how teams achieved significant benefits with Hexawise
-  in test planning, execution, and automation.
+description: Demonstrating how Guidewire teams achieved significant benefits
+  with Hexawise in test planning, execution, and automation.
 url: hexawise-for-guidewire
 intro_header: Hexawise is a <u>test design optimization</u> tool that allows
   users to quickly generate tests from a model of variation ideas of their
