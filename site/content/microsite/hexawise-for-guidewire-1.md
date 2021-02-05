@@ -28,7 +28,7 @@ section_text_3_2: >-
 section_video_url_3_2: https://s3.amazonaws.com/media.hexawise.com/video/hexawise-guidewire-communicate-coverage.mp4
 section_navbar_4: Accelerate test automation
 section_header_4: Hexawise will help you accelerate test automation
-section_text_4: Use Hexawise to generate the right tests for automation.
+section_text_4: <large>Use Hexawise to generate the right tests for automation.</large>
 section_image_4: img/section_4_image.png
 section_4_video_url: https://s3.amazonaws.com/media.hexawise.com/video/hexawise-guidewire-faster-automation.mp4
 cta_text: "Reach out to the below contact to learn more about the significant
