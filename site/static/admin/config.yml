@@ -43,7 +43,7 @@ collections: # A list of collections the CMS should be able to edit
           The font awesome icon's identifier (the 'user-circle' in fa-user-circle)
       - {label: "Section 1 Header", name: section_header_1, widget: "markdown", default: "Hexawise tests are different", required: true}
       - {label: "Section 1 Text", name: "section_text_1", widget: "markdown", default: 'Why are these tests important?', required: false}
-      - {label: "Section 1 Video", name: "section_1_video_url", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/hexawise-tests-are-different-animation.mp4', required: false}
+      - {label: "Section 1 Video", name: "section_video_url_1", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/hexawise-tests-are-different-animation.mp4', required: false}
       # - {label: "Section 1 Video Autoplays?", name: "video_autoplay_1", widget: "boolean", default: true, required: false}
 
       # SECTION 2 FIELDS
@@ -51,7 +51,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Section 2 Icon", name: "section_icon_2", widget: "string", required: false}
       - {label: "Section 2 Header", name: section_header_2, widget: "markdown", default: "Because you consistently <u>find more defects</u> with your optimized Hexawise tests.", required: false}
       - {label: "Section 2 Text", name: "section_text_2", widget: "markdown", required: false}
-      - {label: "Section 2 Video", name: "section_2_video_url", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/traditional-vs-hexawise-tests-animation.mp4', required: false}
+      - {label: "Section 2 Video", name: "section_video_url_2", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/traditional-vs-hexawise-tests-animation.mp4', required: false}
       # - {label: "Section 2 Video Autoplays?", name: "video_autoplay_2", widget: "boolean", default: true, required: false}
 
       # SECTION 3 FIELDS
@@ -72,7 +72,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Section 4 Text", name: "section_text_4", widget: "markdown", default: "Use Hexawise to generate the right tests for automation.", required: false}
       - {label: "Section 4 Image", name: "section_image_4", widget: "image", required: false}
       - {label: "Section 4 Image Text", name: "section_image_text_4", widget: "markdown", required: false}
-      - {label: "Section 4 Video", name: "section_4_video_url", widget: "string", required: false}
+      - {label: "Section 4 Video", name: "section_video_url_4", widget: "string", required: false}
      #  - {label: "Section 4 Video Autoplays?", name: "video_autoplay_4", widget: "boolean", default: false, required: false}
 
      # SECTION 5 FIELDS
@@ -82,7 +82,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Section 5 Text", name: "section_text_5", widget: "markdown", required: false}
       - {label: "Section 5 Image", name: "section_image_5", widget: "image", required: false}
       - {label: "Section 5 Image Text", name: "section_image_text_5", widget: "markdown", required: false}
-      - {label: "Section 5 Video", name: "section_5_video_url", widget: "string", required: false}
+      - {label: "Section 5 Video", name: "section_video_url_5", widget: "string", required: false}
       # - {label: "Section 5 Video Autoplays?", name: "video_autoplay_5", widget: "boolean", default: false, required: false}
 
       # CONTACT FIELDS
