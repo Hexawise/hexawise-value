@@ -10,7 +10,7 @@ intro_body: Hexawise is used alongside various Test Management and Automation to
 image: /img/hexawise-tosca.png
 section_navbar_1: Hexawise tests are different
 section_header_1: Hexawise tests are different
-section_text_1: Why are these differences important?
+section_text_1: <h5>Why are these differences important?</h5>
 section_1_video_url: https://s3.amazonaws.com/media.hexawise.com/guidewire-no-matrices.mp4
 section_navbar_2: Find more defects
 section_header_2: Because you consistently <u>find more defects</u> with your
