@@ -8,35 +8,40 @@
 </div>
 {{ partial "footer.html" . }}
 <script>
-  function conditionallyPlayVideo(video) {
-    var x = video.offsetLeft,
-        y = video.offsetTop,
-        w = video.offsetWidth,
-        h = video.offsetHeight,
-        r = x + w, //right
-        b = y + h, //bottom
-        visibleX,
-        visibleY,
-        visible;
+  function conditionallyPlayVideo(videos) {
 
-    if (window.pageXOffset >= r ||
-        window.pageYOffset >= b ||
-        window.pageXOffset + window.innerWidth < x ||
-        window.pageYOffset + window.innerHeight < y
-       ) {
+    var video;
 
-      return;
-    }
+    for (video in videos) {
+      var x = videos[video].offsetLeft,
+          y = videos[video].offsetTop,
+          w = videos[video].offsetWidth,
+          h = videos[video].offsetHeight,
+          r = x + w, //right
+          b = y + h, //bottom
+          visibleX,
+          visibleY,
+          visible;
 
-    visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
-    visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+      if (window.pageXOffset >= r ||
+          window.pageYOffset >= b ||
+          window.pageXOffset + window.innerWidth < x ||
+          window.pageYOffset + window.innerHeight < y
+         ) {
 
-    visible = visibleX * visibleY / (w * h);
+        return;
+      }
 
-    const threshold = 0.4;
+      visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+      visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
 
-    if(visible > threshold && !video.ended) {
-      video.play()
+      visible = visibleX * visibleY / (w * h);
+
+      const threshold = 0.4;
+
+      if(visible > threshold && !videos[video].ended) {
+        videos[video].play()
+      }
     }
   }
 
