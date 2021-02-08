@@ -38,4 +38,4 @@ To add videos, you'll need to upload them to our `media.hexawise.com` S3 bucket 
 6. You should see a list of multiple S3 buckets. The one you're looking for is as at the bottom of the list, `media.hexawise.com`.
 7. In that dropdown list, find the `video` folder. This is where you'll add your video(s).
 
-Once the video has been uploaded, you can include its URL(which should look like `https://s3.amazonaws.com/media.hexawise.com/video/video-filename.mp4`) in a Section Video field for your microsite.
+Once the video has been uploaded, you can include its URL (which should look like `https://s3.amazonaws.com/media.hexawise.com/video/video-filename.mp4`) in a Section Video field for your microsite.
