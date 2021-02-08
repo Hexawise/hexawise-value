@@ -29,7 +29,7 @@ Adding images to a microsite is as easy as uploading them through the admin UI.
 
 To add videos, you'll need to upload them to our `media.hexawise.com` S3 bucket first.
 
-[Cyberduck](https://cyberduck.io/) is a simple way to upload videos. Ping me for the secret keys needed to use the `media-uploads` IAM user.
+[Cyberduck](https://cyberduck.io/) is a simple way to upload videos. Ping me for the secret keys needed to login as the `media-uploads` user.
 1. Open Cyberduck.
 2. Click on the 'Open Connection' icon.
 3. Select 'Amazon S3' from the dropdown menu at the top of the dialog.
