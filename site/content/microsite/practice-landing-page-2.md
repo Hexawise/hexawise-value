@@ -6,7 +6,7 @@ section_2_video_url: https://s3.amazonaws.com/media.hexawise.com/video/tradition
 title: Practice Site
 description: What is Hexawise? And more importantly, how can it help you?
 url: practice-landing-page-2
-section_icon_1: dollar-sign
+section_icon_1: dollar sign
 section_3_text_1: "![]()"
 image: /img/hexawise-tosca.png
 section_navbar_1: Font-Awesome
