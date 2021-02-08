@@ -15,7 +15,6 @@ For more about how to use the Netlify CLI, use the commands `netlify` and `netli
 
 The Netlify site can be found [here](https://app.netlify.com/sites/stupefied-goldberg-35c5b7/overview).
 Pushing to this repo will automatically start a deploy there.
-The resulting site in production is [here](https://value.hexawise.com).
 
 ## Creating Microsites
 Log into the admin UI [here](https://value.hexawise.com/admin).
