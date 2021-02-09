@@ -19,7 +19,7 @@ section_navbar_1: Hexawise tests are different
 section_header_1: Hexawise tests are different
 section_text_1: Why are these tests important?
 section_video_url_1: https://s3.amazonaws.com/media.hexawise.com/video/hexawise-tests-are-different-animation.mp4
-video_autoplay_1: true
+video_autoplay_1: false
 section_navbar_2: Find more defects
 section_header_2: Because you consistently <u>find more defects</u> with your
   optimized Hexawise tests.
