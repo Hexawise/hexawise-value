@@ -1,5 +1,5 @@
 ---
-title: Tyler Microsite 1.0.5
+title: Tyler Microsite 1.0.6
 description: Demonstrating how teams achieved significant benefits with Hexawise
   in test planning, execution, and automation.
 url: tyler-will-delete-this
