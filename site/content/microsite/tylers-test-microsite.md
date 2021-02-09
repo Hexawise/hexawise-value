@@ -1,5 +1,5 @@
 ---
-title: Tyler Microsite 1.0.8
+title: Tyler Microsite 1.0.9
 description: Demonstrating how teams achieved significant benefits with Hexawise
   in test planning, execution, and automation.
 url: tyler-will-delete-this
@@ -47,6 +47,6 @@ section_video_url_5: https://s3.amazonaws.com/media.hexawise.com/video/tradition
 video_autoplay_5: true
 cta_text: Reach out to the below contacts to learn more about the significant
   benefits of Hexawise
-contact_1: test@test.com
+contact_1: ""
 contact_2: test.2@test.com
 ---
