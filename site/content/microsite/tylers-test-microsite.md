@@ -36,6 +36,7 @@ video_autoplay_3_2: false
 section_navbar_4: Accelerate test automation
 section_header_4: Hexawise will help you accelerate test automation
 section_text_4: Use Hexawise to generate the right tests for automation.
+section_image_4: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Michael_Jordan_in_2014.jpg/220px-Michael_Jordan_in_2014.jpg
 video_autoplay_4: false
 section_navbar_5: "Section #5"
 section_header_5: "Section #5 is the best section out of all of them"
