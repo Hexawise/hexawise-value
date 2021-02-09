@@ -1,5 +1,5 @@
 ---
-title: Tyler Microsite 1.0.4
+title: Tyler Microsite 1.0.5
 description: Demonstrating how teams achieved significant benefits with Hexawise
   in test planning, execution, and automation.
 url: tyler-will-delete-this
@@ -40,10 +40,10 @@ video_autoplay_4: false
 section_navbar_5: "Section #5"
 section_header_5: "Section #5 is the best section out of all of them"
 section_text_5: Why? Because I added it!
-section_image_5: img/hexawise-bdd-screenshot.png
+section_image_5: ""
 section_image_text_5: Optional image text
 section_video_url_5: https://s3.amazonaws.com/media.hexawise.com/video/traditional-vs-hexawise-tests-animation.mp4
-video_autoplay_5: false
+video_autoplay_5: true
 cta_text: Reach out to the below contacts to learn more about the significant
   benefits of Hexawise
 ---
