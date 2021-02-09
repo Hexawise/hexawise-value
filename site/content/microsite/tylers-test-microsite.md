@@ -40,7 +40,7 @@ video_autoplay_4: false
 section_navbar_5: "Section #5"
 section_header_5: "Section #5 is the best section out of all of them"
 section_text_5: Why? Because I added it!
-video_autoplay_5: false
+video_autoplay_5: true
 cta_text: Reach out to the below contacts to learn more about the significant
   benefits of Hexawise
 ---
