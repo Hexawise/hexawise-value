@@ -37,6 +37,9 @@ section_navbar_4: Accelerate test automation
 section_header_4: Hexawise will help you accelerate test automation
 section_text_4: Use Hexawise to generate the right tests for automation.
 video_autoplay_4: false
+section_navbar_5: "Section #5"
+section_header_5: "Section #5 is the best section out of all of them"
+section_text_5: Why? Because I added it!
 video_autoplay_5: false
 cta_text: Reach out to the below contacts to learn more about the significant
   benefits of Hexawise
