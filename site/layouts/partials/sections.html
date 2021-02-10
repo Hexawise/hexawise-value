@@ -19,7 +19,7 @@
       </div>
       {{ end }}
       <div class="row w-100 text-center mb-4">
-        <div id="section-1-text">
+        <div class="p-3" id="section-1-text">
           {{ .RenderString .Params.section_text_1 }}
         </div>
       </div>
@@ -30,7 +30,7 @@
 {{ if .Params.section_header_2 }}
 <div id="section-2" class="feature-section">
   <div class="row w-100">
-    <div id="section-2-text">
+    <div class="p-3" id="section-2-text">
       <h5 id="section-2-header" class="section-text">
         {{ if .Params.section_icon_2 }}
           <i class="fa fa-{{ .Params.section_icon_2 }}"></i>
