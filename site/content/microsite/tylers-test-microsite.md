@@ -41,7 +41,7 @@ video_autoplay_4: false
 section_navbar_5: "Section #5"
 section_header_5: "Section #5 is the best section out of all of them"
 section_text_5: Why? Because I added it!
-section_image_5: ""
+section_image_5: img/test-cases.png
 section_image_text_5: Optional image text
 section_video_url_5: https://s3.amazonaws.com/media.hexawise.com/video/traditional-vs-hexawise-tests-animation.mp4
 video_autoplay_5: true
