@@ -1,9 +1,0 @@
-# Font style metadata
-name = "Theme"
-
-google_fonts = "family=Poppins:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700"
-
-heading_font = "Poppins"
-body_font = "Roboto"
-nav_font = "Roboto"
-mono_font = "Roboto Mono"
