@@ -37,7 +37,7 @@
 
       visible = visibleX * visibleY / (w * h);
 
-      const threshold = 0.4;
+      const threshold = 0.1;
 
       if(visible > threshold && !videos[video].ended) {
         videos[video].play()
