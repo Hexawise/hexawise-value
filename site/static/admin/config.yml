@@ -49,6 +49,7 @@ collections: # A list of collections the CMS should be able to edit
           The font awesome icon's identifier (the 'user-circle' in fa-user-circle). The list of icons is available at https://fontawesome.com/v4.7.0/icons/.
       - {label: "Section 1 Header", name: section_header_1, widget: "markdown", default: "Hexawise tests are different", required: true}
       - {label: "Section 1 Text", name: "section_text_1", widget: "markdown", default: 'Why are these tests important?', required: false}
+      # - {label: "Section 1 Animation", }
       - {label: "Section 1 Video", name: "section_video_url_1", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/hexawise-tests-are-different-animation.mp4', required: false}
       - {label: "Section 1 Video Autoplays?", name: "video_autoplay_1", widget: "boolean", default: true, required: false}
 
@@ -57,6 +58,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Section 2 Icon", name: "section_icon_2", widget: "string", required: false}
       - {label: "Section 2 Header", name: section_header_2, widget: "markdown", default: "Because you consistently <u>find more defects</u> with your optimized Hexawise tests.", required: false}
       - {label: "Section 2 Text", name: "section_text_2", widget: "markdown", required: false}
+      # - {label: "Section 2 Animation"}
       - {label: "Section 2 Video", name: "section_video_url_2", widget: "string", default: 'https://s3.amazonaws.com/media.hexawise.com/video/traditional-vs-hexawise-tests-animation.mp4', required: false}
       - {label: "Section 2 Video Autoplays?", name: "video_autoplay_2", widget: "boolean", default: true, required: false}
 
