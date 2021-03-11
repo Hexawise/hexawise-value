@@ -7,18 +7,20 @@
         {{ end }}
         {{ .RenderString .Params.section_header_1 }}
       </h5>
-      {{ if .Params.section_video_url_1 }}
       <div class="row">
-        <iframe class="p-3 border-0" style="transform: scale(0.8); width: 1650px; height: 1260px; margin: -80px -250px;" src="/marketing-animation/index.html?p=W3siY29sIjoiQXBwbGljYXRpb24gSW5jb21lIiwibGFiZWwiOnsiMSI6IkxvdyIsIjIiOiJNZWRpdW0iLCIzIjoiSGlnaCJ9fSx7ImNvbCI6IkFwcGxpY2FudCBDcmVkaXQgU2NvcmUiLCJsYWJlbCI6eyIxIjoiQmFkIiwiMiI6IkF2ZXJhZ2UiLCIzIjoiR29vZCJ9fSx7ImNvbCI6IkFwcGxpY2FudCBTdGF0dXMiLCJsYWJlbCI6eyIxIjoiRW1wbG95ZWUiLCIyIjoiUmVndWxhciIsIjMiOiJWZXRlcmFuIn19LHsiY29sIjoiTG9hbiBUZXJtIiwibGFiZWwiOnsiMSI6IjIwIFlycyIsIjIiOiIzMCBZcnMiLCIzIjoiMTUgWXJzIn19LHsiY29sIjoiTG9hbiBBbW91bnQiLCJsYWJlbCI6eyIxIjoiU21hbGwiLCIyIjoiTWVkaXVtIiwiMyI6IkxhcmdlIn19LHsiY29sIjoiUHJvcGVydHkgVHlwZSIsImxhYmVsIjp7IjEiOiJBcGFydG1lbnQiLCIyIjoiSG91c2UiLCIzIjoiQ29uZG8ifX0seyJjb2wiOiJQcm9wZXJ0eSBMb2NhdGlvbiIsImxhYmVsIjp7IjEiOiJBIiwiMiI6IkIiLCIzIjoiQyJ9fSx7ImNvbCI6IlByb3BlcnR5IFN0YXR1cyIsImxhYmVsIjp7IjEiOiJJbnZlc3RtZW50IiwiMiI6IlByaW1hcnkiLCIzIjoiVmFjYXRpb24ifX1d"></iframe>
-       <!--  {{ if .Params.video_autoplay_1 }}
-        <video muted class='autoplay' id='section-1-video' style='width: 100%; height: 100%;'>
-        {{ else }}
-        <video controls id='section-1-video' style='width: 100%; height: 100%;'>
+        {{ if .Params.section_animation_1 }}
+        <iframe class="p-3 border-0" style="transform: scale(0.8); width: 1650px; height: 1260px; margin: -80px -250px;" src="{{ .Params.section_animation_1 }}"></iframe>
         {{ end }}
-          <source src="{{ .Params.section_video_url_1 }}" type='video/mp4'>
-        </video> -->
+        {{ if .Params.section_video_url_1 }}
+          {{ if .Params.video_autoplay_1 }}
+            <video muted class='autoplay' id='section-1-video' style='width: 100%; height: 100%;'>
+            {{ else }}
+            <video controls id='section-1-video' style='width: 100%; height: 100%;'>
+          {{ end }}
+            <source src="{{ .Params.section_video_url_1 }}" type='video/mp4'>
+          </video>
+        {{ end }}
       </div>
-      {{ end }}
       <div class="row w-100 text-center mb-4">
         <div class="p-3" id="section-1-text">
           {{ .RenderString .Params.section_text_1 }}
@@ -41,17 +43,18 @@
       {{ .RenderString .Params.section_text_2 }}
     </div>
   </div>
-  {{ if .Params.section_video_url_2 }}
-  <div class="row w-100">
-    {{ if .Params.video_autoplay_2 }}
-    <video muted class='autoplay' id='section-2-video' style='width: 100%; height: 100%;'>
-    {{ else }}
-    <video controls id='section-2-video' style='width: 100%; height: 100%;'>
+  {{ if .Params.section_animation_2 }}
+    <iframe class="p-3 border-0" style="transform: scale(0.8); width: 1650px; height: 1260px; margin: -80px -250px;" src="{{ .Params.section_animation_2 }}"></iframe>
     {{ end }}
-      <source src="{{ .Params.section_video_url_2 }}" type='video/mp4'>
-    </video>
-  </div>
-  {{ end }}
+    {{ if .Params.section_video_url_2 }}
+      {{ if .Params.video_autoplay_2 }}
+        <video muted class='autoplay' id='section-2-video' style='width: 100%; height: 100%;'>
+        {{ else }}
+        <video controls id='section-2-video' style='width: 100%; height: 100%;'>
+      {{ end }}
+        <source src="{{ .Params.section_video_url_2 }}" type='video/mp4'>
+      </video>
+    {{ end }}
 </div>
 {{ end }}
 
