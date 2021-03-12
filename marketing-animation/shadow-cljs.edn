@@ -1,0 +1,40 @@
+{:source-paths
+ ["cljs"]
+
+ :dependencies
+ [;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;;
+  ;; Web dependencies
+  ;; Instaparse aims to be the simplest way to build parsers in Clojure. https://github.com/Engelberg/instaparse
+  [instaparse "1.4.10"]
+
+  ;; React wrapper for ClojureScript https://github.com/tonsky/rum
+  [rum "0.12.3" :exclusions [cljsjs/react
+                             cljsjs/react-dom]]
+  ;; A collection of Chrome DevTools enhancements for ClojureScript developers https://github.com/binaryage/cljs-devtools
+  [binaryage/devtools "1.0.0"]
+
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;; Development deps
+  ;;
+  ;; A collection of nREPL middleware originally designed to enhance CIDER
+  [cider/cider-nrepl "0.24.0"]
+  ;; nREPL middleware to support refactorings in an editor agnostic way
+  [refactor-nrepl "2.5.0-SNAPSHOT"]
+  ]
+
+ :nrepl {:host       "0.0.0.0"
+         :port       9000
+         :middleware [refactor-nrepl.middleware/wrap-refactor]}
+
+ :builds
+ {:web {:target           :browser
+        :output-dir       "target/js"
+        :asset-path       "/target/js"
+        :compiler-options {:optimizations :simple}
+        :modules          {:matrix {:entries [coverage-matrix.core
+                                              edit.core]}}
+        :devtools         {:preloads [shadow.remote.runtime.cljs.browser]}
+        :js-options       {:resolve {"d3" {:target :global
+                                           :global "d3"}}}}
+  }}
