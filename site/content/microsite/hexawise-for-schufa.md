@@ -3,7 +3,7 @@ title: Hexawise for SCHUFA
 description: Demonstrating how SCHUFA teams can achieve significant benefits
   with Hexawise in test planning, execution, and automation.
 url: hexawise-for-schufa
-crawlable: true
+crawlable: false
 intro_header: Hexawise is a <u>test design optimization</u> tool that allows
   users to quickly generate tests from a model of variation ideas of their
   System Under Test.
