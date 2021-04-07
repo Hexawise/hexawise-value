@@ -11,30 +11,30 @@ intro_body: Hexawise is used alongside various Test Management and Automation to
 image: /img/hexawise-tosca.png
 section_navbar_1: Hexawise tests are different
 section_icon_1: random
-section_header_1: Hexawise tests are different
+section_header_1: Hexawise tests are different. You consistently <u>find more
+  defects</u> with your optimized Hexawise tests.
 section_text_1: ""
+section_animation_1: marketing-animation/index.html?p=W3siY29sIjoiQWdlIiwibGFiZWwiOnsiMSI6IllvdW5nIiwiMiI6Ik1pZGRsZSBBZ2UiLCIzIjoiT2xkIn19LHsiY29sIjoiUGxhY2Ugb2YgYmlydGgiLCJsYWJlbCI6eyIxIjoiUmVnaW9uIDEiLCIyIjoiUmVnaW9uIDIiLCIzIjoiUmVnaW9uIDMifX0seyJjb2wiOiJHZW5kZXIiLCJsYWJlbCI6eyIxIjoiTWFsZSIsIjIiOiJGZW1hbGUiLCIzIjoiVW5rbm93biJ9fSx7ImNvbCI6IlNwZWNpYWwgbWFya2VycyIsImxhYmVsIjp7IjEiOiJNYXJrZXIgZ3JvdXAgMSIsIjIiOiJNYXJrZXQgZ3JvdXAgMiIsIjMiOiJNYXJrZXIgZ3JvdXAgMyJ9fSx7ImNvbCI6Ik90aGVyIGlucXVpcmllcyIsImxhYmVsIjp7IjEiOiJTbWFsbCBlZmZlY3QiLCIyIjoiTWVkaXVtIGVmZmVjdCIsIjMiOiJMYXJnZSBlZmZlY3QifX0seyJjb2wiOiJDb250cmFjdHMgU0NIVUZBIGNvcnBvcmF0ZSIsImxhYmVsIjp7IjEiOiJHcm91cCAxIiwiMiI6Ikdyb3VwIDIiLCIzIjoiR3JvdXAgMyJ9fSx7ImNvbCI6IkN1c3RvbWVyIHR5cGUiLCJsYWJlbCI6eyIxIjoiVHlwZSAxIiwiMiI6IlR5cGUgMiIsIjMiOiJUeXBlIDMifX0seyJjb2wiOiJBZGRpdGlvbmFsIHByb2R1Y3RzIiwibGFiZWwiOnsiMSI6IjEiLCIyIjoiMiIsIjMiOiIzIn19XQ==
 section_video_url_1: ""
 video_autoplay_1: false
-section_navbar_2: Find more defects
-section_icon_2: search
-section_header_2: Because you consistently <u>find more defects</u> with your
-  optimized Hexawise tests.
-section_animation_2: marketing-animation/index.html?p=W3siY29sIjoiQWdlIiwibGFiZWwiOnsiMSI6IllvdW5nIiwiMiI6Ik1pZGRsZSBBZ2UiLCIzIjoiT2xkIn19LHsiY29sIjoiUGxhY2Ugb2YgYmlydGgiLCJsYWJlbCI6eyIxIjoiUmVnaW9uIDEiLCIyIjoiUmVnaW9uIDIiLCIzIjoiUmVnaW9uIDMifX0seyJjb2wiOiJHZW5kZXIiLCJsYWJlbCI6eyIxIjoiTWFsZSIsIjIiOiJGZW1hbGUiLCIzIjoiVW5rbm93biJ9fSx7ImNvbCI6IlNwZWNpYWwgbWFya2VycyIsImxhYmVsIjp7IjEiOiJNYXJrZXIgZ3JvdXAgMSIsIjIiOiJNYXJrZXQgZ3JvdXAgMiIsIjMiOiJNYXJrZXIgZ3JvdXAgMyJ9fSx7ImNvbCI6Ik90aGVyIGlucXVpcmllcyIsImxhYmVsIjp7IjEiOiJTbWFsbCBlZmZlY3QiLCIyIjoiTWVkaXVtIGVmZmVjdCIsIjMiOiJMYXJnZSBlZmZlY3QifX0seyJjb2wiOiJDb250cmFjdHMgU0NIVUZBIGNvcnBvcmF0ZSIsImxhYmVsIjp7IjEiOiJHcm91cCAxIiwiMiI6Ikdyb3VwIDIiLCIzIjoiR3JvdXAgMyJ9fSx7ImNvbCI6IkN1c3RvbWVyIHR5cGUiLCJsYWJlbCI6eyIxIjoiVHlwZSAxIiwiMiI6IlR5cGUgMiIsIjMiOiJUeXBlIDMifX0seyJjb2wiOiJBZGRpdGlvbmFsIHByb2R1Y3RzIiwibGFiZWwiOnsiMSI6IjEiLCIyIjoiMiIsIjMiOiIzIn19XQ==
-section_video_url_2: ""
-video_autoplay_2: true
-section_navbar_3: Get to market faster
-section_icon_3: fast-forward
-section_header_3: Hexawise speeds time to market
-section_text_3_1: >-
+section_navbar_2: Get to market faster
+section_icon_2: fast-forward
+section_header_2: Hexawise speeds time to market
+section_text_2: >-
   <h6>Faster test case selection</h6>
 
   <large>Once models are defined inside Hexawise, the right tests for execution are quickly selected.</large>
-section_video_url_3_1: https://s3.amazonaws.com/media.hexawise.com/SCHUFA/SCHUFA+1.mp4
-section_text_3_2: >-
-  <h6>Smarter testing decisions</h6>
-
-  <large>Use Hexawise’s clear coverage reports to make smarter testing decisions about test case counts and coverage.</large>
-section_video_url_3_2: https://s3.amazonaws.com/media.hexawise.com/SCHUFA/SCHUFA+2.mp4
+section_animation_2: ""
+section_video_url_2: https://s3.amazonaws.com/media.hexawise.com/SCHUFA/SCHUFA+1.mp4
+video_autoplay_2: false
+section_navbar_3: Smarter testing decisions
+section_icon_3: search
+section_header_3: Hexawise's coverage reports
+section_text_3_1: Use Hexawise’s clear coverage reports to make smarter testing
+  decisions about test case counts and coverage.
+section_video_url_3_1: https://s3.amazonaws.com/media.hexawise.com/SCHUFA/SCHUFA+2.mp4
+section_text_3_2: ""
+section_video_url_3_2: ""
 section_navbar_4: Accelerate test automation
 section_icon_4: cogs
 section_header_4: Hexawise will help you accelerate test automation
