@@ -14,7 +14,7 @@ section_navbar_1: Hexawise tests are different
 section_icon_1: random
 section_header_1: Hexawise tests are different
 section_text_1: <h5>Why are these differences important?</h5>
-section_video_url_1: https://media.hexawise.com.s3.amazonaws.com/SCHUFA/SCHUFA%20-%20first%20lines%20animation.mov
+section_video_url_1: https://media.hexawise.com.s3.amazonaws.com/SCHUFA/SCHUFA%20lines%20animation.mp4
 video_autoplay_1: true
 section_navbar_2: Find more defects
 section_icon_2: search
@@ -30,18 +30,18 @@ section_text_3_1: >-
   <h6>Faster test case selection</h6>
 
   <large>Once models are defined inside Hexawise, the right tests for execution are quickly selected.</large>
-section_video_url_3_1: https://media.hexawise.com.s3.amazonaws.com/SCHUFA/SCHUFA%201-%20generate%20tests.mov
+section_video_url_3_1: https://media.hexawise.com.s3.amazonaws.com/SCHUFA/SCHUFA%201.mp4
 section_text_3_2: >-
   <h6>Smarter testing decisions</h6>
 
   <large>Use Hexawise’s clear coverage reports to make smarter testing decisions about test case counts and coverage.</large>
-section_video_url_3_2: https://media.hexawise.com.s3.amazonaws.com/SCHUFA/SCHUFA%202%20-%20understanding%20coverage.mov
+section_video_url_3_2: https://media.hexawise.com.s3.amazonaws.com/SCHUFA/SCHUFA%202.mp4
 section_navbar_4: Accelerate test automation
 section_icon_4: cogs
 section_header_4: Hexawise will help you accelerate test automation
 section_text_4: <large>Use Hexawise to generate the right tests for automation.</large>
 section_image_4: img/section_4_image.png
-section_video_url_4: https://media.hexawise.com.s3.amazonaws.com/SCHUFA/SCHUFA%203%20-%20automate.mov
+section_video_url_4: https://media.hexawise.com.s3.amazonaws.com/SCHUFA/SCHUFA%203.mp4
 section_video_url_5: ""
 cta_text: "Reach out to the below contact to learn more about the significant
   benefits that were achieved during the Hexawise POC at Guidewire:"
