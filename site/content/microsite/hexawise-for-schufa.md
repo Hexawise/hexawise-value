@@ -1,8 +1,7 @@
 ---
 title: Hexawise for SCHUFA
 description: Demonstrating how SCHUFA teams can achieve significant benefits
-  with Hexawise in test planning, execution, and
-  automation.https://value.hexawise.com/admin/#/collections/microsite
+  with Hexawise in test planning, execution, and automation.
 url: hexawise-for-schufa
 crawlable: true
 intro_header: Hexawise is a <u>test design optimization</u> tool that allows
@@ -13,9 +12,9 @@ image: /img/hexawise-tosca.png
 section_navbar_1: Hexawise tests are different
 section_icon_1: random
 section_header_1: Hexawise tests are different
-section_text_1: <h5>Why are these differences important?</h5>
-section_video_url_1: https://s3.amazonaws.com/media.hexawise.com/SCHUFA/SCHUFA+lines+animation.mp4
-video_autoplay_1: true
+section_text_1: ""
+section_video_url_1: ""
+video_autoplay_1: false
 section_navbar_2: Find more defects
 section_icon_2: search
 section_header_2: Because you consistently <u>find more defects</u> with your
