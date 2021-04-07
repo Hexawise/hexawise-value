@@ -10,7 +10,7 @@ body {
 }
 
 .chart-title {
-	font-size: 1.5rem;
+	font-size: 2rem;
 	margin-top: 0;
 	margin-bottom: 1rem;
 	font-weight: 500;
@@ -22,12 +22,11 @@ svg text {
 
 .column-label,
 .test-label {
-	font-size: 0.75rem;
-	font-weight: bold;
+	font-size: 1.5rem;
 }
 
 .grid-label {
-	font-size: 0.625rem;
+	font-size: 1.2rem;
 }
 
 .chart-title {
@@ -36,7 +35,7 @@ svg text {
 }
 
 .chart-container + .chart-title {
-	margin-top: 4rem;
+	margin-top: 2rem;
 }
 
 .chart-container {
