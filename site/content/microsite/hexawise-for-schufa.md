@@ -35,14 +35,14 @@ section_text_3_2: >-
   <h6>Smarter testing decisions</h6>
 
   <large>Use Hexawise’s clear coverage reports to make smarter testing decisions about test case counts and coverage.</large>
-section_video_url_3_2: ""
+section_video_url_3_2: https://media.hexawise.com.s3.amazonaws.com/SCHUFA/SCHUFA%202%20-%20understanding%20coverage.mov
 section_navbar_4: Accelerate test automation
 section_icon_4: cogs
 section_header_4: Hexawise will help you accelerate test automation
 section_text_4: <large>Use Hexawise to generate the right tests for automation.</large>
 section_image_4: img/section_4_image.png
-section_video_url_4: https://media.hexawise.com.s3.amazonaws.com/SCHUFA/SCHUFA%202%20-%20understanding%20coverage.mov
-section_video_url_5: https://media.hexawise.com.s3.amazonaws.com/SCHUFA/SCHUFA%203%20-%20automate.mov
+section_video_url_4: https://media.hexawise.com.s3.amazonaws.com/SCHUFA/SCHUFA%203%20-%20automate.mov
+section_video_url_5: ""
 cta_text: "Reach out to the below contact to learn more about the significant
   benefits that were achieved during the Hexawise POC at Guidewire:"
 contact_1: conor.wolford@hexawise.com
