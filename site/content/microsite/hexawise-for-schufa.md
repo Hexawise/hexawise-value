@@ -42,7 +42,6 @@ section_text_4: <large>Use Hexawise to generate the right tests for automation.<
 section_image_4: img/section_4_image.png
 section_video_url_4: https://s3.amazonaws.com/media.hexawise.com/SCHUFA/SCHUFA+3.mp4
 section_video_url_5: ""
-cta_text: "Reach out to the below contact to learn more about the significant
-  benefits that were achieved during the Hexawise POC at Guidewire:"
+cta_text: "Reach out to the below contact to learn more:"
 contact_1: conor.wolford@hexawise.com
 ---
