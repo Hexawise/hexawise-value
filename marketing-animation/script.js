@@ -268,7 +268,7 @@ function mountAnimationGraphics() {
 			.append("text")
 			.attr("class", "grid-label")
 			.attr("text-anchor", "middle")
-			.attr("y", (linkOuterWidth * numTests) / 5 +  lineHeight)
+			.attr("y", (linkOuterWidth * numTests) / 2.25 + lineHeight)
 			.text(d => labels[d.i].label[d.j]);
 
 		grid
