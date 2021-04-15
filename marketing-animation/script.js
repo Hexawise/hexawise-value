@@ -49,26 +49,10 @@ function mountAnimationGraphics() {
 
 	const width = 940;
 	const height = 600;
-	const linkOuterWidth = 8;
-	const linkInnerWidth = 6;
+	const linkOuterWidth = 6;
+	const linkInnerWidth = 4;
 	const nodeOuterWidth = 12;
 	const nodeInnerWidth = 4;
-
-  // Render bad coverage matrix
-  const stepBadCoverageMatrix = coverage_matrix.core.start_BANG_({
-    dom: "bad-test-matrix",
-    data: badTestData,
-    coverage: [28,7,7,7,7,7,7,7,7,7,7,7,7,7,7,4,3],
-    labels
-  });
-
-  // Render good coverage matrix
-  const stepGoodCoverageMatrix = coverage_matrix.core.start_BANG_({
-    dom: "good-test-matrix",
-    data: goodTestData,
-    coverage: [28,28,28,23,23,23,22,20,17,10,6,6,5,5,3,3,2],
-    labels
-  });
 
   // Render bad test web
 	const stepBadTestWeb = renderParallelCoordinates({
@@ -103,9 +87,7 @@ function mountAnimationGraphics() {
   // Return handles allowing consumer to "step" animations forward test-by-test
   return {
     stepBadTestWeb,
-    stepBadCoverageMatrix,
     stepGoodTestWeb,
-    stepGoodCoverageMatrix,
   };
 
 
@@ -314,20 +296,20 @@ function mountAnimationGraphics() {
 				.append("text")
 				.datum(testData[0].source)
 				.attr("class", "test-label")
-				.style("fill", linkColor)
+				// .style("fill", linkColor)
 				.attr("x", d => d.x)
 				.attr("y", d => d.y)
 				.attr("dx", -20)
-				.attr("dy", "0.35em")
+				// .attr("dy", "0.35em")
 				.attr("text-anchor", "end")
 				.text(`Test ${k+1}`);
 
 			const tRearrange = svg.transition().duration(durationRearrange);
 
 			grid
-				.selectAll(".node-line");
-				.transition(tRearrange);
-				.attr("y1", d => d.y1);
+				.selectAll(".node-line")
+				.transition(tRearrange)
+				.attr("y1", d => d.y1)
 				.attr("y2", d => d.y2);
 
 			prevTests

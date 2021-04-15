@@ -3,7 +3,6 @@ body {
   font-size: 1rem;
   color: #444;
   margin: 0;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,9 +19,13 @@ svg text {
   fill: #444;
 }
 
-.column-label,
+.column-label {
+  font-size: 1.35rem;
+}
+
 .test-label {
   font-size: 1.35rem;
+  font-weight: normal;
 }
 
 .grid-label {
@@ -60,57 +63,3 @@ svg text {
   min-height: 612px;
   min-width: 1230px;
 }
-
-#become-wastefully-repetitive {
-  position: absolute;
-  top: 131px;
-  left: -105px;
-  width: 100px;
-}
-
-#become-wasteful-arrow {
-  position: relative;
-  font-size: 5em;
-  top: -42px;
-  left: 19px;
-  transform: scaleX(1.5);
-}
-
-#leave-gaps {
-  position: absolute;
-  top: 111px;
-  left: 500px;
-  width: 164px;
-}
-
-#leave-gaps-arrow {
-  position: relative;
-  font-size: 5em;
-  top: -131px;
-  left: -95px;
-  transform: rotate(-22deg) scaleX(2.5);
-}
-
-#thoroughly-covering {
-  position: absolute;
-  top: 98px;
-  left: 493px;
-  width: 200px;
-}
-
-#thoroughly-covering-arrow {
-  position: relative;
-  font-size: 5em;
-  top: -131px;
-  left: -95px;
-  transform: rotate(-22deg) scaleX(2.5);
-}
-
-/*.matrix-test-stats {
-  position: absolute;
-  top: 372px;
-  left: 71px;
-  font-size: 1.3em;
-  line-height: 0.2em;
-  text-align: center;
-}*/
