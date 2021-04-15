@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title></title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body style="overflow:hidden">
-    <div class="container" style="width:">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title></title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body style="overflow:hidden">
+		<div class="container">
+
       <div class="sub-container">
         <div class="container-group">
+          <div id="become-wastefully-repetitive">
+            <p class="chart-title">become wastefully repetitive</p>
+            <div id="become-wasteful-arrow" class="chart-title">&rarr;</div>
+          </div>
           <p id="bad-chart-title" class="chart-title">
-            Unlike <span class="accent-bad">traditional</span> tests that become wastefully repetitive and leave gaps in coverage...
+            Unlike <span class="accent-bad">traditional</span> tests that...
           </p>
           <div class="chart-container" id="bad-test"></div>
         </div>
         <div class="container-group">
-          <!-- <div class="chart-container" id="bad-test-matrix"></div> -->
+          <div id="leave-gaps">
+            <p class="chart-title">and leave coverage gaps (in red),</p>
+            <div id="leave-gaps-arrow" class="chart-title">&larr;</div>
+          </div>
+          <div class="chart-container" id="bad-test-matrix"></div>
         </div>
       </div>
 
       <div class="sub-container">
         <div class="container-group">
           <p id="good-chart-title" class="chart-title">
-            optimized <span class="accent-good">Hexawise</span> tests find more defects by thorougly covering system interactions...
+            optimized <span class="accent-good">Hexawise</span> tests find more defects by...
           </p>
           <div class="chart-container" id="good-test"></div>
         </div>
         <div class="container-group">
-          <!-- <div class="chart-container" id="good-test-matrix"></div> -->
+          <div id="thoroughly-covering">
+            <p class="chart-title">thoroughly covering system interactions.</p>
+            <div id="thoroughly-covering-arrow" class="chart-title">&larr;</div>
+          </div>
+          <div class="chart-container" id="good-test-matrix"></div>
         </div>
       </div>
 
-    </div>
+		</div>
 
-    <script src="https://d3js.org/d3.v5.min.js"></script>
+		<script src="https://d3js.org/d3.v5.min.js"></script>
     <script src="target/js/matrix.js"></script>
-    <script src="script.js"></script>
+		<script src="script.js"></script>
     <script src="timeline.js"></script>
-  </body>
+	</body>
 </html>
