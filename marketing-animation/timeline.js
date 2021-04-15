@@ -34,7 +34,6 @@
     // Bad tests sequence
     [2000,              () => fadeIn(badChartTitle)],
     [1500,              () => fadeIn(becomeWasteful)],
-    [0,                 () => partialFadeOut(badChartTitle)],
     [500,               () => fadeIn(becomeWastefulArrow)],
     [500,               () => anim = mountAnimationGraphics()],
     [500,               () => fadeIn(badTestWeb)],
@@ -71,7 +70,6 @@
     [delayBetweenTests, stepGood],
     [0,                 () => fadeIn(thoroughlyCovering)],
     [200,               () => fadeIn(thoroughlyCoveringArrow)],
-    [0,                 () => partialFadeOut(goodChartTitle)],
     [delayBetweenTests, stepGood],
     [delayBetweenTests, stepGood],
     [delayBetweenTests, stepGood],

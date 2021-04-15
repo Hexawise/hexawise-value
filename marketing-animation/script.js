@@ -47,10 +47,10 @@ function mountAnimationGraphics() {
 	const goodColor = "#7258c0";
 	const nodeColor = "#444";
 
-	const width = 720;
-	const height = 460;
-	const linkOuterWidth = 5;
-	const linkInnerWidth = 4;
+	const width = 940;
+	const height = 600;
+	const linkOuterWidth = 8;
+	const linkInnerWidth = 6;
 	const nodeOuterWidth = 12;
 	const nodeInnerWidth = 4;
 
@@ -268,7 +268,7 @@ function mountAnimationGraphics() {
 			.append("text")
 			.attr("class", "grid-label")
 			.attr("text-anchor", "middle")
-			.attr("y", (linkOuterWidth * numTests) / 2 + lineHeight)
+			.attr("y", (linkOuterWidth * numTests) / 2.25 + lineHeight)
 			.text(d => labels[d.i].label[d.j]);
 
 		grid
@@ -325,9 +325,9 @@ function mountAnimationGraphics() {
 			const tRearrange = svg.transition().duration(durationRearrange);
 
 			grid
-				.selectAll(".node-line")
-				.transition(tRearrange)
-				.attr("y1", d => d.y1)
+				.selectAll(".node-line");
+				.transition(tRearrange);
+				.attr("y1", d => d.y1);
 				.attr("y2", d => d.y2);
 
 			prevTests
