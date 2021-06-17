@@ -44,4 +44,5 @@ section_video_url_4: https://s3.amazonaws.com/media.hexawise.com/SCHUFA/SCHUFA+3
 section_video_url_5: ""
 cta_text: "Reach out to the below contact to learn more:"
 contact_1: conor.wolford@hexawise.com
+contact_2: edwin.katthi@ubs.com
 ---
