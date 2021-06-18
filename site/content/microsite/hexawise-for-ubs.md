@@ -25,14 +25,14 @@ section_text_2: >-
 
   <large>Once models are defined inside Hexawise, the right tests for execution are quickly selected.</large>
 section_animation_2: ""
-section_video_url_2: https://s3.amazonaws.com/media.hexawise.com/SCHUFA/SCHUFA+1.mp4
+section_video_url_2: https://s3.amazonaws.com/media.hexawise.com/video/UBS1.mp4
 video_autoplay_2: false
 section_navbar_3: Smarter testing decisions
 section_icon_3: search
 section_header_3: Hexawise's coverage reports
 section_text_3_1: Use Hexawise’s clear coverage reports to make smarter testing
   decisions about test case counts and coverage.
-section_video_url_3_1: https://s3.amazonaws.com/media.hexawise.com/SCHUFA/SCHUFA+2.mp4
+section_video_url_3_1: https://s3.amazonaws.com/media.hexawise.com/video/UBS2.mp4
 section_text_3_2: ""
 section_video_url_3_2: ""
 section_navbar_4: Accelerate test automation
@@ -40,7 +40,7 @@ section_icon_4: cogs
 section_header_4: Hexawise will help you accelerate test automation
 section_text_4: <large>Use Hexawise to generate the right tests for automation.</large>
 section_image_4: img/section_4_image.png
-section_video_url_4: https://s3.amazonaws.com/media.hexawise.com/SCHUFA/SCHUFA+3.mp4
+section_video_url_4: https://s3.amazonaws.com/media.hexawise.com/video/UBS3.mp4
 section_video_url_5: ""
 cta_text: "Reach out to the below contact to learn more:"
 contact_1: conor.wolford@hexawise.com
