@@ -15,7 +15,7 @@ section_header_1: Hexawise tests are different. You consistently <u>find more
   defects</u> with your optimized Hexawise tests.
 section_text_1: ""
 section_animation_1: ""
-section_video_url_1: https://s3.amazonaws.com/media.hexawise.com/video/UBS%20animation.mov
+section_video_url_1: https://s3.amazonaws.com/media.hexawise.com/video/UBS%20animationB.mov
 video_autoplay_1: true
 section_navbar_2: Get to market faster
 section_icon_2: fast-forward
